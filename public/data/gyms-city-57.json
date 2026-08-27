@@ -1,0 +1,20 @@
+[
+  {
+    "id": "01eeb36d-8494-4ca2-867a-be3533d6eb50",
+    "name": "Flash2261 抱石攀岩",
+    "short_name": "F",
+    "city_id": 57,
+    "latitude": 36.620635,
+    "longitude": 101.772005,
+    "status": "active"
+  },
+  {
+    "id": "0501de99-2bbb-4f64-8469-c06c6956da63",
+    "name": "青海磐攀攀岩馆",
+    "short_name": "青",
+    "city_id": 57,
+    "latitude": 36.610986,
+    "longitude": 101.78698,
+    "status": "active"
+  }
+]

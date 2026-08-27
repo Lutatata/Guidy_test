@@ -1,0 +1,56 @@
+[
+  {
+    "id": "3bc865dd-6d94-492f-88ec-c7e1ea6bcc31",
+    "name": "haone攀岩俱乐部",
+    "short_name": "H",
+    "city_id": 34,
+    "latitude": 45.773708,
+    "longitude": 126.623482,
+    "status": "active"
+  },
+  {
+    "id": "1ab5b23b-e0f8-4bcc-9139-67f3534be01a",
+    "name": "冰城岩舞空间攀岩俱乐部",
+    "short_name": "冰",
+    "city_id": 34,
+    "latitude": 45.733752,
+    "longitude": 126.567049,
+    "status": "active"
+  },
+  {
+    "id": "27f14e3e-9e2b-47c8-a313-34bd2d3d6cdb",
+    "name": "冰城岩舞空间攀岩俱乐部(会展店)",
+    "short_name": "冰",
+    "city_id": 34,
+    "latitude": 45.754644,
+    "longitude": 126.702225,
+    "status": "active"
+  },
+  {
+    "id": "79473b3c-400e-4e86-8b7f-2fc563439567",
+    "name": "听潮攀岩",
+    "short_name": "听",
+    "city_id": 34,
+    "latitude": 45.747457,
+    "longitude": 126.649347,
+    "status": "active"
+  },
+  {
+    "id": "e022c152-8f7a-4ed9-84be-31002f401bfb",
+    "name": "尔滨up攀岩馆",
+    "short_name": "尔",
+    "city_id": 34,
+    "latitude": 45.7613716125488,
+    "longitude": 126.667266845703,
+    "status": "active"
+  },
+  {
+    "id": "f9ab2548-09da-4644-bb0c-43118ca572db",
+    "name": "龙攀岩馆",
+    "short_name": "龙",
+    "city_id": 34,
+    "latitude": 45.692046,
+    "longitude": 126.600657,
+    "status": "active"
+  }
+]

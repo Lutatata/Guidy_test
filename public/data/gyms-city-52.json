@@ -1,0 +1,29 @@
+[
+  {
+    "id": "71b3a3b6-f5f9-414f-95fe-b26916e9c12b",
+    "name": "78山丘抱石",
+    "short_name": "7",
+    "city_id": 52,
+    "latitude": 38.059809,
+    "longitude": 114.501943,
+    "status": "active"
+  },
+  {
+    "id": "1c48ed05-ad8a-4952-a214-865626c441e1",
+    "name": "山丘攀岩(北国未来城店)",
+    "short_name": "山",
+    "city_id": 52,
+    "latitude": 38.000389,
+    "longitude": 114.473539,
+    "status": "active"
+  },
+  {
+    "id": "badda069-decf-4f5a-8034-30a1a36dffb9",
+    "name": "淘攀攀岩",
+    "short_name": "淘",
+    "city_id": 52,
+    "latitude": 38.012954,
+    "longitude": 114.617474,
+    "status": "active"
+  }
+]

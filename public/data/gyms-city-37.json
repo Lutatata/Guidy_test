@@ -1,0 +1,56 @@
+[
+  {
+    "id": "3937a864-b288-428a-87ab-3206ef8d7470",
+    "name": "RockFUN乐岩攀岩馆(乐清银泰百货店)",
+    "short_name": "R",
+    "city_id": 37,
+    "latitude": 28.086862,
+    "longitude": 120.973531,
+    "status": "active"
+  },
+  {
+    "id": "4245080e-c1ff-4641-9680-a0d6d12b26cd",
+    "name": "Rockfun乐岩攀岩馆(温州印象城mega)",
+    "short_name": "R",
+    "city_id": 37,
+    "latitude": 27.984973,
+    "longitude": 120.701795,
+    "status": "active"
+  },
+  {
+    "id": "4824fa1e-8d0f-419b-9f0e-2cd70c6cb375",
+    "name": "七喜运动攀岩馆",
+    "short_name": "七",
+    "city_id": 37,
+    "latitude": 27.980116,
+    "longitude": 120.627329,
+    "status": "active"
+  },
+  {
+    "id": "df9a97be-4646-4295-9a28-1720eb3cf91c",
+    "name": "大黄蜂攀岩馆",
+    "short_name": "大",
+    "city_id": 37,
+    "latitude": 28.005748,
+    "longitude": 120.710249,
+    "status": "active"
+  },
+  {
+    "id": "a95fab55-1c18-45d9-8264-3957a1bb2240",
+    "name": "芭乐攀岩(瑞安店)",
+    "short_name": "芭",
+    "city_id": 37,
+    "latitude": 27.766558,
+    "longitude": 120.694017,
+    "status": "active"
+  },
+  {
+    "id": "fc0e911c-38ea-4797-90e0-4fbeb5309bcd",
+    "name": "芭乐攀岩馆（龙湾馆）",
+    "short_name": "芭",
+    "city_id": 37,
+    "latitude": 27.984035,
+    "longitude": 120.719457,
+    "status": "active"
+  }
+]

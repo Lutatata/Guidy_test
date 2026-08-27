@@ -1,0 +1,56 @@
+[
+  {
+    "id": "fd9abfde-136d-43a4-9ce8-ea8567fd3fdd",
+    "name": "乌鲁木齐橘攀攀岩馆",
+    "short_name": "乌",
+    "city_id": 33,
+    "latitude": 43.896189,
+    "longitude": 87.631032,
+    "status": "active"
+  },
+  {
+    "id": "58f1dc8c-31d4-456e-a945-e6d941955b4a",
+    "name": "变色龙攀岩馆",
+    "short_name": "变",
+    "city_id": 33,
+    "latitude": 43.860604,
+    "longitude": 87.588397,
+    "status": "active"
+  },
+  {
+    "id": "437ba4bf-e49c-4dc4-b5e1-fb2cc3dd7451",
+    "name": "屋顶攀岩",
+    "short_name": "屋",
+    "city_id": 33,
+    "latitude": 43.814945,
+    "longitude": 87.596975,
+    "status": "active"
+  },
+  {
+    "id": "cec2d9ee-195d-4d41-8f8c-283c5964cf01",
+    "name": "岩咖攀岩运动馆",
+    "short_name": "岩",
+    "city_id": 33,
+    "latitude": 43.860339,
+    "longitude": 87.535212,
+    "status": "active"
+  },
+  {
+    "id": "d9a33dd1-6cb6-4489-8b30-2e4d8134ec87",
+    "name": "岩咖攀岩馆(小西门金谷大厦店)",
+    "short_name": "岩",
+    "city_id": 33,
+    "latitude": 43.799041,
+    "longitude": 87.610507,
+    "status": "active"
+  },
+  {
+    "id": "022716f9-598f-4dae-91dc-a7f0531e5623",
+    "name": "岩咖攀岩馆(居然之家店)",
+    "short_name": "岩",
+    "city_id": 33,
+    "latitude": 43.842092,
+    "longitude": 87.540077,
+    "status": "active"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "244ea60d-9f4f-4061-88ee-67349b501e09",
+    "name": "ARCH攀岩(T16购物中心)",
+    "short_name": "A",
+    "city_id": 39,
+    "latitude": 28.701087,
+    "longitude": 115.869791,
+    "status": "active"
+  },
+  {
+    "id": "8e40665b-4a98-451e-a7db-3ce9c4b997d8",
+    "name": "Answer攀岩",
+    "short_name": "A",
+    "city_id": 39,
+    "latitude": 28.737473,
+    "longitude": 115.8601,
+    "status": "active"
+  },
+  {
+    "id": "48de604d-7a50-4321-a143-26f56363d87f",
+    "name": "乐易攀岩中心(国体中心店)",
+    "short_name": "乐",
+    "city_id": 39,
+    "latitude": 28.619843,
+    "longitude": 115.820765,
+    "status": "active"
+  },
+  {
+    "id": "d294f463-a82a-4813-a442-27d368ebf994",
+    "name": "岩舞攀岩·嘉义户外(朝阳天虹店)",
+    "short_name": "岩",
+    "city_id": 39,
+    "latitude": 28.636399,
+    "longitude": 115.863354,
+    "status": "active"
+  },
+  {
+    "id": "728d0d00-9e64-4f7b-bdb8-a02a0a2a8765",
+    "name": "遇见攀岩俱乐部(地铁大厦天虹店)",
+    "short_name": "遇",
+    "city_id": 39,
+    "latitude": 28.682461,
+    "longitude": 115.851138,
+    "status": "active"
+  }
+]

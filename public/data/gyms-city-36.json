@@ -1,0 +1,56 @@
+[
+  {
+    "id": "3b197f0a-4cd7-4677-8d17-f743bd0e597a",
+    "name": "HiRock嗨岩攀岩馆(伯渎河体育中心店)",
+    "short_name": "H",
+    "city_id": 36,
+    "latitude": 31.551941,
+    "longitude": 120.40575,
+    "status": "active"
+  },
+  {
+    "id": "62997ab1-85f7-4ca0-a67a-4fecd911b5eb",
+    "name": "HiRock嗨岩攀岩馆(居然之家店)",
+    "short_name": "H",
+    "city_id": 36,
+    "latitude": 31.562311,
+    "longitude": 120.353522,
+    "status": "active"
+  },
+  {
+    "id": "3feb1643-159c-40c8-af02-e741e4e77aa6",
+    "name": "HiRock嗨岩攀岩馆(红星美凯龙店)",
+    "short_name": "H",
+    "city_id": 36,
+    "latitude": 31.493368,
+    "longitude": 120.28957,
+    "status": "active"
+  },
+  {
+    "id": "7f14be71-cfdd-458e-8137-d69c2e9399b2",
+    "name": "forest攀岩馆",
+    "short_name": "F",
+    "city_id": 36,
+    "latitude": 31.480206,
+    "longitude": 120.365918,
+    "status": "active"
+  },
+  {
+    "id": "86b6f6b9-4e3f-4154-84cb-880c67c7e6ce",
+    "name": "山爪攀岩Claw Climbing Club",
+    "short_name": "山",
+    "city_id": 36,
+    "latitude": 31.585626,
+    "longitude": 120.349779,
+    "status": "active"
+  },
+  {
+    "id": "6e6e953e-e3cb-42f1-b36e-d66fa557d9a7",
+    "name": "比卓体育·成人儿童体适能跑酷·攀岩",
+    "short_name": "比",
+    "city_id": 36,
+    "latitude": 31.543005,
+    "longitude": 120.263959,
+    "status": "active"
+  }
+]
