@@ -47,9 +47,6 @@ export default function MapPage() {
   const [navMode, setNavMode] = useState<'driving' | 'walking' | 'transit'>('driving');
   const [routeInfo, setRouteInfo] = useState<{ distance: string; time: string } | null>(null);
   const [navigating, setNavigating] = useState(false);
-  const drivingRef = useRef<any>(null);
-  const walkingRef = useRef<any>(null);
-  const transitRef = useRef<any>(null);
   const routePolylineRef = useRef<any>(null);
   const routeStartMarkerRef = useRef<any>(null);
   const routeEndMarkerRef = useRef<any>(null);
@@ -507,112 +504,161 @@ export default function MapPage() {
       mapInstanceRef.current?.remove(routeEndMarkerRef.current);
       routeEndMarkerRef.current = null;
     }
-    drivingRef.current?.clear();
-    walkingRef.current?.clear();
-    transitRef.current?.clear();
   };
 
-  // 规划路线
+  // 绘制路线折线
+  const drawRoutePolyline = (pathStr: string) => {
+    const AMapObj = (window as any).AMap;
+    if (!AMapObj || !mapInstanceRef.current) return;
+
+    // 清除旧折线
+    if (routePolylineRef.current) {
+      mapInstanceRef.current?.remove(routePolylineRef.current);
+    }
+
+    // 解析 polyline 数据 (格式: "lng1,lat1;lng2,lat2;...")
+    const path = pathStr.split(';').map(point => {
+      const [lng, lat] = point.split(',').map(Number);
+      return [lng, lat];
+    });
+
+    // 创建路线折线
+    const polyline = new AMapObj.Polyline({
+      path: path,
+      strokeColor: '#f97316',
+      strokeWeight: 6,
+      strokeOpacity: 0.8,
+      lineCap: 'round',
+      lineJoin: 'round',
+      zIndex: 200,
+    });
+
+    mapInstanceRef.current?.add(polyline);
+    routePolylineRef.current = polyline;
+
+    // 添加终点标记
+    const endMarker = new AMapObj.Marker({
+      position: path[path.length - 1],
+      map: mapInstanceRef.current,
+      content: '<div style="width:24px;height:24px;background:#2B2B2E;border-radius:50%;border:3px solid white;box-shadow:0 2px 8px rgba(0,0,0,0.3);"></div>',
+      offset: new AMapObj.Pixel(-12, -12),
+      zIndex: 300,
+    });
+    routeEndMarkerRef.current = endMarker;
+
+    // 调整视野包含整个路线
+    mapInstanceRef.current?.setFitView([polyline, endMarker]);
+  };
+
+  // 规划路线 (使用 REST API)
   const planRoute = useCallback(async (mode: 'driving' | 'walking' | 'transit', destination: { lng: number; lat: number }) => {
     if (!userLocation || !mapInstanceRef.current) {
       alert('请先定位您的位置');
       return;
     }
 
-    const AMapObj = (window as any).AMap;
     setNavigating(true);
 
     // 清除旧路线
     clearRoute();
 
     try {
-      const origin = [userLocation.lng, userLocation.lat];
-      const dest = [destination.lng, destination.lat];
+      const key = 'ee175e6e8cf3639dd9566fb8268d0ead';
+      const origin = `${userLocation.lng},${userLocation.lat}`;
+      const dest = `${destination.lng},${destination.lat}`;
 
+      let url = '';
       if (mode === 'driving') {
-        const driving = new AMapObj.Driving({
-          map: mapInstanceRef.current,
-          policy: AMapObj.DrivingPolicy.LEAST_TIME,
-          autoFitView: true,
-        });
-        drivingRef.current = driving;
-
-        driving.search(origin, dest, (status: string, result: any) => {
-          setNavigating(false);
-          if (status === 'complete' && result.routes && result.routes.length > 0) {
-            const route = result.routes[0];
-            const distance = route.distance > 1000
-              ? `${(route.distance / 1000).toFixed(1)} km`
-              : `${route.distance} m`;
-            const time = route.time > 3600
-              ? `${Math.floor(route.time / 3600)}时${Math.floor((route.time % 3600) / 60)}分`
-              : `${Math.floor(route.time / 60)}分钟`;
-            setRouteInfo({ distance, time });
-
-            // 保存路线折线引用以便清除
-            if (result.polyline) {
-              routePolylineRef.current = result.polyline;
-            }
-          } else {
-            console.warn('驾车路线规划失败:', status, result);
-            setRouteInfo(null);
-          }
-        });
+        url = `https://restapi.amap.com/v3/direction/driving?key=${key}&origin=${origin}&destination=${dest}&strategy=0&extensions=all&show_fields=polyline`;
       } else if (mode === 'walking') {
-        const walking = new AMapObj.Walking({
-          map: mapInstanceRef.current,
-          autoFitView: true,
-        });
-        walkingRef.current = walking;
-
-        walking.search(origin, dest, (status: string, result: any) => {
-          setNavigating(false);
-          if (status === 'complete' && result.routes && result.routes.length > 0) {
-            const route = result.routes[0];
-            const distance = route.distance > 1000
-              ? `${(route.distance / 1000).toFixed(1)} km`
-              : `${route.distance} m`;
-            const time = route.time > 3600
-              ? `${Math.floor(route.time / 3600)}时${Math.floor((route.time % 3600) / 60)}分`
-              : `${Math.floor(route.time / 60)}分钟`;
-            setRouteInfo({ distance, time });
-
-            if (result.polyline) {
-              routePolylineRef.current = result.polyline;
-            }
-          } else {
-            console.warn('步行路线规划失败:', status, result);
-            setRouteInfo(null);
-          }
-        });
-      } else if (mode === 'transit') {
-        const transit = new AMapObj.Transit({
-          map: mapInstanceRef.current,
-          autoFitView: true,
-        });
-        transitRef.current = transit;
-
-        transit.search(origin, dest, (status: string, result: any) => {
-          setNavigating(false);
-          if (status === 'complete' && result.plans && result.plans.length > 0) {
-            const plan = result.plans[0];
-            const distance = plan.distance > 1000
-              ? `${(plan.distance / 1000).toFixed(1)} km`
-              : `${plan.distance} m`;
-            const time = plan.time > 3600
-              ? `${Math.floor(plan.time / 3600)}时${Math.floor((plan.time % 3600) / 60)}分`
-              : `${Math.floor(plan.time / 60)}分钟`;
-            setRouteInfo({ distance, time });
-          } else {
-            console.warn('公交路线规划失败:', status, result);
-            setRouteInfo(null);
-          }
-        });
+        url = `https://restapi.amap.com/v3/direction/walking?key=${key}&origin=${origin}&destination=${dest}&show_fields=polyline`;
+      } else {
+        url = `https://restapi.amap.com/v3/direction/transit?key=${key}&origin=${origin}&destination=${dest}&extensions=all&show_fields=polyline`;
       }
-    } catch (err) {
-      console.error('路线规划异常:', err);
+
+      const response = await fetch(url);
+      const data = await response.json();
+      console.log('路线规划返回:', data);
+      console.log('完整 keys:', Object.keys(data));
+      console.log('JSON预览:', JSON.stringify(data).substring(0, 1000));
+      console.log('route类型:', typeof data.route, 'isArray:', Array.isArray(data.route));
+      if (data.route) {
+        console.log('route keys:', Object.keys(data.route));
+      }
+
+      if (data.status === '1') {
+        let routeData: any;
+        let distance: number;
+        let duration: number;
+        let polyline: string | undefined;
+
+        if (mode === 'transit') {
+          // 公交方案 - 使用 plans
+          routeData = data.plans?.[0];
+          if (!routeData) throw new Error('无公交方案');
+          distance = routeData.distance;
+          duration = routeData.duration;
+        } else {
+          // 驾车/步行方案 - route 是对象，paths 是数组
+          const route = data.route;
+          if (!route) throw new Error('无可用路线');
+          
+          // paths 是数组，取第一个路径
+          const path = route.paths?.[0];
+          if (!path) throw new Error('无路径数据');
+          
+          distance = path.distance;
+          duration = path.duration;
+
+          // 尝试获取 polyline - 可能在 path 上或 steps 内
+          polyline = path.polyline;
+          
+          // 如果 path 上没有 polyline，尝试从 steps 中获取
+          if (!polyline && path.steps && path.steps.length > 0) {
+            // 合并所有 steps 的 polyline
+            const polylines: string[] = [];
+            for (const step of path.steps) {
+              if (step.polyline) {
+                polylines.push(step.polyline);
+              }
+            }
+            if (polylines.length > 0) {
+              polyline = polylines.join(';');
+            }
+          }
+
+          console.log('path keys:', Object.keys(path));
+          console.log('polyline存在:', !!polyline);
+          console.log('distance:', distance, 'duration:', duration);
+
+          // 绘制路线
+          if (polyline) {
+            drawRoutePolyline(polyline);
+          }
+        }
+
+        // 显示距离和时间
+        const distanceStr = distance > 1000
+          ? `${(distance / 1000).toFixed(1)} km`
+          : `${Math.round(distance)} m`;
+        const timeStr = duration > 3600
+          ? `${Math.floor(duration / 3600)}时${Math.floor((duration % 3600) / 60)}分`
+          : `${Math.floor(duration / 60)}分钟`;
+
+        setRouteInfo({ distance: distanceStr, time: timeStr });
+      } else {
+        throw new Error(data.info || '路线规划失败');
+      }
+    } catch (err: any) {
+      console.error('路线规划失败:', err);
+      // 更友好的错误信息
+      if (err.message === '无可用路线' || err.message === '无公交方案') {
+        setRouteInfo(null);
+      } else {
+        setRouteInfo(null);
+      }
+    } finally {
       setNavigating(false);
-      alert('路线规划失败，请重试');
     }
   }, [userLocation]);
 
@@ -653,6 +699,49 @@ export default function MapPage() {
     navDestinationRef.current = null;
   };
 
+  // 打开手机导航
+  const openPhoneNavigation = () => {
+    if (!userLocation || !navDestinationRef.current) return;
+    
+    const modeMap = {
+      driving: 0,  // 驾车
+      walking: 1,  // 步行
+      transit: 2,  // 公交
+    };
+    
+    const type = modeMap[navMode];
+    const dest = navDestinationRef.current;
+    
+    // 使用高德地图 URI scheme 打开手机导航
+    // iOS: iosamap://path?sourceApplication=Guidy&sname=起点&dname=终点&slon=...&slat=...&dlon=...&dlat=...&t=类型
+    // Android: amapuri://route/plan/?sourceApplication=Guidy&sname=起点&dname=终点&slon=...&slat=...&dlon=...&dlat=...&t=类型
+    
+    const params = new URLSearchParams({
+      sourceApplication: 'Guidy',
+      sname: '我的位置',
+      dname: '攀岩馆',
+      slon: userLocation.lng.toString(),
+      slat: userLocation.lat.toString(),
+      dlon: dest.lng.toString(),
+      dlat: dest.lat.toString(),
+      t: type.toString(),
+    });
+    
+    // 尝试打开高德地图 App
+    const amapUrl = `iosamap://path?${params.toString()}`;
+    window.location.href = amapUrl;
+    
+    // 如果没安装，2秒后跳转网页版
+    setTimeout(() => {
+      // 使用 Web 版高德地图作为备选
+      const webUrl = `https://uri.amap.com/navigation?${params.toString()}&src=Guidy&coordinate=gaode`;
+      // 只在 App 未安装时跳转
+      if (document.visibilityState === 'visible') {
+        window.open(webUrl, '_blank');
+      }
+    }, 2000);
+  };
+
   if (loading) {
     return <div className="flex items-center justify-center h-screen text-gray-500">加载中...</div>;
   }
@@ -683,6 +772,83 @@ export default function MapPage() {
               <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/>
             </svg>
           </button>
+
+          {/* 导航按钮组 - 规划路线时显示 */}
+          {showNavigation && (
+            <div className="relative mt-[500px]">
+              {/* 时间距离提示框（在按钮左侧） */}
+              {routeInfo && (
+                <div className="absolute right-[60px] top-1/2 -translate-y-1/2 bg-[#2B2B2E]/95 backdrop-blur-sm rounded-lg px-3 py-2 text-white whitespace-nowrap shadow-lg">
+                  <div className="text-xs text-white/60">约</div>
+                  <div className="text-sm font-bold">{routeInfo.time}</div>
+                  <div className="text-xs text-white/60 mt-0.5">{routeInfo.distance}</div>
+                  {/* 三角形指向按钮 */}
+                  <div className="absolute right-[-4px] top-1/2 -translate-y-1/2 w-0 h-0 border-l-[4px] border-l-[#2B2B2E]/95 border-t-[4px] border-t-transparent border-b-[4px] border-b-transparent"></div>
+                </div>
+              )}
+              
+              {/* 按钮组外框 */}
+              <div className="flex flex-col gap-1 bg-[#2B2B2E] rounded-[20px] shadow-lg p-2">
+                {/* 驾车 */}
+                <button
+                  onClick={() => switchNavMode('driving')}
+                  className={`w-10 h-10 rounded-xl flex items-center justify-center pointer-events-auto active:scale-95 transition-transform ${
+                    navMode === 'driving' ? 'bg-orange-500' : 'bg-transparent'
+                  }`}
+                  title="驾车"
+                >
+                  <span className={`text-sm font-bold ${navMode === 'driving' ? 'text-white' : 'text-white/70'}`}>驾</span>
+                </button>
+                
+                {/* 步行 */}
+                <button
+                  onClick={() => switchNavMode('walking')}
+                  className={`w-10 h-10 rounded-xl flex items-center justify-center pointer-events-auto active:scale-95 transition-transform ${
+                    navMode === 'walking' ? 'bg-orange-500' : 'bg-transparent'
+                  }`}
+                  title="步行"
+                >
+                  <span className={`text-sm font-bold ${navMode === 'walking' ? 'text-white' : 'text-white/70'}`}>步</span>
+                </button>
+                
+                {/* 公交 */}
+                <button
+                  onClick={() => switchNavMode('transit')}
+                  className={`w-10 h-10 rounded-xl flex items-center justify-center pointer-events-auto active:scale-95 transition-transform ${
+                    navMode === 'transit' ? 'bg-orange-500' : 'bg-transparent'
+                  }`}
+                  title="公交"
+                >
+                  <span className={`text-sm font-bold ${navMode === 'transit' ? 'text-white' : 'text-white/70'}`}>公</span>
+                </button>
+                
+                <div className="h-px bg-white/20 mx-2 my-1"></div>
+                
+                {/* Go - 打开手机导航 */}
+                <button
+                  onClick={openPhoneNavigation}
+                  disabled={!routeInfo}
+                  className={`w-10 h-10 rounded-xl flex items-center justify-center pointer-events-auto active:scale-95 transition-transform ${
+                    routeInfo ? 'bg-transparent' : 'bg-transparent opacity-50'
+                  }`}
+                  title="开始导航"
+                >
+                  <span className={`text-xs font-bold ${routeInfo ? 'text-white' : 'text-white/50'}`}>Go</span>
+                </button>
+              </div>
+              
+              {/* 关闭按钮 */}
+              <button
+                onClick={closeNavigation}
+                className="w-10 h-10 rounded-[20px] shadow-lg flex items-center justify-center pointer-events-auto active:scale-95 transition-transform bg-[#2B2B2E] mt-2 mx-auto"
+                title="关闭导航"
+              >
+                <svg className="w-4 h-4 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          )}
         </div>
 
         {/* 悬浮卡片 - 选中岩馆时显示 */}
@@ -806,108 +972,6 @@ export default function MapPage() {
                   </svg>
                   导航到这里去
                 </button>
-              </div>
-            </div>
-          </div>
-        )}
-
-        {/* 导航面板 - 规划路线时显示 */}
-        {showNavigation && (
-          <div className="absolute bottom-[130px] left-[46px] right-[46px] z-50 animate-slide-up">
-            <div className="bg-[#F6E199] rounded-[20px] shadow-2xl overflow-hidden">
-              {/* 拖拽手柄 */}
-              <div className="flex justify-center pt-3 pb-1">
-                <div className="w-10 h-1.5 bg-[#3B473B]/30 rounded-full"></div>
-              </div>
-
-              <div className="px-4 pb-4 pt-2">
-                {/* 标题 + 关闭按钮 */}
-                <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-base font-bold text-[#3B473B]">路线规划</h3>
-                  <button onClick={closeNavigation} className="w-8 h-8 flex items-center justify-center text-[#3B473B]/60 hover:text-[#3B473B] text-xl">
-                    ×
-                  </button>
-                </div>
-
-                {/* 交通方式切换 */}
-                <div className="flex gap-2 mb-3">
-                  {(['driving', 'walking', 'transit'] as const).map((mode) => (
-                    <button
-                      key={mode}
-                      onClick={() => switchNavMode(mode)}
-                      className={`flex-1 py-2.5 rounded-xl text-sm font-medium transition-colors ${
-                        navMode === mode
-                          ? 'bg-[#3B473B] text-white'
-                          : 'bg-[#3B473B]/10 text-[#3B473B]'
-                      }`}
-                    >
-                      {mode === 'driving' && (
-                        <span className="flex items-center justify-center gap-1">
-                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-                          </svg>
-                          驾车
-                        </span>
-                      )}
-                      {mode === 'walking' && (
-                        <span className="flex items-center justify-center gap-1">
-                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                          </svg>
-                          步行
-                        </span>
-                      )}
-                      {mode === 'transit' && (
-                        <span className="flex items-center justify-center gap-1">
-                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12h18m-3 0h3m-6 0h3M6 12h3" />
-                          </svg>
-                          公交
-                        </span>
-                      )}
-                    </button>
-                  ))}
-                </div>
-
-                {/* 路线信息 */}
-                {navigating ? (
-                  <div className="flex items-center justify-center py-6 text-[#3B473B]/70">
-                    <div className="w-5 h-5 border-2 border-[#3B473B]/30 border-t-[#3B473B] rounded-full animate-spin mr-2"></div>
-                    规划路线中...
-                  </div>
-                ) : routeInfo ? (
-                  <div className="flex items-center gap-3">
-                    <div className="flex-1 bg-[#3B473B]/10 rounded-xl px-4 py-3">
-                      <div className="text-xs text-[#3B473B]/60 mb-1">预计用时</div>
-                      <div className="text-xl font-bold text-[#3B473B]">{routeInfo.time}</div>
-                    </div>
-                    <div className="flex-1 bg-[#3B473B]/10 rounded-xl px-4 py-3">
-                      <div className="text-xs text-[#3B473B]/60 mb-1">总距离</div>
-                      <div className="text-xl font-bold text-[#3B473B]">{routeInfo.distance}</div>
-                    </div>
-                  </div>
-                ) : (
-                  <div className="flex items-center justify-center py-6 text-[#3B473B]/50 text-sm">
-                    无法规划路线，请尝试其他方式
-                  </div>
-                )}
-
-                {/* 操作按钮 */}
-                <div className="flex gap-2 mt-4">
-                  <button
-                    onClick={closeNavigation}
-                    className="flex-1 py-3 rounded-xl font-semibold bg-[#3B473B]/10 text-[#3B473B] active:scale-[0.98] transition-transform"
-                  >
-                    取消
-                  </button>
-                  {routeInfo && (
-                    <button
-                      className="flex-1 py-3 rounded-xl font-semibold bg-[#2B2B2E] text-white active:scale-[0.98] transition-transform"
-                    >
-                      开始导航
-                    </button>
-                  )}
-                </div>
               </div>
             </div>
           </div>
