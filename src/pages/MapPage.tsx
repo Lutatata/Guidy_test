@@ -1131,7 +1131,7 @@ export default function MapPage() {
           {/* 视频 */}
           <video
             className="w-full h-full object-cover"
-            src={`/videos/video${playingVideoIndex}.mov`}
+            src={`/videos/video${playingVideoIndex}.mp4`}
             autoPlay
             playsInline
             controls
