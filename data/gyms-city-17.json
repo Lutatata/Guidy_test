@@ -1,0 +1,146 @@
+[
+  {
+    "id": "b44f6eb7-6766-45cf-845f-d912edd0bf70",
+    "name": "Rusher Site攀岩空间(SM店)",
+    "short_name": "R",
+    "city_id": 17,
+    "latitude": 32.404595,
+    "longitude": 119.477648,
+    "status": "active"
+  },
+  {
+    "id": "794d418a-70a5-4dab-8474-de9bd4f29558",
+    "name": "Rusher Site攀岩空间(三盛店)",
+    "short_name": "R",
+    "city_id": 17,
+    "latitude": 32.380838,
+    "longitude": 119.397608,
+    "status": "active"
+  },
+  {
+    "id": "566d5b52-fd65-4bbd-8f8a-766c16aa72e0",
+    "name": "SUPERWALL崇山攀岩馆",
+    "short_name": "S",
+    "city_id": 17,
+    "latitude": 34.268003,
+    "longitude": 117.203237,
+    "status": "active"
+  },
+  {
+    "id": "cc7893a1-aeeb-4432-ba15-1971a26153f6",
+    "name": "TC-SPACE攀岩空间(星耀城吾悦广场店)",
+    "short_name": "T",
+    "city_id": 17,
+    "latitude": 31.86052,
+    "longitude": 119.955086,
+    "status": "active"
+  },
+  {
+    "id": "5f21c57b-755e-4fe4-8f95-d6b6ed120b48",
+    "name": "向云端·攀岩",
+    "short_name": "向",
+    "city_id": 17,
+    "latitude": 33.297229,
+    "longitude": 120.216818,
+    "status": "active"
+  },
+  {
+    "id": "ecaf1a9e-d439-469a-bde2-a95f9bd14e5a",
+    "name": "大国宝贝攀岩(九洲新世界店)",
+    "short_name": "大",
+    "city_id": 17,
+    "latitude": 31.765082,
+    "longitude": 119.950479,
+    "status": "active"
+  },
+  {
+    "id": "626681c0-ea34-4335-86e5-2344d4c48756",
+    "name": "大国宝贝攀岩(武进万达店)",
+    "short_name": "大",
+    "city_id": 17,
+    "latitude": 31.733329,
+    "longitude": 119.948303,
+    "status": "active"
+  },
+  {
+    "id": "f7effabb-11a1-4949-95d2-80c3e504096a",
+    "name": "山语者攀登(凤凰广场店)",
+    "short_name": "山",
+    "city_id": 17,
+    "latitude": 31.975608,
+    "longitude": 120.897329,
+    "status": "active"
+  },
+  {
+    "id": "21305067-ffed-4290-a00f-4cc8c20bdde3",
+    "name": "山阶攀岩",
+    "short_name": "山",
+    "city_id": 17,
+    "latitude": 31.780394,
+    "longitude": 119.95577,
+    "status": "active"
+  },
+  {
+    "id": "cefb8c57-7972-4372-ac2d-999ff95c73fd",
+    "name": "岩趣攀岩馆(大丰店)",
+    "short_name": "岩",
+    "city_id": 17,
+    "latitude": 33.21174,
+    "longitude": 120.45386,
+    "status": "active"
+  },
+  {
+    "id": "9f6dbc75-7d78-4199-a96d-2c3c4c0aa27f",
+    "name": "常州瑞德体育攀岩馆",
+    "short_name": "常",
+    "city_id": 17,
+    "latitude": 31.826627,
+    "longitude": 119.950438,
+    "status": "active"
+  },
+  {
+    "id": "b8bc6c60-9656-4695-b59a-8f2abd031912",
+    "name": "攀客攀岩运动馆",
+    "short_name": "攀",
+    "city_id": 17,
+    "latitude": 34.226373,
+    "longitude": 117.296612,
+    "status": "active"
+  },
+  {
+    "id": "50c2675d-befb-4c38-9343-f3222e04ff1c",
+    "name": "星空攀岩(常州星湖广场店)",
+    "short_name": "星",
+    "city_id": 17,
+    "latitude": 31.666231,
+    "longitude": 119.96507,
+    "status": "active"
+  },
+  {
+    "id": "a1d6326b-77f0-4a4e-b276-df58cde906f0",
+    "name": "火舞空间攀岩",
+    "short_name": "火",
+    "city_id": 17,
+    "latitude": 34.253216,
+    "longitude": 117.246276,
+    "status": "active"
+  },
+  {
+    "id": "a6c5aade-bf01-4928-b4a2-62d1a9877a30",
+    "name": "野羚羊攀岩基地",
+    "short_name": "野",
+    "city_id": 17,
+    "latitude": 32.312196,
+    "longitude": 119.917116,
+    "status": "active"
+  },
+  {
+    "id": "ee023f10-4c10-466a-86a2-e0d4f6a785a6",
+    "name": "鸡蛋饼攀岩馆",
+    "short_name": "鸡",
+    "city_id": 17,
+    "latitude": 33.370808,
+    "longitude": 120.15654,
+    "status": "active"
+  }
+]

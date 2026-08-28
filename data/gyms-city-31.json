@@ -1,0 +1,65 @@
+[
+  {
+    "id": "8abbf573-d30d-43cf-9881-3f787e60268c",
+    "name": "利川攀岩馆",
+    "short_name": "利",
+    "city_id": 31,
+    "latitude": 30.289793,
+    "longitude": 108.94428,
+    "status": "active"
+  },
+  {
+    "id": "e58961bd-f70c-4584-aba6-b30191e26ef4",
+    "name": "壁虎攀岩馆",
+    "short_name": "壁",
+    "city_id": 31,
+    "latitude": 30.385948,
+    "longitude": 112.885864,
+    "status": "active"
+  },
+  {
+    "id": "5cba81e3-f01d-4b11-accb-49215c6e6fee",
+    "name": "宜昌极限攀岩馆",
+    "short_name": "宜",
+    "city_id": 31,
+    "latitude": 30.696728,
+    "longitude": 111.309945,
+    "status": "active"
+  },
+  {
+    "id": "34487ee9-fbdb-4e8d-a756-b0d8c30b94b1",
+    "name": "岩酷运动·攀岩(吾悦广场店)",
+    "short_name": "岩",
+    "city_id": 31,
+    "latitude": 30.738677,
+    "longitude": 111.33418,
+    "status": "active"
+  },
+  {
+    "id": "40e164b3-92c7-4218-b066-6821376defff",
+    "name": "开花攀岩馆（Bloom Climbing）",
+    "short_name": "开",
+    "city_id": 31,
+    "latitude": 31.004438,
+    "longitude": 112.206155,
+    "status": "active"
+  },
+  {
+    "id": "2782a5d9-270b-4564-a951-af26aef05e8e",
+    "name": "春晓攀岩馆(中商广场店)",
+    "short_name": "春",
+    "city_id": 31,
+    "latitude": 30.21148,
+    "longitude": 115.085264,
+    "status": "active"
+  },
+  {
+    "id": "48369c2c-6d55-4dfb-8b79-f7a903caa6be",
+    "name": "银河运动公园攀岩馆",
+    "short_name": "银",
+    "city_id": 31,
+    "latitude": 32.04067,
+    "longitude": 112.115908,
+    "status": "active"
+  }
+]

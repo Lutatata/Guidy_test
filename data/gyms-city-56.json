@@ -1,0 +1,20 @@
+[
+  {
+    "id": "c17cdc9d-92f2-42b1-9271-4b5ddc9c559a",
+    "name": "GENE攀岩馆",
+    "short_name": "G",
+    "city_id": 56,
+    "latitude": 29.642672,
+    "longitude": 91.16516,
+    "status": "active"
+  },
+  {
+    "id": "c884a30e-7798-424c-bc76-be462e3f8c81",
+    "name": "西藏登山体验健身训练馆",
+    "short_name": "西",
+    "city_id": 56,
+    "latitude": 29.677161,
+    "longitude": 91.12591,
+    "status": "active"
+  }
+]

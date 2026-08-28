@@ -1,0 +1,47 @@
+[
+  {
+    "id": "5f3817c0-17ff-4e54-923b-fa662e5370c5",
+    "name": "中国登山训练基地攀岩馆",
+    "short_name": "中",
+    "city_id": 40,
+    "latitude": 39.341269,
+    "longitude": 115.943504,
+    "status": "active"
+  },
+  {
+    "id": "3ce74fe1-1e20-41d4-8e6b-00f60b9d9a4a",
+    "name": "原石引力攀岩馆",
+    "short_name": "原",
+    "city_id": 40,
+    "latitude": 38.90931,
+    "longitude": 115.461417,
+    "status": "active"
+  },
+  {
+    "id": "42e4d373-2882-405a-94f9-0ba26534acb0",
+    "name": "唐山攀登中心(攀岩馆)",
+    "short_name": "唐",
+    "city_id": 40,
+    "latitude": 39.671768,
+    "longitude": 118.180077,
+    "status": "active"
+  },
+  {
+    "id": "40ab14c0-588e-4349-86c6-ca18bbb5f457",
+    "name": "嗨抱攀岩馆",
+    "short_name": "嗨",
+    "city_id": 40,
+    "latitude": 37.717181,
+    "longitude": 115.689903,
+    "status": "active"
+  },
+  {
+    "id": "23c808c4-e51a-4c39-ae16-0910853384e1",
+    "name": "蜂巢攀岩(世纪港湾店)",
+    "short_name": "蜂",
+    "city_id": 40,
+    "latitude": 39.947274,
+    "longitude": 119.584149,
+    "status": "active"
+  }
+]

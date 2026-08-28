@@ -1,0 +1,65 @@
+[
+  {
+    "id": "09d5d8f8-1619-4c8a-bcdb-43625bdc420b",
+    "name": "九洲园宝攀岩体能健康馆",
+    "short_name": "九",
+    "city_id": 30,
+    "latitude": 41.703673,
+    "longitude": 123.384688,
+    "status": "active"
+  },
+  {
+    "id": "727b4685-4b5e-46fc-be1e-317acdd9d7e0",
+    "name": "今日攀岩(龙之梦购物中心店)",
+    "short_name": "今",
+    "city_id": 30,
+    "latitude": 41.80786,
+    "longitude": 123.487999,
+    "status": "active"
+  },
+  {
+    "id": "b52d6905-e9fd-40c3-bfe4-8c04c22e45c5",
+    "name": "星辰攀岩",
+    "short_name": "星",
+    "city_id": 30,
+    "latitude": 41.746071,
+    "longitude": 123.499971,
+    "status": "active"
+  },
+  {
+    "id": "16dded33-5c44-4e01-9f0f-b50cb0b1e585",
+    "name": "极爱攀岩",
+    "short_name": "极",
+    "city_id": 30,
+    "latitude": 41.739518,
+    "longitude": 123.457784,
+    "status": "active"
+  },
+  {
+    "id": "5bc53184-83dd-482b-99a9-c6a3ca7f523e",
+    "name": "老曲攀岩馆",
+    "short_name": "老",
+    "city_id": 30,
+    "latitude": 41.743301,
+    "longitude": 123.45795,
+    "status": "active"
+  },
+  {
+    "id": "f12075f2-4ef0-4cff-8c4d-66e87dbc9e4f",
+    "name": "极攀岩俱乐部(南九中路)",
+    "short_name": "极",
+    "city_id": 30,
+    "latitude": 41.793877,
+    "longitude": 123.34698,
+    "status": "active"
+  },
+  {
+    "id": "ccb977a3-7006-4cbd-a092-f3cf8381ae86",
+    "name": "石猴子攀岩馆",
+    "short_name": "石",
+    "city_id": 30,
+    "latitude": 41.79293,
+    "longitude": 123.43313,
+    "status": "active"
+  }
+]

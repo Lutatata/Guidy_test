@@ -1,0 +1,47 @@
+[
+  {
+    "id": "a5d4f620-3449-495c-a1d7-c4fa8a2108ec",
+    "name": "山咔咔攀岩SkkClimbing",
+    "short_name": "山",
+    "city_id": 44,
+    "latitude": 26.646505,
+    "longitude": 106.647329,
+    "status": "active"
+  },
+  {
+    "id": "eabec2bd-ab14-487c-8777-57a27d9497e4",
+    "name": "沸点攀岩",
+    "short_name": "沸",
+    "city_id": 44,
+    "latitude": 26.560921,
+    "longitude": 106.704674,
+    "status": "active"
+  },
+  {
+    "id": "dd1f6840-79bb-4e56-9fc2-747f2ee18085",
+    "name": "自由落体攀岩(太平路店)",
+    "short_name": "自",
+    "city_id": 44,
+    "latitude": 26.580378,
+    "longitude": 106.710408,
+    "status": "active"
+  },
+  {
+    "id": "dd85776f-656b-42da-ba10-e5857b92babf",
+    "name": "贵州巴壁虎攀岩馆",
+    "short_name": "贵",
+    "city_id": 44,
+    "latitude": 26.545796,
+    "longitude": 106.668396,
+    "status": "active"
+  },
+  {
+    "id": "64f09010-274a-43c7-8452-f0920ad95f54",
+    "name": "贵阳热岩攀岩馆",
+    "short_name": "贵",
+    "city_id": 44,
+    "latitude": 26.645654,
+    "longitude": 106.618807,
+    "status": "active"
+  }
+]

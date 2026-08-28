@@ -1,0 +1,137 @@
+[
+  {
+    "id": "8b4efa81-3955-4cd2-8165-5d5e06dfffde",
+    "name": "大力水手攀岩",
+    "short_name": "大",
+    "city_id": 18,
+    "latitude": 24.491853,
+    "longitude": 118.113818,
+    "status": "active"
+  },
+  {
+    "id": "0042ee5e-e704-4231-b207-b5bd74639958",
+    "name": "不吃饭攀岩馆",
+    "short_name": "不",
+    "city_id": 18,
+    "latitude": 24.465859,
+    "longitude": 118.094397,
+    "status": "active"
+  },
+  {
+    "id": "cdd712ea-cad4-48b8-ace7-a76ee856dd69",
+    "name": "山海攀岩(铁路公园店)",
+    "short_name": "山",
+    "city_id": 18,
+    "latitude": 24.462558,
+    "longitude": 118.108521,
+    "status": "active"
+  },
+  {
+    "id": "152af62a-8589-49fa-a145-cc2f87253180",
+    "name": "攀猩儿童攀岩馆(厦门天虹会展北店)",
+    "short_name": "攀",
+    "city_id": 18,
+    "latitude": 24.476681,
+    "longitude": 118.192423,
+    "status": "active"
+  },
+  {
+    "id": "a1c7b746-b150-4f21-8851-00b1851a1027",
+    "name": "攀猩儿童攀岩馆(厦门汇景店)",
+    "short_name": "攀",
+    "city_id": 18,
+    "latitude": 24.620129,
+    "longitude": 118.245279,
+    "status": "active"
+  },
+  {
+    "id": "5d506b58-f84c-478c-982d-f0517f56713a",
+    "name": "攀猩攀岩馆(厦门海沧SM旗舰店)",
+    "short_name": "攀",
+    "city_id": 18,
+    "latitude": 24.538934,
+    "longitude": 117.957297,
+    "status": "active"
+  },
+  {
+    "id": "91558684-a02e-420d-8578-436968fdb0cb",
+    "name": "视攀攀岩馆(逆熵力量店)",
+    "short_name": "视",
+    "city_id": 18,
+    "latitude": 24.48513,
+    "longitude": 118.157323,
+    "status": "active"
+  },
+  {
+    "id": "1d915900-2e8f-4e14-99ea-c6883fb840df",
+    "name": "视攀攀岩馆On Sight Climbing Gym（集美馆）",
+    "short_name": "视",
+    "city_id": 18,
+    "latitude": 24.600334,
+    "longitude": 118.075168,
+    "status": "active"
+  },
+  {
+    "id": "d0cb39eb-09e0-441d-ba42-409527c29587",
+    "name": "视攀攀岩（塔埔馆）",
+    "short_name": "视",
+    "city_id": 18,
+    "latitude": 24.494453,
+    "longitude": 118.191247,
+    "status": "active"
+  },
+  {
+    "id": "6941c461-c5ca-4322-94a8-f824df912537",
+    "name": "龙景攀岩(COCO Park店)",
+    "short_name": "龙",
+    "city_id": 18,
+    "latitude": 24.474929,
+    "longitude": 118.189248,
+    "status": "active"
+  },
+  {
+    "id": "e5670f93-aeba-4144-9b2e-abf93d79a1a4",
+    "name": "龙景攀岩(波特曼佰翔酒店)",
+    "short_name": "龙",
+    "city_id": 18,
+    "latitude": 24.616467,
+    "longitude": 118.144328,
+    "status": "active"
+  },
+  {
+    "id": "3032e9f9-8b7e-41e7-9414-2f00ff984832",
+    "name": "龙景攀岩(海峡世茂广场店)",
+    "short_name": "龙",
+    "city_id": 18,
+    "latitude": 24.436176,
+    "longitude": 118.088243,
+    "status": "active"
+  },
+  {
+    "id": "bdd0b767-b3dd-41fd-a1e6-040379210256",
+    "name": "龙景攀岩(阿罗海城市广场店)",
+    "short_name": "龙",
+    "city_id": 18,
+    "latitude": 24.48185,
+    "longitude": 118.031657,
+    "status": "active"
+  },
+  {
+    "id": "5386c19a-493e-47ed-b891-f69c81fabcf7",
+    "name": "山海攀岩(文灶潮场店)",
+    "short_name": "山",
+    "city_id": 18,
+    "latitude": 24.471626,
+    "longitude": 118.102778,
+    "status": "active"
+  },
+  {
+    "id": "c34e9420-725d-4e4f-a803-e0aa57ddd859",
+    "name": "龙景攀岩(宝龙一城店)",
+    "short_name": "龙",
+    "city_id": 18,
+    "latitude": 24.485454,
+    "longitude": 118.173359,
+    "status": "active"
+  }
+]

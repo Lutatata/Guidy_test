@@ -1,0 +1,20 @@
+[
+  {
+    "id": "f775a819-6086-4916-9554-e4768e05cc9c",
+    "name": "海日攀岩",
+    "short_name": "海",
+    "city_id": 55,
+    "latitude": 40.78536,
+    "longitude": 111.67398,
+    "status": "active"
+  },
+  {
+    "id": "4a0906ad-c9a1-4746-9389-7600d8e8b2e3",
+    "name": "蒙攀攀岩馆(蒙西文化广场店)",
+    "short_name": "蒙",
+    "city_id": 55,
+    "latitude": 40.801865,
+    "longitude": 111.665822,
+    "status": "active"
+  }
+]

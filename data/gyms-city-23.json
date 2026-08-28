@@ -1,0 +1,110 @@
+[
+  {
+    "id": "d1063a4e-419f-4cba-8bd7-18b1ac39527a",
+    "name": "ICG郑攀攀岩馆",
+    "short_name": "I",
+    "city_id": 23,
+    "latitude": 34.720032,
+    "longitude": 113.744049,
+    "status": "active"
+  },
+  {
+    "id": "c80f393d-fdf4-49c8-9c20-e9d856765671",
+    "name": "KK攀岩俱乐部",
+    "short_name": "K",
+    "city_id": 23,
+    "latitude": 34.833262,
+    "longitude": 113.625285,
+    "status": "active"
+  },
+  {
+    "id": "fabcad66-b35a-42d0-bd67-8e35f3fdb0d7",
+    "name": "KK攀岩运动中心",
+    "short_name": "K",
+    "city_id": 23,
+    "latitude": 34.732965,
+    "longitude": 113.757996,
+    "status": "active"
+  },
+  {
+    "id": "ab0d4ad1-4b0a-47db-99f8-db3894e5ef8c",
+    "name": "OBXClimbing黑曜石攀岩馆",
+    "short_name": "O",
+    "city_id": 23,
+    "latitude": 34.696672,
+    "longitude": 113.797382,
+    "status": "active"
+  },
+  {
+    "id": "002ba751-0f99-4d00-8aac-3103d9263e22",
+    "name": "SKY WALL攀岩运动中心(郑东绿地中心南塔店)",
+    "short_name": "S",
+    "city_id": 23,
+    "latitude": 34.757789,
+    "longitude": 113.767557,
+    "status": "active"
+  },
+  {
+    "id": "eb33ce82-6f70-4ccd-9e2c-5387148945f9",
+    "name": "尖极限攀岩馆",
+    "short_name": "尖",
+    "city_id": 23,
+    "latitude": 34.770396,
+    "longitude": 113.765786,
+    "status": "active"
+  },
+  {
+    "id": "84723395-d74f-43f4-b201-0f47bd133f2d",
+    "name": "岩究所攀岩运动空间(正弘店)",
+    "short_name": "岩",
+    "city_id": 23,
+    "latitude": 34.80679,
+    "longitude": 113.566094,
+    "status": "active"
+  },
+  {
+    "id": "d29102b1-d666-41f3-bfd6-7b54cf204bf5",
+    "name": "梦起攀岩",
+    "short_name": "梦",
+    "city_id": 23,
+    "latitude": 34.800873,
+    "longitude": 113.646183,
+    "status": "active"
+  },
+  {
+    "id": "f71a551b-3546-4bb8-a27f-0836a5a480a4",
+    "name": "氧攀攀岩(郑州荥阳吾悦广场店)",
+    "short_name": "氧",
+    "city_id": 23,
+    "latitude": 34.774719,
+    "longitude": 113.428202,
+    "status": "active"
+  },
+  {
+    "id": "47e75dad-e429-4898-9da7-e491a40fe3e7",
+    "name": "若克攀岩运动馆(公园茂店)",
+    "short_name": "若",
+    "city_id": 23,
+    "latitude": 34.818838,
+    "longitude": 113.555113,
+    "status": "active"
+  },
+  {
+    "id": "f69bea56-b958-4c08-afec-d98efb28f31c",
+    "name": "青少年攀岩训练中心",
+    "short_name": "青",
+    "city_id": 23,
+    "latitude": 34.467984,
+    "longitude": 113.047602,
+    "status": "active"
+  },
+  {
+    "id": "6a3ce28b-2f2b-4b0f-98b8-0a480c4f1305",
+    "name": "SKYWALL攀岩运动中心(蜜油园店)",
+    "short_name": "S",
+    "city_id": 23,
+    "latitude": 34.773272,
+    "longitude": 113.639311,
+    "status": "active"
+  }
+]

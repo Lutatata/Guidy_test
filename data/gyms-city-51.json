@@ -1,0 +1,29 @@
+[
+  {
+    "id": "a552cc3d-79cc-45e1-95e3-ea0ac736b014",
+    "name": "道博攀岩馆(秀英店)",
+    "short_name": "道",
+    "city_id": 51,
+    "latitude": 20.014837,
+    "longitude": 110.282974,
+    "status": "active"
+  },
+  {
+    "id": "194b027a-0d03-4ca1-b5bd-b801ee0352f9",
+    "name": "采星攀岩(吾悦广场店)",
+    "short_name": "采",
+    "city_id": 51,
+    "latitude": 19.97698,
+    "longitude": 110.336913,
+    "status": "active"
+  },
+  {
+    "id": "d2899b5b-34e9-4208-93bb-f56331174a69",
+    "name": "道博攀岩(王府井海垦店)",
+    "short_name": "道",
+    "city_id": 51,
+    "latitude": 20.017794,
+    "longitude": 110.31771,
+    "status": "active"
+  }
+]

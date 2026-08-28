@@ -1,0 +1,20 @@
+[
+  {
+    "id": "01795c0a-313e-4fad-bde3-3321eba68889",
+    "name": "K2crux 攀岩",
+    "short_name": "K",
+    "city_id": 59,
+    "latitude": 46.546131,
+    "longitude": 125.156744,
+    "status": "active"
+  },
+  {
+    "id": "418e4ef5-4f5b-4f29-9bd3-3676ae6cea9b",
+    "name": "black2黑土攀岩",
+    "short_name": "B",
+    "city_id": 59,
+    "latitude": 44.578422,
+    "longitude": 129.620997,
+    "status": "active"
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "id": "78a02476-a0f8-4066-9174-7300faf9990f",
+    "name": "328攀岩搏击运动馆(漫时区店)",
+    "short_name": "3",
+    "city_id": 14,
+    "latitude": 30.574584,
+    "longitude": 114.324138,
+    "status": "active"
+  },
+  {
+    "id": "9343dd52-91e3-4990-8c0b-e9ca794658cb",
+    "name": "MTC顶峰攀岩(塔子湖店)",
+    "short_name": "M",
+    "city_id": 14,
+    "latitude": 30.641373,
+    "longitude": 114.283734,
+    "status": "active"
+  },
+  {
+    "id": "1399c3ab-511d-4624-a7eb-4df173390bc9",
+    "name": "MTC顶峰攀岩(武汉站店)",
+    "short_name": "M",
+    "city_id": 14,
+    "latitude": 30.604419,
+    "longitude": 114.435141,
+    "status": "active"
+  },
+  {
+    "id": "310dd4ea-69ee-45bd-826f-9db8f78414b2",
+    "name": "is+climbing攀岩馆",
+    "short_name": "I",
+    "city_id": 14,
+    "latitude": 30.637054,
+    "longitude": 114.20804,
+    "status": "active"
+  },
+  {
+    "id": "f93e3b49-8884-4c8a-aaf6-deecb1f83731",
+    "name": "五岩六色攀岩馆",
+    "short_name": "五",
+    "city_id": 14,
+    "latitude": 30.614711,
+    "longitude": 114.254611,
+    "status": "active"
+  },
+  {
+    "id": "e422d914-b75a-4c19-9d86-d47373d246d1",
+    "name": "优胜美岩运动攀岩馆",
+    "short_name": "优",
+    "city_id": 14,
+    "latitude": 30.576923,
+    "longitude": 114.363655,
+    "status": "active"
+  },
+  {
+    "id": "ca973a96-563c-407c-9b79-85d2d875df6d",
+    "name": "岩舞(金地广场店)",
+    "short_name": "岩",
+    "city_id": 14,
+    "latitude": 30.603475,
+    "longitude": 114.383574,
+    "status": "active"
+  },
+  {
+    "id": "8b0b5a3d-900c-4323-81cc-212e51414006",
+    "name": "岩舞空间(凯德1818店)",
+    "short_name": "岩",
+    "city_id": 14,
+    "latitude": 30.552823,
+    "longitude": 114.339946,
+    "status": "active"
+  },
+  {
+    "id": "d7ba5277-e750-4d33-9a4a-74026f08a8aa",
+    "name": "岩舞空间(新唐万科店)",
+    "short_name": "岩",
+    "city_id": 14,
+    "latitude": 30.623299,
+    "longitude": 114.261932,
+    "status": "active"
+  },
+  {
+    "id": "e56645c4-8ac9-475c-9533-3a36b5b00957",
+    "name": "岩舞空间(武汉荟聚店)",
+    "short_name": "岩",
+    "city_id": 14,
+    "latitude": 30.618456,
+    "longitude": 114.168269,
+    "status": "active"
+  },
+  {
+    "id": "ebd9f58d-bb5d-4125-8a69-46ee5b137141",
+    "name": "岩舞空间（金银潭永旺店）",
+    "short_name": "岩",
+    "city_id": 14,
+    "latitude": 30.650309,
+    "longitude": 114.23634,
+    "status": "active"
+  },
+  {
+    "id": "16ddedc1-251d-4e47-9be8-71f685138e52",
+    "name": "新起点 & 热狗攀岩",
+    "short_name": "新",
+    "city_id": 14,
+    "latitude": 30.46826,
+    "longitude": 114.483604,
+    "status": "active"
+  },
+  {
+    "id": "83e2a5b0-80a8-4d65-b7de-28b5622d115f",
+    "name": "新起点攀岩(国金馆)",
+    "short_name": "新",
+    "city_id": 14,
+    "latitude": 30.584673,
+    "longitude": 114.277502,
+    "status": "active"
+  },
+  {
+    "id": "e63d8ca4-761e-479d-8c09-ff8b3d7e299b",
+    "name": "新起点攀岩(汉口馆)",
+    "short_name": "新",
+    "city_id": 14,
+    "latitude": 30.584848,
+    "longitude": 114.280921,
+    "status": "active"
+  },
+  {
+    "id": "caf7a5bc-86e6-48aa-9a8a-1f76191d3cb3",
+    "name": "武体攀岩基地",
+    "short_name": "武",
+    "city_id": 14,
+    "latitude": 30.502307,
+    "longitude": 114.172004,
+    "status": "active"
+  },
+  {
+    "id": "5ce55608-cbf0-483f-94e9-e52ffce38e8c",
+    "name": "热狗攀岩",
+    "short_name": "热",
+    "city_id": 14,
+    "latitude": 30.50598,
+    "longitude": 114.40208,
+    "status": "active"
+  },
+  {
+    "id": "835fae3b-aee2-4c3d-9a48-ca279e98b1ac",
+    "name": "雪豹攀攀(青山馆)",
+    "short_name": "雪",
+    "city_id": 14,
+    "latitude": 30.631866,
+    "longitude": 114.389244,
+    "status": "active"
+  },
+  {
+    "id": "941de733-d359-422b-876a-223cbf1036dc",
+    "name": "香蕉攀岩(光谷k11店)",
+    "short_name": "香",
+    "city_id": 14,
+    "latitude": 30.493118,
+    "longitude": 114.414034,
+    "status": "active"
+  },
+  {
+    "id": "9cd03060-c9cc-4f85-9cd9-cb1285cc86ab",
+    "name": "香蕉攀岩(恒隆广场店)",
+    "short_name": "香",
+    "city_id": 14,
+    "latitude": 30.577847,
+    "longitude": 114.27276,
+    "status": "active"
+  },
+  {
+    "id": "3a6551f5-8745-4150-a32d-b1d7aa1feddc",
+    "name": "香蕉攀岩(亲橙万象汇店)",
+    "short_name": "香",
+    "city_id": 14,
+    "latitude": 30.589958,
+    "longitude": 114.34173,
+    "status": "active"
+  }
+]
