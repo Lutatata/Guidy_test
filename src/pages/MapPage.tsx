@@ -25,6 +25,9 @@ export default function MapPage() {
   const mapInstanceRef = useRef<any>(null);
   const markersRef = useRef<any[]>([]);
   const markerClickedRef = useRef(false);
+  const userLocationMarkerRef = useRef<any>(null);
+  const userLocationCircleRef = useRef<any>(null);
+  const cityChangedByLocationRef = useRef(false);
 
   const cityParam = searchParams.get('city');
   const [cityId, setCityId] = useState<number>(cityParam ? parseInt(cityParam) : 1);
@@ -36,6 +39,8 @@ export default function MapPage() {
   const [selectedGym, setSelectedGym] = useState<GymBase | null>(null);
   const [selectedGymDetail, setSelectedGymDetail] = useState<GymDetail | null>(null);
   const [keyword, setKeyword] = useState('');
+  const [userLocation, setUserLocation] = useState<{ lng: number; lat: number } | null>(null);
+  const [locating, setLocating] = useState(false);
 
   useEffect(() => {
     waitForAMapAndLoad();
@@ -55,12 +60,20 @@ export default function MapPage() {
 
   useEffect(() => {
     if (!mapInstanceRef.current) return;
-    const center = cityCenters[cityId] || { lat: 35.8617, lng: 104.1954, zoom: 5 };
-    mapInstanceRef.current.setZoomAndCenter(center.zoom, [center.lng, center.lat]);
-    setTimeout(() => {
-      mapInstanceRef.current?.resize();
+
+    if (cityChangedByLocationRef.current) {
+      // 定位匹配城市：只加载岩馆，不移动地图中心（保留用户定位位置）
+      cityChangedByLocationRef.current = false;
       loadGyms(cityId);
-    }, 300);
+    } else {
+      // 正常城市切换：移动地图中心 + 加载岩馆
+      const center = cityCenters[cityId] || { lat: 35.8617, lng: 104.1954, zoom: 5 };
+      mapInstanceRef.current.setZoomAndCenter(center.zoom, [center.lng, center.lat]);
+      setTimeout(() => {
+        mapInstanceRef.current?.resize();
+        loadGyms(cityId);
+      }, 300);
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cityId]);
 
@@ -120,6 +133,10 @@ export default function MapPage() {
 
     map.on('complete', () => {
       addMarkers(gymData);
+      // 自动尝试定位用户位置
+      setTimeout(() => {
+        locate();
+      }, 500);
     });
 
     map.on('click', () => {
@@ -223,10 +240,227 @@ export default function MapPage() {
   };
 
   const locate = () => {
-    if (cityCenters[cityId]) {
-      const center = cityCenters[cityId];
-      mapInstanceRef.current?.setZoomAndCenter(center.zoom, [center.lng, center.lat]);
+    const AMapObj = (window as any).AMap;
+    if (!AMapObj || !mapInstanceRef.current) return;
+
+    setLocating(true);
+
+    // 优先使用浏览器原生 API（更可靠）
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (pos) => {
+          const lng = pos.coords.longitude;
+          const lat = pos.coords.latitude;
+          const accuracy = pos.coords.accuracy;
+          console.log('定位成功 (浏览器):', lng, lat, '精度:', accuracy);
+          setUserLocation({ lng, lat });
+          addUserLocationMarker(lng, lat, accuracy);
+          mapInstanceRef.current.setZoomAndCenter(15, [lng, lat]);
+          // 逆地理编码匹配城市
+          reverseGeocodeAndMatchCity(lng, lat);
+          setLocating(false);
+        },
+        (err) => {
+          console.warn('浏览器定位失败:', err.code, err.message);
+          // 降级：使用 AMap IP 定位
+          aMapIpFallback();
+        },
+        { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
+      );
+    } else {
+      // 不支持浏览器定位，用 AMap IP 定位
+      aMapIpFallback();
     }
+  };
+
+  // 逆地理编码，根据经纬度匹配城市（使用高德 REST API，更可靠）
+  const reverseGeocodeAndMatchCity = async (lng: number, lat: number) => {
+    if (cities.length === 0) return;
+
+    try {
+      // 直接调用高德逆地理编码 REST API
+      const response = await fetch(
+        `https://restapi.amap.com/v3/geocode/regeo?key=ee175e6e8cf3639dd9566fb8268d0ead&location=${lng},${lat}`
+      );
+      const data = await response.json();
+      console.log('逆地理编码原始返回:', data);
+
+      if (data.status === '1' && data.regeocode) {
+        // 高德 REST API 返回字段使用下划线命名（formatted_address）
+        const formattedAddress = data.regeocode.formatted_address || '';
+        let cityName = '';
+        if (data.regeocode.addressComponent) {
+          const comp = data.regeocode.addressComponent;
+          // 优先取 city，没有则取 province
+          cityName = comp.city || comp.province || '';
+        }
+        console.log('逆地理编码结果:', cityName, '完整地址:', formattedAddress);
+
+        // 匹配城市列表
+        const matchedCity = matchCityByName(cityName, formattedAddress);
+        if (matchedCity) {
+          console.log('匹配到城市:', matchedCity.name, 'id:', matchedCity.id);
+          if (matchedCity.id !== cityId) {
+            cityChangedByLocationRef.current = true;
+            setCityId(matchedCity.id);
+            setCityName(matchedCity.name);
+          }
+        } else {
+          console.warn('未匹配到城市，保持当前城市:', cityName);
+        }
+      } else {
+        console.warn('逆地理编码失败:', data.info);
+      }
+    } catch (err) {
+      console.error('逆地理编码请求异常:', err);
+    }
+  };
+
+  // 城市名匹配（支持模糊匹配，处理"上海市" vs "上海"、"广东(其他)" vs "广东省" 等）
+  const matchCityByName = (cityName: string, fullAddress: string): City | null => {
+    if (cities.length === 0) return null;
+
+    // 清理城市名：去除"市"、"省"、"自治区"等后缀
+    const cleanName = cityName
+      .replace(/市$/, '')
+      .replace(/省$/, '')
+      .replace(/自治区$/, '')
+      .replace(/特别行政区$/, '')
+      .trim();
+
+    // 提取城市核心名：去除括号内容（如 "广东(其他)" → "广东"）
+    const extractCore = (name: string) => name.replace(/[（(][^）)]*[）)]/, '').trim();
+
+    // 精确匹配
+    let matched = cities.find(c => c.name === cityName || c.name === cleanName);
+    if (matched) return matched;
+
+    // 精确匹配（去除括号后）
+    matched = cities.find(c => {
+      const core = extractCore(c.name);
+      return core === cleanName || core === cityName;
+    });
+    if (matched) return matched;
+
+    // 模糊匹配：城市名包含或被包含
+    matched = cities.find(c =>
+      c.name.includes(cleanName) || cleanName.includes(c.name.replace(/市$/, ''))
+    );
+    if (matched) return matched;
+
+    // 模糊匹配（去除括号后）
+    matched = cities.find(c => {
+      const core = extractCore(c.name);
+      return core.includes(cleanName) || cleanName.includes(core);
+    });
+    if (matched) return matched;
+
+    // 用完整地址匹配（针对"XX省XX市"格式）
+    if (fullAddress) {
+      matched = cities.find(c => {
+        const cn = extractCore(c.name).replace(/市$/, '').replace(/省$/, '');
+        return fullAddress.includes(cn);
+      });
+      if (matched) return matched;
+    }
+
+    return null;
+  };
+
+  const aMapIpFallback = () => {
+    const AMapObj = (window as any).AMap;
+    if (!AMapObj || !mapInstanceRef.current) {
+      setLocating(false);
+      return;
+    }
+
+    // 使用 AMap.Geolocation 的 IP 定位兜底
+    const geolocation = new AMapObj.Geolocation({
+      enableHighAccuracy: false,
+      timeout: 10000,
+      showButton: false,
+      showMarker: false,
+      showCircle: false,
+      panToLocation: true,
+      zoomToAccuracy: true,
+    });
+
+    mapInstanceRef.current.addControl(geolocation);
+
+    geolocation.getCurrentPosition((status: string, result: any) => {
+      setLocating(false);
+      if (status === 'complete') {
+        const lng = result.position.getLng ? result.position.getLng() : result.position.lng;
+        const lat = result.position.getLat ? result.position.getLat() : result.position.lat;
+        const accuracy = result.accuracy || 1000;
+        console.log('定位成功 (AMap IP):', lng, lat);
+        setUserLocation({ lng, lat });
+        addUserLocationMarker(lng, lat, accuracy);
+        mapInstanceRef.current.setZoomAndCenter(15, [lng, lat]);
+        // 逆地理编码匹配城市
+        reverseGeocodeAndMatchCity(lng, lat);
+      } else {
+        console.warn('所有定位方式均失败:', status, result);
+      }
+      // 延迟移除，避免影响地图渲染
+      setTimeout(() => {
+        mapInstanceRef.current?.removeControl(geolocation);
+      }, 1000);
+    });
+  };
+
+  const addUserLocationMarker = (lng: number, lat: number, accuracy?: number) => {
+    const AMapObj = (window as any).AMap;
+    if (!AMapObj || !mapInstanceRef.current) return;
+
+    // 清除旧的标记
+    if (userLocationMarkerRef.current) {
+      mapInstanceRef.current.remove(userLocationMarkerRef.current);
+      userLocationMarkerRef.current = null;
+    }
+    if (userLocationCircleRef.current) {
+      mapInstanceRef.current.remove(userLocationCircleRef.current);
+      userLocationCircleRef.current = null;
+    }
+
+    // 精度圆圈
+    if (accuracy && accuracy > 0) {
+      const circle = new AMapObj.Circle({
+        center: [lng, lat],
+        radius: accuracy,
+        strokeColor: '#4A90D9',
+        strokeOpacity: 0.3,
+        strokeWeight: 1,
+        fillColor: '#4A90D9',
+        fillOpacity: 0.1,
+        zIndex: 50,
+      });
+      mapInstanceRef.current.add(circle);
+      userLocationCircleRef.current = circle;
+    }
+
+    // 用户位置圆点（内联样式确保动画可用）
+    const markerContent = `
+      <div style="position:relative;transform:translate(-50%,-50%);width:48px;height:48px;">
+        <style>
+          @keyframes userPulse {
+            0% { transform: translate(-50%,-50%) scale(1); opacity: 0.6; }
+            50% { transform: translate(-50%,-50%) scale(2); opacity: 0; }
+            100% { transform: translate(-50%,-50%) scale(1); opacity: 0; }
+          }
+        </style>
+        <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:32px;height:32px;background:rgba(74,144,217,0.3);border-radius:50%;animation:userPulse 2s infinite;"></div>
+        <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:16px;height:16px;background:#4A90D9;border-radius:50%;border:3px solid white;box-shadow:0 2px 8px rgba(74,144,217,0.5);"></div>
+      </div>`;
+
+    const marker = new AMapObj.Marker({
+      position: [lng, lat],
+      map: mapInstanceRef.current,
+      offset: new AMapObj.Pixel(0, 0),
+      content: markerContent,
+      zIndex: 400,
+    });
+    userLocationMarkerRef.current = marker;
   };
 
   if (loading) {
@@ -243,10 +477,20 @@ export default function MapPage() {
         </div>
 
         {/* 顶部通知按钮 */}
-        <div className="absolute top-0 right-0 z-50 px-[46px] pt-[27px] pointer-events-none">
+        <div className="absolute top-0 right-0 z-50 px-[46px] pt-[27px] pointer-events-none flex flex-col gap-2">
           <button className="w-10 h-10 bg-[#2B2B2E] rounded-full shadow-md flex items-center justify-center pointer-events-auto">
             <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+            </svg>
+          </button>
+          {/* 定位按钮 */}
+          <button 
+            onClick={locate}
+            className="w-10 h-10 bg-[#2B2B2E] rounded-full shadow-md flex items-center justify-center pointer-events-auto active:scale-95 transition-transform"
+          >
+            {/* 地图标记图标 */}
+            <svg className={`w-5 h-5 ${locating ? 'text-blue-400 animate-pulse' : 'text-white'}`} fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/>
             </svg>
           </button>
         </div>
@@ -411,22 +655,23 @@ export default function MapPage() {
       <div className="bg-[#9AB372] border-t border-[#9AB372] shadow-lg relative z-30">
         <div className="flex items-center justify-around px-2 pt-0 pb-2">
           <button className="flex items-center py-[7px] px-[18px]">
-            <svg className="w-[26px] h-[26px] text-orange-500" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z" />
+            {/* 首页图标 - 小房子 */}
+            <svg className="w-[26px] h-[26px] text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3m10-11v10a1 1 0 01-1 1h-3m-6 0h6m-6 0v-6a1 1 0 011-1h4a1 1 0 011 1v6"/>
             </svg>
           </button>
           <button className="flex items-center py-[7px] px-[18px]">
-            <svg className="w-[26px] h-[26px] text-[#3B473B]/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-[26px] h-[26px] text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
           </button>
           <button className="flex items-center py-[7px] px-[18px]">
-            <svg className="w-[26px] h-[26px] text-[#3B473B]/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-[26px] h-[26px] text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
             </svg>
           </button>
           <button className="flex items-center py-[7px] px-[18px]">
-            <svg className="w-[26px] h-[26px] text-[#3B473B]/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-[26px] h-[26px] text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
             </svg>
           </button>
