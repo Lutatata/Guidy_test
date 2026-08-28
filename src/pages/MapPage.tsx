@@ -41,6 +41,9 @@ export default function MapPage() {
   const [keyword, setKeyword] = useState('');
   const [userLocation, setUserLocation] = useState<{ lng: number; lat: number } | null>(null);
   const [locating, setLocating] = useState(false);
+  const touchStartYRef = useRef(0);
+  const [playingVideoIndex, setPlayingVideoIndex] = useState<number | null>(null);
+  const touchStartXRef = useRef(0);
 
   // 导航相关状态
   const [showNavigation, setShowNavigation] = useState(false);
@@ -57,6 +60,13 @@ export default function MapPage() {
     waitForAMapAndLoad();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // 切换岩馆时暂停所有视频并重置播放状态
+  useEffect(() => {
+    if (!selectedGym) return;
+    document.querySelectorAll('video').forEach((v) => v.pause());
+    setPlayingVideoIndex(null);
+  }, [selectedGym]);
 
   const waitForAMapAndLoad = () => {
     const checkAMap = () => {
@@ -746,6 +756,72 @@ export default function MapPage() {
     return <div className="flex items-center justify-center h-screen text-gray-500">加载中...</div>;
   }
 
+  const renderDetailContent = () => (
+    <>
+      {/* 头部：logo + 名称 + 导航 */}
+      <div className="flex gap-3">
+        {/* 左侧logo */}
+        <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-amber-700 to-amber-900 flex-shrink-0 relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+          <div className="absolute inset-0 flex items-center justify-center">
+            <svg className="w-8 h-8 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 20l4-8 3 6 2-4 4 6H3z" />
+              <circle cx="8.5" cy="7" r="2" strokeWidth={1.5} />
+            </svg>
+          </div>
+        </div>
+
+        {/* 右侧信息 */}
+        <div className="flex-1 min-w-0 flex items-start">
+          <div className="flex-1 min-w-0">
+            <h2 className="text-lg font-bold text-[#3B473B] truncate">
+              {selectedGym!.name}
+            </h2>
+            <div className="flex items-center gap-3 mt-1.5">
+              <span className="text-sm text-orange-500 font-semibold">
+                距你 380m
+              </span>
+              <span className="text-xs px-2 py-0.5 bg-[#3B473B]/15 text-[#3B473B] rounded-full flex items-center gap-1">
+                <span className="w-1.5 h-1.5 bg-green-600 rounded-full"></span>
+                {selectedGym!.status === 'active' ? '营业中' : '已关闭'}
+              </span>
+            </div>
+          </div>
+
+          {/* 导航按钮 - 右上角 */}
+          <button
+            onClick={handleNavigate}
+            className="ml-2 bg-[#2B2B2E] text-white px-3 py-2 rounded-[20px] font-semibold flex items-center justify-center gap-1 hover:bg-gray-800 transition-colors active:scale-[0.98] flex-shrink-0"
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+            </svg>
+            <span className="text-sm">导航</span>
+          </button>
+        </div>
+      </div>
+
+      {/* 地址 */}
+      <div className="flex items-start gap-2 text-sm mt-4">
+        <svg className="w-4 h-4 text-[#3B473B]/50 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+        <span className="text-[#3B473B]">{selectedGymDetail?.address || '地址暂未提供'}</span>
+      </div>
+
+      {/* 营业时间 */}
+      <div className="flex items-center gap-2 text-sm mt-2">
+        <svg className="w-4 h-4 text-[#3B473B]/50 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <span className="text-[#3B473B]">
+          营业时间：{selectedGymDetail?.opening_hours?.weekday || '暂未提供'}
+        </span>
+      </div>
+    </>
+  );
+
   return (
     <div className="relative w-full h-full flex flex-col bg-gray-50 overflow-hidden">
       {/* 地图区域 */}
@@ -776,126 +852,67 @@ export default function MapPage() {
 
         {/* 悬浮卡片 - 选中岩馆时显示 */}
         {selectedGym && (
-          <div className="absolute bottom-[130px] left-[46px] right-[46px] z-50 animate-slide-up">
-            <div onClick={(e) => e.stopPropagation()} className="bg-[#F6E199] rounded-[20px] shadow-2xl overflow-hidden">
-              {/* 拖拽手柄 */}
-              <div className="flex justify-center pt-3 pb-1">
+          <div className="absolute top-[40px] bottom-[115px] left-[46px] right-[46px] z-50 animate-slide-up flex flex-col">
+            <div onClick={(e) => e.stopPropagation()} className="bg-[#F6E199] rounded-[20px] shadow-2xl overflow-hidden flex flex-col h-full">
+              {/* 拖拽手柄 - 下滑关闭 */}
+              <div
+                className="flex justify-center pt-3 pb-1 cursor-pointer"
+                onTouchStart={(e) => { touchStartYRef.current = e.touches[0].clientY; }}
+                onTouchMove={(e) => {
+                  const deltaY = e.touches[0].clientY - touchStartYRef.current;
+                  if (deltaY > 60) {
+                    setSelectedGym(null);
+                  }
+                }}
+                onTouchEnd={() => { touchStartYRef.current = 0; }}
+              >
                 <div className="w-10 h-1.5 bg-[#3B473B]/30 rounded-full"></div>
               </div>
 
-              {/* 卡片内容 */}
-              <div className="px-4 pb-4 pt-2">
-                {/* 头部：图片 + 名称 */}
-                <div className="flex gap-3">
-                  {/* 左侧图片 */}
-                  <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-amber-700 to-amber-900 flex-shrink-0 relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <svg className="w-10 h-10 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 20l4-8 3 6 2-4 4 6H3z" />
-                        <circle cx="8.5" cy="7" r="2" strokeWidth={1.5} />
-                      </svg>
-                    </div>
-                  </div>
-
-                  {/* 右侧信息 */}
-                  <div className="flex-1 min-w-0 flex items-start">
-                    <div className="flex-1 min-w-0">
-                      <h2 className="text-lg font-bold text-[#3B473B] truncate">
-                        {selectedGym.name}
-                      </h2>
-                      
-                      {/* 标签 */}
-                      <div className="flex flex-wrap gap-1 mt-1">
-                        {selectedGymDetail?.climb_type ? (
-                          <span className="text-xs px-2 py-0.5 bg-[#3B473B]/15 text-[#3B473B] rounded-full">
-                            {selectedGymDetail.climb_type}
-                          </span>
-                        ) : (
-                          <>
-                            <span className="text-xs px-2 py-0.5 bg-[#3B473B]/15 text-[#3B473B] rounded-full">抱石</span>
-                            <span className="text-xs px-2 py-0.5 bg-[#3B473B]/15 text-[#3B473B] rounded-full">难度墙</span>
-                          </>
-                        )}
-                        <span className="text-xs px-2 py-0.5 bg-[#3B473B]/15 text-[#3B473B] rounded-full">自动保护</span>
+              {/* 香蕉岩馆 - Feed流视频网格 */}
+              {(selectedGym.name.includes('香蕉') || selectedGym.name.toUpperCase().includes('BANANA')) ? (
+                <div className="flex-1 min-h-0 overflow-y-auto px-3 pb-3 pt-1">
+                  {renderDetailContent()}
+                  <div className="grid grid-cols-2 gap-2 mt-4">
+                    {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((i) => (
+                      <div key={i} className="bg-white rounded-xl overflow-hidden shadow-sm" onClick={() => setPlayingVideoIndex(i)}>
+                        <div className="relative aspect-[3/4] bg-black">
+                          <img
+                            className="w-full h-full object-cover"
+                            src={`/videos/video${i}.jpg`}
+                            alt={`视频${i}`}
+                          />
+                          {/* 播放图标覆盖 */}
+                          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                            <div className="w-10 h-10 bg-black/40 rounded-full flex items-center justify-center">
+                              <svg className="w-5 h-5 text-white ml-0.5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z"/>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="p-2">
+                          <p className="text-xs font-medium text-[#3B473B] line-clamp-1">视频标题{['一','二','三','四','五','六','七','八','九'][i-1]}</p>
+                          <div className="flex items-center justify-between mt-1">
+                            <span className="text-[10px] text-[#3B473B]/60">视频{['一','二','三','四','五','六','七','八','九'][i-1]}</span>
+                            <div className="flex items-center gap-0.5 text-[#3B473B]/60">
+                              <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                              </svg>
+                              <span className="text-[10px]">{[128, 256, 384, 512, 640, 768, 896, 1024, 999][i-1]}</span>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-
-                      {/* 距离 + 状态 */}
-                      <div className="flex items-center gap-3 mt-2">
-                        <span className="text-sm text-orange-500 font-semibold">
-                          距你 380m
-                        </span>
-                        <span className="text-xs px-2 py-0.5 bg-[#3B473B]/15 text-[#3B473B] rounded-full flex items-center gap-1">
-                          <span className="w-1.5 h-1.5 bg-green-600 rounded-full"></span>
-                          {selectedGym.status === 'active' ? '营业中' : '已关闭'}
-                        </span>
-                      </div>
-                    </div>
-
-                    {/* 爱心收藏按钮 */}
-                    <button className="p-2 text-[#3B473B]/50 hover:text-red-500 flex-shrink-0 transition-colors">
-                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                      </svg>
-                    </button>
+                    ))}
                   </div>
                 </div>
-
-                {/* 分隔线 */}
-                <div className="border-t border-[#3B473B]/20 my-3"></div>
-
-                {/* 详细信息 */}
-                <div className="space-y-2.5">
-                  {/* 地址 */}
-                  <div className="flex items-start gap-2 text-sm">
-                    <svg className="w-4 h-4 text-[#3B473B]/50 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                    <span className="text-[#3B473B]">{selectedGymDetail?.address || '地址暂未提供'}</span>
-                  </div>
-
-                  {/* 电话 */}
-                  <div className="flex items-center gap-2 text-sm">
-                    <svg className="w-4 h-4 text-[#3B473B]/50 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                    <span className="text-[#3B473B]">{selectedGymDetail?.phone || '电话暂未提供'}</span>
-                  </div>
-
-                  {/* 营业时间 */}
-                  <div className="flex items-center gap-2 text-sm">
-                    <svg className="w-4 h-4 text-[#3B473B]/50 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <span className="text-[#3B473B]">
-                      营业时间：{selectedGymDetail?.opening_hours?.weekday || '暂未提供'}
-                    </span>
-                  </div>
-
-                  {/* 评分 */}
-                  {selectedGymDetail?.rating && (
-                    <div className="flex items-center gap-2 text-sm">
-                      <svg className="w-4 h-4 text-yellow-500 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                      </svg>
-                      <span className="text-[#3B473B] font-medium">{selectedGymDetail.rating}</span>
-                      <span className="text-[#3B473B]/50">· {selectedGymDetail.favorites}收藏</span>
-                    </div>
-                  )}
+              ) : (
+                /* 非香蕉岩馆 - 原有卡片内容 */
+                <div className="px-4 pb-4 pt-2 flex-1 overflow-y-auto">
+                  {renderDetailContent()}
                 </div>
-
-                {/* 导航按钮 */}
-                <button
-                  onClick={handleNavigate}
-                  className="w-full mt-4 bg-[#2B2B2E] text-white py-3.5 rounded-[20px] font-semibold flex items-center justify-center gap-2 hover:bg-gray-800 transition-colors active:scale-[0.98]"
-                >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-                  </svg>
-                  导航到这里去
-                </button>
-              </div>
+              )}
             </div>
           </div>
         )}
@@ -1087,6 +1104,42 @@ export default function MapPage() {
               </div>
             </div>
           </div>
+        </div>
+      )}
+
+      {/* 全屏视频播放器 - 覆盖整个手机屏幕 */}
+      {playingVideoIndex !== null && (
+        <div
+          className="fixed inset-0 z-[100] bg-black"
+          onTouchStart={(e) => { touchStartXRef.current = e.touches[0].clientX; }}
+          onTouchMove={(e) => {
+            const dx = e.touches[0].clientX - touchStartXRef.current;
+            if (dx > 80) {
+              setPlayingVideoIndex(null);
+            }
+          }}
+        >
+          {/* 返回按钮 */}
+          <button
+            onClick={() => setPlayingVideoIndex(null)}
+            className="absolute top-4 left-4 z-10 w-10 h-10 bg-black/50 rounded-full flex items-center justify-center"
+          >
+            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          {/* 视频 */}
+          <video
+            className="w-full h-full object-cover"
+            src={`/videos/video${playingVideoIndex}.mov`}
+            autoPlay
+            playsInline
+            controls
+            onClick={(e) => {
+              const v = e.currentTarget;
+              if (v.paused) v.play(); else v.pause();
+            }}
+          />
         </div>
       )}
     </div>
