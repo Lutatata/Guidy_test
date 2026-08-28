@@ -1,0 +1,110 @@
+[
+  {
+    "id": "7bc1f356-0be8-48b0-b8cb-1cd2b2839e47",
+    "name": "TNS攀岩馆(南亚风情第壹城店)",
+    "short_name": "T",
+    "city_id": 21,
+    "latitude": 25.008216,
+    "longitude": 102.683195,
+    "status": "active"
+  },
+  {
+    "id": "745a8b3d-4e0d-419a-810a-3215d6359969",
+    "name": "今日攀岩(万达广场店)",
+    "short_name": "今",
+    "city_id": 21,
+    "latitude": 25.008687,
+    "longitude": 102.709463,
+    "status": "active"
+  },
+  {
+    "id": "23511ce5-df47-482f-a474-24d6f5c11fdd",
+    "name": "今日攀岩(和谐广场店)",
+    "short_name": "今",
+    "city_id": 21,
+    "latitude": 25.101409,
+    "longitude": 102.732293,
+    "status": "active"
+  },
+  {
+    "id": "fe3c419f-79d5-4ddf-95db-4447a00e1092",
+    "name": "今日攀岩(建设路店)",
+    "short_name": "今",
+    "city_id": 21,
+    "latitude": 25.0588,
+    "longitude": 102.692,
+    "status": "active"
+  },
+  {
+    "id": "b6f564f4-561a-46a9-9d58-9db7922fe78c",
+    "name": "好悦天地TNS攀岩馆",
+    "short_name": "好",
+    "city_id": 21,
+    "latitude": 25.021774,
+    "longitude": 102.71405,
+    "status": "active"
+  },
+  {
+    "id": "23d9307c-273e-407c-80e2-37076192e30b",
+    "name": "小熊攀岩俱乐部(云岭天骄馆)",
+    "short_name": "小",
+    "city_id": 21,
+    "latitude": 25.082611,
+    "longitude": 102.711117,
+    "status": "active"
+  },
+  {
+    "id": "064e6786-af61-4e42-8b46-e63de4943156",
+    "name": "小熊攀岩俱乐部(海乐世界LivingMall馆)",
+    "short_name": "小",
+    "city_id": 21,
+    "latitude": 24.970942,
+    "longitude": 102.740932,
+    "status": "active"
+  },
+  {
+    "id": "9d2426ca-26db-44a7-bffb-3eaaf0a3d9e3",
+    "name": "尚攀城市攀岩馆",
+    "short_name": "尚",
+    "city_id": 21,
+    "latitude": 24.91966,
+    "longitude": 102.464643,
+    "status": "active"
+  },
+  {
+    "id": "f93723d0-2d55-4bd9-8236-2aadfff88d10",
+    "name": "攀登侠儿童攀岩馆(昆明安宁吾悦店)",
+    "short_name": "攀",
+    "city_id": 21,
+    "latitude": 24.925179,
+    "longitude": 102.483271,
+    "status": "active"
+  },
+  {
+    "id": "89c0241e-f96e-4403-803c-f1bfa1211446",
+    "name": "攀羊岩馆",
+    "short_name": "攀",
+    "city_id": 21,
+    "latitude": 24.854597,
+    "longitude": 102.836658,
+    "status": "active"
+  },
+  {
+    "id": "edeb7b8a-8a03-44fd-9e6f-e3f97f31225d",
+    "name": "那岩(拓东)攀岩馆",
+    "short_name": "那",
+    "city_id": 21,
+    "latitude": 25.034705,
+    "longitude": 102.733468,
+    "status": "active"
+  },
+  {
+    "id": "581b3003-23e9-4e33-8b9e-e673a87380f1",
+    "name": "那岩0871攀岩俱乐部",
+    "short_name": "那",
+    "city_id": 21,
+    "latitude": 25.134022,
+    "longitude": 102.736897,
+    "status": "active"
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "c6085e77-00c9-4c80-b3a0-2646e49c693d",
+    "name": "红点攀岩(吾悦广场店)",
+    "short_name": "红",
+    "city_id": 54,
+    "latitude": 34.50653,
+    "longitude": 109.47254,
+    "status": "active"
+  },
+  {
+    "id": "7ba8cfcd-4409-464b-99c0-39686ead2577",
+    "name": "羚羊攀岩",
+    "short_name": "羚",
+    "city_id": 54,
+    "latitude": 32.688958,
+    "longitude": 109.047879,
+    "status": "active"
+  },
+  {
+    "id": "0506fbeb-259c-4e65-b3f0-f494faac36a5",
+    "name": "顽石攀岩(三迪店)",
+    "short_name": "顽",
+    "city_id": 54,
+    "latitude": 34.361524,
+    "longitude": 107.255305,
+    "status": "active"
+  }
+]

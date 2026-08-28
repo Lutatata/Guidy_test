@@ -1,0 +1,83 @@
+[
+  {
+    "id": "41980bf3-2122-412a-8bea-4ed342f4cb2e",
+    "name": "云起攀岩中心（西乡塘店）",
+    "short_name": "云",
+    "city_id": 24,
+    "latitude": 22.8334255218506,
+    "longitude": 108.296440124512,
+    "status": "active"
+  },
+  {
+    "id": "6f84b59c-a3d6-41d9-95fc-cc33593455a7",
+    "name": "云起攀岩馆(五象航洋店)",
+    "short_name": "云",
+    "city_id": 24,
+    "latitude": 22.766871,
+    "longitude": 108.374923,
+    "status": "active"
+  },
+  {
+    "id": "7cbb5c01-ccd9-4d49-84d6-7f63f513bdaf",
+    "name": "佰锐探险德伏攀岩基地",
+    "short_name": "佰",
+    "city_id": 24,
+    "latitude": 23.000634,
+    "longitude": 108.297007,
+    "status": "active"
+  },
+  {
+    "id": "a9e95b4d-176d-4183-9078-2adeea3aa78e",
+    "name": "坏猩猩攀岩馆",
+    "short_name": "坏",
+    "city_id": 24,
+    "latitude": 22.755327,
+    "longitude": 108.3777,
+    "status": "active"
+  },
+  {
+    "id": "a3283b39-a95b-4d70-82c5-a67bbec90e1b",
+    "name": "攀猩儿童攀岩馆(南宁融创茂店)",
+    "short_name": "攀",
+    "city_id": 24,
+    "latitude": 22.846949,
+    "longitude": 108.33902,
+    "status": "active"
+  },
+  {
+    "id": "37613d23-39aa-4071-950e-aaefda48740d",
+    "name": "攀达户外攀岩馆",
+    "short_name": "攀",
+    "city_id": 24,
+    "latitude": 22.798912,
+    "longitude": 108.41286,
+    "status": "active"
+  },
+  {
+    "id": "af5f849f-0deb-4a4e-962d-47e7f78c935f",
+    "name": "日星攀岩馆",
+    "short_name": "日",
+    "city_id": 24,
+    "latitude": 22.82926,
+    "longitude": 108.39146,
+    "status": "active"
+  },
+  {
+    "id": "1c88aee9-d5dc-4e4d-a633-17a25b758f84",
+    "name": "氧攀(华丰爱琴海店)",
+    "short_name": "氧",
+    "city_id": 24,
+    "latitude": 22.813707,
+    "longitude": 108.422401,
+    "status": "active"
+  },
+  {
+    "id": "c6a143fd-cc7a-4c30-b853-bedb4d36da5a",
+    "name": "氧攀(青秀天街店)",
+    "short_name": "氧",
+    "city_id": 24,
+    "latitude": 22.7947845458984,
+    "longitude": 108.447959899902,
+    "status": "active"
+  }
+]

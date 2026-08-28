@@ -1,0 +1,65 @@
+[
+  {
+    "id": "f08c907d-4411-4bbc-b14f-b4889036ce20",
+    "name": "中奥极限攀岩馆",
+    "short_name": "中",
+    "city_id": 29,
+    "latitude": 32.947238,
+    "longitude": 117.404687,
+    "status": "active"
+  },
+  {
+    "id": "d158e617-31a3-45cc-b885-a69c94305cf9",
+    "name": "岩迹攀岩",
+    "short_name": "岩",
+    "city_id": 29,
+    "latitude": 32.915377,
+    "longitude": 115.891915,
+    "status": "active"
+  },
+  {
+    "id": "b6c6f2e8-41d0-43e5-85a7-0ea4494074ad",
+    "name": "攀猩攀岩馆",
+    "short_name": "攀",
+    "city_id": 29,
+    "latitude": 33.316675,
+    "longitude": 117.320519,
+    "status": "active"
+  },
+  {
+    "id": "3f5477e6-2532-4d67-9acb-b5b9e98516f2",
+    "name": "溪口攀岩馆",
+    "short_name": "溪",
+    "city_id": 29,
+    "latitude": 30.674604,
+    "longitude": 118.713894,
+    "status": "active"
+  },
+  {
+    "id": "7bbc00fd-4a60-4fa9-94fb-85fe9544ab06",
+    "name": "硕果攀岩",
+    "short_name": "硕",
+    "city_id": 29,
+    "latitude": 33.9567,
+    "longitude": 116.795942,
+    "status": "active"
+  },
+  {
+    "id": "8294a25f-a778-4a8d-8cd2-f65968837f51",
+    "name": "福瑞攀岩馆",
+    "short_name": "福",
+    "city_id": 29,
+    "latitude": 30.483297,
+    "longitude": 117.055965,
+    "status": "active"
+  },
+  {
+    "id": "dbcd14f1-52c8-4f58-a207-bf0b4d42e262",
+    "name": "触顶攀岩",
+    "short_name": "触",
+    "city_id": 29,
+    "latitude": 31.315869,
+    "longitude": 118.366161,
+    "status": "active"
+  }
+]

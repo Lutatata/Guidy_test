@@ -1,0 +1,20 @@
+[
+  {
+    "id": "217ac566-845d-440e-93bf-6e5eb6664f88",
+    "name": "W³攀岩健身户外俱乐部",
+    "short_name": "W",
+    "city_id": 58,
+    "latitude": 26.265842,
+    "longitude": 107.510461,
+    "status": "active"
+  },
+  {
+    "id": "ca7df827-9c65-4531-8774-c036a5a9e161",
+    "name": "真行者攀岩馆",
+    "short_name": "真",
+    "city_id": 58,
+    "latitude": 25.105439,
+    "longitude": 104.912017,
+    "status": "active"
+  }
+]

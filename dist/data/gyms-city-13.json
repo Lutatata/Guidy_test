@@ -1,0 +1,209 @@
+[
+  {
+    "id": "acf719c2-9832-420a-8851-88973e780cba",
+    "name": "DC攀岩",
+    "short_name": "D",
+    "city_id": 13,
+    "latitude": 34.196164,
+    "longitude": 108.903716,
+    "status": "active"
+  },
+  {
+    "id": "d5146165-8674-4e49-84ef-80bc5d79ec63",
+    "name": "DC攀岩·西体店",
+    "short_name": "D",
+    "city_id": 13,
+    "latitude": 34.238351,
+    "longitude": 108.934627,
+    "status": "active"
+  },
+  {
+    "id": "89d073c4-6b7d-4498-a88d-ce8cad11e5b5",
+    "name": "RED BOX红盒子综合运动中心",
+    "short_name": "R",
+    "city_id": 13,
+    "latitude": 34.210248,
+    "longitude": 109.013567,
+    "status": "active"
+  },
+  {
+    "id": "5e5b9d15-5178-49f2-9e7b-15c7400d7c8e",
+    "name": "大仁攀岩",
+    "short_name": "大",
+    "city_id": 13,
+    "latitude": 34.142594,
+    "longitude": 108.84586,
+    "status": "active"
+  },
+  {
+    "id": "2d688837-1492-4fa7-a635-015c8abbb178",
+    "name": "大寨路都特攀岩",
+    "short_name": "大",
+    "city_id": 13,
+    "latitude": 34.243064,
+    "longitude": 108.86647,
+    "status": "active"
+  },
+  {
+    "id": "c3eb0aff-557a-4c48-8a8f-f585b60d1b51",
+    "name": "岩十三攀岩馆",
+    "short_name": "岩",
+    "city_id": 13,
+    "latitude": 34.21914,
+    "longitude": 108.894244,
+    "status": "active"
+  },
+  {
+    "id": "f78cf123-05cf-4ee3-a272-62a89737fefa",
+    "name": "慕岩攀岩",
+    "short_name": "慕",
+    "city_id": 13,
+    "latitude": 34.177583,
+    "longitude": 108.884408,
+    "status": "active"
+  },
+  {
+    "id": "9dddc335-7c92-45cf-92b4-2ad89afae1db",
+    "name": "我攀·西安 攀岩馆",
+    "short_name": "我",
+    "city_id": 13,
+    "latitude": 34.185791,
+    "longitude": 108.885732,
+    "status": "active"
+  },
+  {
+    "id": "67f9f4ce-807d-4f9d-b049-a7a1f17a3c03",
+    "name": "攀岩梦工厂",
+    "short_name": "攀",
+    "city_id": 13,
+    "latitude": 34.246819,
+    "longitude": 108.961537,
+    "status": "active"
+  },
+  {
+    "id": "dc9a33f8-48d8-4e70-9316-bc4eeb2b1a47",
+    "name": "攀岩梦工厂（开元大剧院店）",
+    "short_name": "攀",
+    "city_id": 13,
+    "latitude": 34.346474,
+    "longitude": 108.95253,
+    "status": "active"
+  },
+  {
+    "id": "3f72a03d-9772-41e2-8f52-12534c427b95",
+    "name": "火石攀岩运动馆(彩虹谷店)",
+    "short_name": "火",
+    "city_id": 13,
+    "latitude": 34.194131,
+    "longitude": 109.010261,
+    "status": "active"
+  },
+  {
+    "id": "50a13587-3e2b-409f-90d5-d1a0a28d9bc5",
+    "name": "火石攀岩运动馆(省体店)",
+    "short_name": "火",
+    "city_id": 13,
+    "latitude": 34.231891,
+    "longitude": 108.943275,
+    "status": "active"
+  },
+  {
+    "id": "30163a45-394c-4d98-a691-b961e376077c",
+    "name": "红点攀岩(大唐西市店)",
+    "short_name": "红",
+    "city_id": 13,
+    "latitude": 34.244795,
+    "longitude": 108.905443,
+    "status": "active"
+  },
+  {
+    "id": "caa7ba37-e033-4438-9845-2ac39a020f90",
+    "name": "红点攀岩(龙湖长乐天街店)",
+    "short_name": "红",
+    "city_id": 13,
+    "latitude": 34.281969,
+    "longitude": 109.013697,
+    "status": "active"
+  },
+  {
+    "id": "ee41b1a7-dc72-422b-a1fa-b09fd0b3769e",
+    "name": "西安斑马攀岩",
+    "short_name": "西",
+    "city_id": 13,
+    "latitude": 34.285891,
+    "longitude": 108.903728,
+    "status": "active"
+  },
+  {
+    "id": "d251a44f-4a28-4df4-9e7e-8684b69c74c2",
+    "name": "西安西柚攀岩seeyouclimbinggym",
+    "short_name": "西",
+    "city_id": 13,
+    "latitude": 34.199397,
+    "longitude": 108.909687,
+    "status": "active"
+  },
+  {
+    "id": "60bbee28-3793-49b2-b5ae-bfc98fae08d4",
+    "name": "见山攀岩",
+    "short_name": "见",
+    "city_id": 13,
+    "latitude": 34.222568,
+    "longitude": 108.932284,
+    "status": "active"
+  },
+  {
+    "id": "836aac7a-2935-440f-b257-f122ff89bd70",
+    "name": "都特攀岩(大悦城店)",
+    "short_name": "都",
+    "city_id": 13,
+    "latitude": 34.21644,
+    "longitude": 108.961455,
+    "status": "active"
+  },
+  {
+    "id": "b1ed556c-0215-4e2b-8b57-e2e3f79090e2",
+    "name": "零重力攀岩(太乙城购物中心店)",
+    "short_name": "零",
+    "city_id": 13,
+    "latitude": 34.234557,
+    "longitude": 108.973258,
+    "status": "active"
+  },
+  {
+    "id": "9579787b-4fdf-4c63-86c3-9a5dfa0dea01",
+    "name": "零重力攀岩(碧乐城店)",
+    "short_name": "零",
+    "city_id": 13,
+    "latitude": 34.193627,
+    "longitude": 108.936704,
+    "status": "active"
+  },
+  {
+    "id": "6ec00c7a-a6c7-41fe-b2ca-7e39ff3ca330",
+    "name": "彼德兔攀岩(大茂城店)",
+    "short_name": "彼",
+    "city_id": 13,
+    "latitude": 34.238373,
+    "longitude": 108.871414,
+    "status": "active"
+  },
+  {
+    "id": "e58bf608-7921-43ab-8e72-6303af403b6e",
+    "name": "老陕攀登共创俱乐部",
+    "short_name": "老",
+    "city_id": 13,
+    "latitude": 34.242284,
+    "longitude": 108.931281,
+    "status": "active"
+  },
+  {
+    "id": "f4001bd4-8740-4e54-8f36-2e8383558bce",
+    "name": "都特攀岩(民乐园店)",
+    "short_name": "都",
+    "city_id": 13,
+    "latitude": 34.267608,
+    "longitude": 108.964608,
+    "status": "active"
+  }
+]

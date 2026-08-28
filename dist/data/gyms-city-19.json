@@ -1,0 +1,128 @@
+[
+  {
+    "id": "29d03f2d-207b-46e7-a1dc-183604089143",
+    "name": "CAMP4岩肆（长沙·西湖公园）",
+    "short_name": "C",
+    "city_id": 19,
+    "latitude": 28.202618,
+    "longitude": 112.943168,
+    "status": "active"
+  },
+  {
+    "id": "ba38a393-34f8-4e01-8f28-6c3c0898e986",
+    "name": "V9攀岩",
+    "short_name": "V",
+    "city_id": 19,
+    "latitude": 28.241339,
+    "longitude": 113.094872,
+    "status": "active"
+  },
+  {
+    "id": "3f013cec-1d46-49e8-8aee-f240b2d98d7e",
+    "name": "tbw攀岩（龙脊基地店）",
+    "short_name": "T",
+    "city_id": 19,
+    "latitude": 28.2202548980713,
+    "longitude": 112.889434814453,
+    "status": "active"
+  },
+  {
+    "id": "4e9256c5-883b-4c56-af98-0f06d45b6472",
+    "name": "九二攀岩(贺龙店)",
+    "short_name": "九",
+    "city_id": 19,
+    "latitude": 28.178226,
+    "longitude": 112.983969,
+    "status": "active"
+  },
+  {
+    "id": "3c9d98e5-ea79-4fd9-821d-cb5719edfd43",
+    "name": "伍鹏攀岩",
+    "short_name": "伍",
+    "city_id": 19,
+    "latitude": 28.2382087707519,
+    "longitude": 112.978477478027,
+    "status": "active"
+  },
+  {
+    "id": "e2bb4adf-e101-46aa-a4ff-87e15ff5b832",
+    "name": "向上攀攀岩(君尚店)",
+    "short_name": "向",
+    "city_id": 19,
+    "latitude": 28.246028,
+    "longitude": 113.103507,
+    "status": "active"
+  },
+  {
+    "id": "13e3da56-fe0f-4a67-aa05-32269fdc3d79",
+    "name": "向上攀攀岩(宁乡吾悦店)",
+    "short_name": "向",
+    "city_id": 19,
+    "latitude": 28.232952,
+    "longitude": 112.554432,
+    "status": "active"
+  },
+  {
+    "id": "a052d6dc-cb4e-4a6b-9696-f8184bacf373",
+    "name": "山与叁山攀岩馆",
+    "short_name": "山",
+    "city_id": 19,
+    "latitude": 28.147583,
+    "longitude": 113.63154,
+    "status": "active"
+  },
+  {
+    "id": "a304c01b-b048-402d-b242-167db2121e1f",
+    "name": "早安攀岩馆(德思勤店)",
+    "short_name": "早",
+    "city_id": 19,
+    "latitude": 28.113308,
+    "longitude": 113.009766,
+    "status": "active"
+  },
+  {
+    "id": "6547f6e3-38c1-472d-b9a2-73334fa8c6f7",
+    "name": "湘攀攀岩(银盆岭万达店)",
+    "short_name": "湘",
+    "city_id": 19,
+    "latitude": 28.223757,
+    "longitude": 112.954423,
+    "status": "active"
+  },
+  {
+    "id": "245d23d7-55fa-4e9b-975c-2cb447618e9c",
+    "name": "香蕉攀岩(凯德壹中心店)",
+    "short_name": "香",
+    "city_id": 19,
+    "latitude": 28.241974,
+    "longitude": 112.95923,
+    "status": "active"
+  },
+  {
+    "id": "8c04edcd-5443-4d37-b3df-50f370e18b67",
+    "name": "香蕉攀岩(悦方ID MALL店)",
+    "short_name": "香",
+    "city_id": 19,
+    "latitude": 28.189629,
+    "longitude": 112.97516,
+    "status": "active"
+  },
+  {
+    "id": "a56d2400-1642-4f67-8328-f4195fb7c024",
+    "name": "香蕉攀岩(珠江星环店)",
+    "short_name": "香",
+    "city_id": 19,
+    "latitude": 28.2524261474609,
+    "longitude": 112.995483398438,
+    "status": "active"
+  },
+  {
+    "id": "0a9b2ec1-9997-48d1-b260-7d947976b9e1",
+    "name": "香蕉攀岩(长沙旗舰店)",
+    "short_name": "香",
+    "city_id": 19,
+    "latitude": 28.252068,
+    "longitude": 112.992874,
+    "status": "active"
+  }
+]
