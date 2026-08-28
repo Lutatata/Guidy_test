@@ -827,7 +827,7 @@ export default function MapPage() {
       {/* 地图区域 */}
       <div className="flex-1 relative min-h-0">
         {/* 15px 倒角边框框架（padding 模拟） */}
-        <div className="absolute inset-0 p-[15px] pb-[15px] bg-[#9AB372] rounded-t-[20px]">
+        <div className="absolute inset-0 p-[8px] pb-[8px] bg-[#9AB372] rounded-t-[20px]">
           <div ref={mapContainerRef} className="w-full h-full rounded-[20px] overflow-hidden" />
         </div>
 
@@ -852,7 +852,7 @@ export default function MapPage() {
 
         {/* 悬浮卡片 - 选中岩馆时显示 */}
         {selectedGym && (
-          <div className="absolute top-[40px] bottom-[115px] left-[46px] right-[46px] z-50 animate-slide-up flex flex-col">
+          <div className="absolute top-[40px] bottom-[90px] left-[26px] right-[26px] z-50 animate-slide-up flex flex-col">
             <div onClick={(e) => e.stopPropagation()} className="bg-[#F6E199] rounded-[20px] shadow-2xl overflow-hidden flex flex-col h-full">
               {/* 拖拽手柄 - 下滑关闭 */}
               <div
@@ -919,8 +919,8 @@ export default function MapPage() {
       </div>
 
       {/* 悬浮搜索栏 */}
-      <div className="absolute bottom-[95px] left-0 right-0 z-40 px-[46px]">
-        <div className="flex items-center gap-2 bg-[#2B2B2E] rounded-full shadow-lg px-3 py-1.5">
+      <div className="absolute bottom-[75px] left-0 right-0 z-40 px-[46px]">
+        <div className="flex items-center gap-2 bg-[#2B2B2E] rounded-full shadow-lg px-3 py-[11px]">
           <div className="flex items-center gap-2 bg-gray-100 rounded-full px-3 py-1.5 whitespace-nowrap">
             <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -1111,10 +1111,16 @@ export default function MapPage() {
       {playingVideoIndex !== null && (
         <div
           className="fixed inset-0 z-[100] bg-black"
-          onTouchStart={(e) => { touchStartXRef.current = e.touches[0].clientX; }}
+          onTouchStart={(e) => {
+            touchStartXRef.current = e.touches[0].clientX;
+            touchStartYRef.current = e.touches[0].clientY;
+          }}
           onTouchMove={(e) => {
             const dx = e.touches[0].clientX - touchStartXRef.current;
-            if (dx > 80) {
+            const dy = e.touches[0].clientY - touchStartYRef.current;
+            if (dy > 100 && Math.abs(dy) > Math.abs(dx)) {
+              setPlayingVideoIndex(null);
+            } else if (dx > 100 && Math.abs(dx) > Math.abs(dy)) {
               setPlayingVideoIndex(null);
             }
           }}

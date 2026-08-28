@@ -22,11 +22,13 @@ html, body {
 }
 
 /* 隐藏滚动条但保留滚动功能 */
-.overflow-x-auto::-webkit-scrollbar {
+.overflow-x-auto::-webkit-scrollbar,
+.overflow-y-auto::-webkit-scrollbar {
   display: none;
 }
 
-.overflow-x-auto {
+.overflow-x-auto,
+.overflow-y-auto {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
