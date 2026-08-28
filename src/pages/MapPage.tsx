@@ -189,12 +189,13 @@ export default function MapPage() {
         const isBanana = gym.name.includes('香蕉') || gym.name.toUpperCase().includes('BANANA');
         const bgColor = isBanana ? '#FFD400' : '#f97316';
         const textColor = isBanana ? '#1a1a1a' : 'white';
-        const borderColor = isBanana ? '#FFC300' : 'white';
+        const borderColor = 'white';
         const zIndex = isBanana ? 300 : 200;
         
         const markerId = `marker-${gym.id}`;
         const markerContent = `
           <div id="${markerId}" style="position:relative;transform:translate(-50%,-100%);cursor:pointer;">
+            ${gym.is_red_dot ? '<div style="position:absolute;top:-1px;right:-1px;width:12px;height:12px;background:#ef4444;border-radius:50%;z-index:10;"></div>' : ''}
             <div style="width:${isBanana ? '36px' : '32px'};height:${isBanana ? '36px' : '32px'};background:${bgColor};border-radius:50%;display:flex;align-items:center;justify-content:center;color:${textColor};font-weight:${isBanana ? '800' : '700'};font-size:${isBanana ? '14px' : '13px'};box-shadow:${isBanana ? '0 3px 12px rgba(255,212,0,0.5)' : '0 2px 8px rgba(0,0,0,0.25)'};border:2px solid ${borderColor};">${isBanana ? '香' : displayName}</div>
           </div>`;
 
