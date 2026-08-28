@@ -1,0 +1,38 @@
+[
+  {
+    "id": "c1301b4e-b6a4-4fc9-977e-a9435a1670ba",
+    "name": "KM CLIMBING",
+    "short_name": "K",
+    "city_id": 46,
+    "latitude": 36.076843,
+    "longitude": 103.866509,
+    "status": "active"
+  },
+  {
+    "id": "83fc46fb-9191-44d4-850f-b8b69b9ba680",
+    "name": "大圣攀岩",
+    "short_name": "大",
+    "city_id": 46,
+    "latitude": 36.0434074401855,
+    "longitude": 103.826293945313,
+    "status": "active"
+  },
+  {
+    "id": "2c3ca0ea-8ee9-4454-8349-df051d64262f",
+    "name": "脆脆鲨攀岩馆",
+    "short_name": "脆",
+    "city_id": 46,
+    "latitude": 36.096984,
+    "longitude": 103.708947,
+    "status": "active"
+  },
+  {
+    "id": "5d5e4446-a75f-455c-b552-684e018e4f18",
+    "name": "马牙club咖啡攀岩",
+    "short_name": "马",
+    "city_id": 46,
+    "latitude": 36.06532,
+    "longitude": 103.854303,
+    "status": "active"
+  }
+]

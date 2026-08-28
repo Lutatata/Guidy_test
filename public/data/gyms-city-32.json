@@ -1,0 +1,65 @@
+[
+  {
+    "id": "685cae31-bc74-4005-adc1-a2346735760d",
+    "name": "中庭攀猩攀岩馆",
+    "short_name": "中",
+    "city_id": 32,
+    "latitude": 26.269093,
+    "longitude": 117.642064,
+    "status": "active"
+  },
+  {
+    "id": "28c4a1d0-17c0-4852-a991-d81a9215d7a9",
+    "name": "天空骑士攀岩基地",
+    "short_name": "天",
+    "city_id": 32,
+    "latitude": 25.197249,
+    "longitude": 118.449872,
+    "status": "active"
+  },
+  {
+    "id": "77a44a85-9f70-4304-a111-6894bb4d2822",
+    "name": "岩石星球攀岩馆",
+    "short_name": "岩",
+    "city_id": 32,
+    "latitude": 24.8171,
+    "longitude": 118.56835,
+    "status": "active"
+  },
+  {
+    "id": "896cd88b-69b4-4e44-bac6-82607abf4e17",
+    "name": "漳州星海攀岩社",
+    "short_name": "漳",
+    "city_id": 32,
+    "latitude": 24.513697,
+    "longitude": 117.695198,
+    "status": "active"
+  },
+  {
+    "id": "ee1d8b9e-11e0-4e0e-b78b-34d4cba07d57",
+    "name": "骑士攀岩(泉州浦西万达广场店)",
+    "short_name": "骑",
+    "city_id": 32,
+    "latitude": 24.881581,
+    "longitude": 118.597531,
+    "status": "active"
+  },
+  {
+    "id": "0b41bf53-d67e-4c3d-a18b-79ebd04edd2d",
+    "name": "骑士攀岩(石狮德辉馆)",
+    "short_name": "骑",
+    "city_id": 32,
+    "latitude": 24.730346,
+    "longitude": 118.650359,
+    "status": "active"
+  },
+  {
+    "id": "1ed4db1b-5cf7-4966-8f96-8ab68928f3c3",
+    "name": "岩安攀岩(阳光时代店)",
+    "short_name": "岩",
+    "city_id": 32,
+    "latitude": 24.811448,
+    "longitude": 118.59202,
+    "status": "active"
+  }
+]

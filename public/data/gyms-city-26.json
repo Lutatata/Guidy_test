@@ -1,0 +1,83 @@
+[
+  {
+    "id": "2bc29a64-8682-4435-a5e1-5734622ebc7a",
+    "name": "Double攀岩运动馆",
+    "short_name": "D",
+    "city_id": 26,
+    "latitude": 29.560849,
+    "longitude": 103.75527,
+    "status": "active"
+  },
+  {
+    "id": "a044d53f-f40e-410d-a663-5167b5426f95",
+    "name": "LION'X 原点攀岩",
+    "short_name": "L",
+    "city_id": 26,
+    "latitude": 31.105784,
+    "longitude": 104.418701,
+    "status": "active"
+  },
+  {
+    "id": "b6b818f7-c1bd-4a51-9eea-3b8546b22e35",
+    "name": "中国-眉山国际攀岩中心",
+    "short_name": "中",
+    "city_id": 26,
+    "latitude": 30.095556,
+    "longitude": 103.877786,
+    "status": "active"
+  },
+  {
+    "id": "2dc0fe18-a3b7-4146-b809-cfe245782e2d",
+    "name": "古郎攀岩馆(欢乐汇店)",
+    "short_name": "古",
+    "city_id": 26,
+    "latitude": 28.894501,
+    "longitude": 105.408807,
+    "status": "active"
+  },
+  {
+    "id": "ca943b92-1e96-45c5-8082-768f93a59555",
+    "name": "多巴安攀岩馆",
+    "short_name": "多",
+    "city_id": 26,
+    "latitude": 28.75533,
+    "longitude": 104.649181,
+    "status": "active"
+  },
+  {
+    "id": "9ea27c55-bf2d-4fd3-aa8f-7ce5c279b15f",
+    "name": "岩跃攀岩馆(马吃水富森美店)",
+    "short_name": "岩",
+    "city_id": 26,
+    "latitude": 29.331711,
+    "longitude": 104.74102,
+    "status": "active"
+  },
+  {
+    "id": "92b5652c-6421-4f88-8925-2eb6c06d940f",
+    "name": "攀登健身馆",
+    "short_name": "攀",
+    "city_id": 26,
+    "latitude": 31.454415,
+    "longitude": 104.689155,
+    "status": "active"
+  },
+  {
+    "id": "deba5c6f-bbeb-4a55-993f-0c2f6db8da0f",
+    "name": "涪山攀岩",
+    "short_name": "涪",
+    "city_id": 26,
+    "latitude": 31.449983,
+    "longitude": 104.729243,
+    "status": "active"
+  },
+  {
+    "id": "1e27b42e-ad80-42b1-9f20-1c815c1621a2",
+    "name": "涪山攀岩2店",
+    "short_name": "涪",
+    "city_id": 26,
+    "latitude": 31.45499,
+    "longitude": 104.685722,
+    "status": "active"
+  }
+]

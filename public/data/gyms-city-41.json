@@ -1,0 +1,47 @@
+[
+  {
+    "id": "bf07be1c-5871-40d9-88dd-c3de45456230",
+    "name": "flash闪攀攀岩馆",
+    "short_name": "F",
+    "city_id": 41,
+    "latitude": 35.299602,
+    "longitude": 113.930077,
+    "status": "active"
+  },
+  {
+    "id": "e2a41856-e540-4084-8404-2958d93b78f6",
+    "name": "壁虎抱石ClimbingGym",
+    "short_name": "壁",
+    "city_id": 41,
+    "latitude": 32.999714,
+    "longitude": 112.5392,
+    "status": "active"
+  },
+  {
+    "id": "ead321e6-044a-4429-b48d-e461e21885fa",
+    "name": "极动攀岩馆",
+    "short_name": "极",
+    "city_id": 41,
+    "latitude": 36.1127,
+    "longitude": 114.373985,
+    "status": "active"
+  },
+  {
+    "id": "2bb437a0-5960-4d1d-8a85-21bfbbfc9cfc",
+    "name": "洛阳攀岩",
+    "short_name": "洛",
+    "city_id": 41,
+    "latitude": 34.656888,
+    "longitude": 112.410728,
+    "status": "active"
+  },
+  {
+    "id": "0d7f9c7f-f55b-4a6c-8e2f-ac4f6bf042ca",
+    "name": "焦作攀岩",
+    "short_name": "焦",
+    "city_id": 41,
+    "latitude": 35.238912,
+    "longitude": 113.222672,
+    "status": "active"
+  }
+]

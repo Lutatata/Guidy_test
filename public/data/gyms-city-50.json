@@ -1,0 +1,29 @@
+[
+  {
+    "id": "09a50883-b84d-4c4f-b45c-2c8bd431ef65",
+    "name": "庐山市遇见庐峰攀岩运动中心",
+    "short_name": "庐",
+    "city_id": 50,
+    "latitude": 29.444674,
+    "longitude": 116.052892,
+    "status": "active"
+  },
+  {
+    "id": "6397f6ff-2026-4e70-9669-d0fbdae8ac95",
+    "name": "益健运动健身俱乐部（攀岩区）",
+    "short_name": "益",
+    "city_id": 50,
+    "latitude": 29.27732,
+    "longitude": 116.22002,
+    "status": "active"
+  },
+  {
+    "id": "6c2aef1d-78bf-4db3-b6bf-55d0966bb601",
+    "name": "黄冲攀岩俱乐部攀岩馆",
+    "short_name": "黄",
+    "city_id": 50,
+    "latitude": 27.847607,
+    "longitude": 113.83406,
+    "status": "active"
+  }
+]

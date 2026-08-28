@@ -1,0 +1,83 @@
+[
+  {
+    "id": "11b6c388-4e2e-4a5e-aecf-a32924e3933e",
+    "name": "大海螺抱石攀岩",
+    "short_name": "大",
+    "city_id": 27,
+    "latitude": 35.968808,
+    "longitude": 120.233889,
+    "status": "active"
+  },
+  {
+    "id": "d1821f32-0ef7-47f3-88fe-184d17e18822",
+    "name": "岩值攀岩(中建锦绣城三期)",
+    "short_name": "岩",
+    "city_id": 27,
+    "latitude": 36.679348,
+    "longitude": 116.899154,
+    "status": "active"
+  },
+  {
+    "id": "00010dbb-ef73-4354-8904-a779ecc0c774",
+    "name": "岩趣攀岩",
+    "short_name": "岩",
+    "city_id": 27,
+    "latitude": 36.100902,
+    "longitude": 120.424858,
+    "status": "active"
+  },
+  {
+    "id": "3c698e44-0a89-4e09-8320-ca80d8c548ef",
+    "name": "海硕悦动攀岩运动馆(大悦春风里店)",
+    "short_name": "海",
+    "city_id": 27,
+    "latitude": 36.408826,
+    "longitude": 120.545933,
+    "status": "active"
+  },
+  {
+    "id": "002cba37-7b6a-4e99-aa83-509c032f4a82",
+    "name": "火舞攀岩",
+    "short_name": "火",
+    "city_id": 27,
+    "latitude": 35.928529,
+    "longitude": 120.165779,
+    "status": "active"
+  },
+  {
+    "id": "5c15bd85-7971-41ad-ae80-dc2ed3a0436c",
+    "name": "猫王攀岩",
+    "short_name": "猫",
+    "city_id": 27,
+    "latitude": 36.07972,
+    "longitude": 120.37057,
+    "status": "active"
+  },
+  {
+    "id": "f23b00d6-4700-4421-8ada-a3300fe42b54",
+    "name": "青岛菁英攀岩(新都心万科生活广场店)",
+    "short_name": "青",
+    "city_id": 27,
+    "latitude": 36.111081,
+    "longitude": 120.393285,
+    "status": "active"
+  },
+  {
+    "id": "f08bb8ba-27f4-4ec4-b9a4-3f42b78ebae8",
+    "name": "在野攀岩",
+    "short_name": "在",
+    "city_id": 27,
+    "latitude": 36.105594,
+    "longitude": 120.471565,
+    "status": "active"
+  },
+  {
+    "id": "df4c3ec5-84a9-45f7-afc3-7bf5b9893080",
+    "name": "青岛岩舞者攀岩",
+    "short_name": "青",
+    "city_id": 27,
+    "latitude": 36.115692,
+    "longitude": 120.33714,
+    "status": "active"
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "f9826bbf-6e48-4e51-8a7a-de96459a7b57",
+    "name": "玩攀SENDIT室内攀岩馆(中际·厚康健康生活馆店)",
+    "short_name": "玩",
+    "city_id": 53,
+    "latitude": 38.506503,
+    "longitude": 106.24545,
+    "status": "active"
+  },
+  {
+    "id": "8e21a4b8-d9e1-421e-880d-efe80b2da4d4",
+    "name": "重心攀岩",
+    "short_name": "重",
+    "city_id": 53,
+    "latitude": 38.525978,
+    "longitude": 106.312405,
+    "status": "active"
+  },
+  {
+    "id": "c757dbea-afdc-468e-bdaf-aa430d98c1a8",
+    "name": "亲水攀岩馆",
+    "short_name": "亲",
+    "city_id": 53,
+    "latitude": 38.47146,
+    "longitude": 106.220063,
+    "status": "active"
+  }
+]

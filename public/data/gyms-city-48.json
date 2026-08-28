@@ -1,0 +1,38 @@
+[
+  {
+    "id": "29123495-223c-48a5-b50b-a699b6f73d6e",
+    "name": "可以攀岩馆",
+    "short_name": "可",
+    "city_id": 48,
+    "latitude": 37.806621,
+    "longitude": 112.54668,
+    "status": "active"
+  },
+  {
+    "id": "38ad0816-2a99-4fb9-8e56-4a24d6fe8391",
+    "name": "岩舞空间攀岩(吾悦广场店)",
+    "short_name": "岩",
+    "city_id": 48,
+    "latitude": 37.872739,
+    "longitude": 112.519961,
+    "status": "active"
+  },
+  {
+    "id": "55dea3eb-9146-43a7-8bd9-560a987b8c0b",
+    "name": "新途运动攀岩馆",
+    "short_name": "新",
+    "city_id": 48,
+    "latitude": 37.821803,
+    "longitude": 112.550266,
+    "status": "active"
+  },
+  {
+    "id": "fd533b86-1b4d-45e4-baed-983ff524d40c",
+    "name": "昱攀攀岩太原吾悦店(总店)",
+    "short_name": "昱",
+    "city_id": 48,
+    "latitude": 37.872773,
+    "longitude": 112.520044,
+    "status": "active"
+  }
+]

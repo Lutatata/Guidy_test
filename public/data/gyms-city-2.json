@@ -1,0 +1,605 @@
+[
+  {
+    "id": "0a76a998-328b-48e4-baf9-716c7a256093",
+    "name": "Bloc1 Climbing攀岩馆",
+    "short_name": "B",
+    "city_id": 2,
+    "latitude": 39.963584,
+    "longitude": 116.45112,
+    "status": "active"
+  },
+  {
+    "id": "4dd5b00b-1512-4ab7-b27c-cf4425112ae6",
+    "name": "CAMP4岩肆·攀岩馆（三里屯店）",
+    "short_name": "C",
+    "city_id": 2,
+    "latitude": 39.9270668029785,
+    "longitude": 116.456367492676,
+    "status": "active"
+  },
+  {
+    "id": "6eb1a52e-8b46-44c6-981c-649ab417767f",
+    "name": "CAMP4攀岩馆(新辰里酒仙桥店&将台店)",
+    "short_name": "C",
+    "city_id": 2,
+    "latitude": 39.975944,
+    "longitude": 116.490705,
+    "status": "active"
+  },
+  {
+    "id": "3cad943c-1b53-46f5-aa19-e76c3d9d111e",
+    "name": "Climb On Gym COG攀岩馆(首钢店)",
+    "short_name": "C",
+    "city_id": 2,
+    "latitude": 39.915518,
+    "longitude": 116.157028,
+    "status": "active"
+  },
+  {
+    "id": "8756120d-0b6e-4bf1-822b-13a1cf36c4da",
+    "name": "Climb On Gym攀岩馆(来广营店COL)",
+    "short_name": "C",
+    "city_id": 2,
+    "latitude": 40.016876,
+    "longitude": 116.465681,
+    "status": "active"
+  },
+  {
+    "id": "d28e207a-4c4c-47bc-817b-f055eade8063",
+    "name": "Climb On Gym攀岩馆(荟聚店)",
+    "short_name": "C",
+    "city_id": 2,
+    "latitude": 39.786298,
+    "longitude": 116.326139,
+    "status": "active"
+  },
+  {
+    "id": "6f6598bd-eac3-48a4-ab99-f21f6852e0f6",
+    "name": "EDGE一直攀岩",
+    "short_name": "E",
+    "city_id": 2,
+    "latitude": 39.960805,
+    "longitude": 116.458998,
+    "status": "active"
+  },
+  {
+    "id": "a61d4686-89d9-4f0f-b9e2-84094c359a23",
+    "name": "Mellow Climbing Gym 攀岩馆",
+    "short_name": "M",
+    "city_id": 2,
+    "latitude": 39.97339,
+    "longitude": 116.496124,
+    "status": "active"
+  },
+  {
+    "id": "36a57d8f-82da-449d-b24a-777baed3853c",
+    "name": "SUPERBOX超级秀场攀岩馆(成寿寺店)",
+    "short_name": "S",
+    "city_id": 2,
+    "latitude": 39.857618,
+    "longitude": 116.447621,
+    "status": "active"
+  },
+  {
+    "id": "2fe260f7-54e2-44b7-9e66-14e650d40d70",
+    "name": "SUPERBOX超级秀场攀岩馆(欢乐谷店)",
+    "short_name": "S",
+    "city_id": 2,
+    "latitude": 39.872276,
+    "longitude": 116.502246,
+    "status": "active"
+  },
+  {
+    "id": "00943adc-c9e0-4cbe-9828-f91fa8df6dfb",
+    "name": "SURMOUNT山迈攀岩",
+    "short_name": "S",
+    "city_id": 2,
+    "latitude": 39.960379,
+    "longitude": 116.28833,
+    "status": "active"
+  },
+  {
+    "id": "ad419ee5-332f-41e1-be24-37bf7c5478e5",
+    "name": "V.ONE攀岩馆",
+    "short_name": "V",
+    "city_id": 2,
+    "latitude": 39.812223,
+    "longitude": 116.300507,
+    "status": "active"
+  },
+  {
+    "id": "7a344dd6-3650-4afc-99f1-1e8be0a1ebdc",
+    "name": "ZOO攀岩馆",
+    "short_name": "Z",
+    "city_id": 2,
+    "latitude": 39.951033,
+    "longitude": 116.528172,
+    "status": "active"
+  },
+  {
+    "id": "f2eee628-3d86-45da-907a-14293c99332a",
+    "name": "uniClimb攀岩馆",
+    "short_name": "U",
+    "city_id": 2,
+    "latitude": 39.981197,
+    "longitude": 116.413224,
+    "status": "active"
+  },
+  {
+    "id": "a15cf631-02fc-4557-8b15-19420abce90c",
+    "name": "一起攀岩(中关村店)",
+    "short_name": "一",
+    "city_id": 2,
+    "latitude": 39.979294,
+    "longitude": 116.314457,
+    "status": "active"
+  },
+  {
+    "id": "a40eb204-e376-4448-84f5-897b05e5da8c",
+    "name": "一起攀岩（崇文门店）",
+    "short_name": "一",
+    "city_id": 2,
+    "latitude": 39.895459,
+    "longitude": 116.417891,
+    "status": "active"
+  },
+  {
+    "id": "40fd9ace-40cb-49ae-84ad-d943d943aad8",
+    "name": "中攀Alps攀岩中心(活力东方购物广场店)",
+    "short_name": "中",
+    "city_id": 2,
+    "latitude": 39.940198,
+    "longitude": 116.521925,
+    "status": "active"
+  },
+  {
+    "id": "999386e2-a4c9-4d40-8c51-0d3b96df8d0b",
+    "name": "人人攀岩(丽泽店)",
+    "short_name": "人",
+    "city_id": 2,
+    "latitude": 39.871829,
+    "longitude": 116.304775,
+    "status": "active"
+  },
+  {
+    "id": "8ec5cabd-c3b8-431f-a737-7ef8bcbb39e8",
+    "name": "人人攀岩(欢乐谷店)",
+    "short_name": "人",
+    "city_id": 2,
+    "latitude": 39.86222,
+    "longitude": 116.52504,
+    "status": "active"
+  },
+  {
+    "id": "1769cde9-0664-4c83-8b93-1e805ef550b0",
+    "name": "北京COB攀岩馆",
+    "short_name": "北",
+    "city_id": 2,
+    "latitude": 39.980446,
+    "longitude": 116.39635,
+    "status": "active"
+  },
+  {
+    "id": "0653c2fe-62c8-4012-a85e-b79f4a50cbf2",
+    "name": "北京金点石日坛攀岩场",
+    "short_name": "北",
+    "city_id": 2,
+    "latitude": 39.916133,
+    "longitude": 116.445614,
+    "status": "active"
+  },
+  {
+    "id": "ccecbee2-8fde-4f6b-88a7-d20651e7552e",
+    "name": "北顶奥森攀岩生态园",
+    "short_name": "北",
+    "city_id": 2,
+    "latitude": 40.01714,
+    "longitude": 116.38114,
+    "status": "active"
+  },
+  {
+    "id": "334eea7c-e299-463d-997c-25b68af4a66b",
+    "name": "奥攀攀岩(世界公园店)",
+    "short_name": "奥",
+    "city_id": 2,
+    "latitude": 39.801259,
+    "longitude": 116.282684,
+    "status": "active"
+  },
+  {
+    "id": "45c3c6d9-41f3-4928-8725-e521ff2f4d4f",
+    "name": "奥攀攀岩(五棵松万达探五哩校区)",
+    "short_name": "奥",
+    "city_id": 2,
+    "latitude": 39.910145,
+    "longitude": 116.27616,
+    "status": "active"
+  },
+  {
+    "id": "d9d06e24-d8e0-417c-940b-93afb77b8e3e",
+    "name": "奥攀攀岩(四季青校区)",
+    "short_name": "奥",
+    "city_id": 2,
+    "latitude": 39.950612,
+    "longitude": 116.278586,
+    "status": "active"
+  },
+  {
+    "id": "d54a2453-cdad-4cc6-8bda-ad4a975d33c4",
+    "name": "奥攀攀岩(玉泉营店)",
+    "short_name": "奥",
+    "city_id": 2,
+    "latitude": 39.842344,
+    "longitude": 116.339922,
+    "status": "active"
+  },
+  {
+    "id": "15cc0bed-104c-4208-b214-7802da002074",
+    "name": "奥攀攀岩(角门店)",
+    "short_name": "奥",
+    "city_id": 2,
+    "latitude": 39.844503,
+    "longitude": 116.387061,
+    "status": "active"
+  },
+  {
+    "id": "5c3dd4b0-cd70-4fa6-8c2d-0e832b55412e",
+    "name": "奥攀攀岩(鸿坤广场店)",
+    "short_name": "奥",
+    "city_id": 2,
+    "latitude": 39.791976,
+    "longitude": 116.340642,
+    "status": "active"
+  },
+  {
+    "id": "6247378e-732a-4a54-ab70-fff8c4d59cbb",
+    "name": "奥攀攀岩王府井奥莱校区(旧宫)",
+    "short_name": "奥",
+    "city_id": 2,
+    "latitude": 39.817568,
+    "longitude": 116.421389,
+    "status": "active"
+  },
+  {
+    "id": "cbf53b9c-f49d-45a5-8065-844015deb5b2",
+    "name": "岚山攀岩(凯德MALL店)",
+    "short_name": "岚",
+    "city_id": 2,
+    "latitude": 39.672191,
+    "longitude": 116.319004,
+    "status": "active"
+  },
+  {
+    "id": "6d6dddb7-62be-4597-ade3-e0283105a4c6",
+    "name": "岚山攀岩(合生广场店)",
+    "short_name": "岚",
+    "city_id": 2,
+    "latitude": 39.856052,
+    "longitude": 116.397713,
+    "status": "active"
+  },
+  {
+    "id": "05ad2f28-d9f8-4e34-8801-d476c2e4ae4d",
+    "name": "岩时攀岩(回龙观店)",
+    "short_name": "岩",
+    "city_id": 2,
+    "latitude": 40.07674,
+    "longitude": 116.34226,
+    "status": "active"
+  },
+  {
+    "id": "a5ab4384-0359-4f13-8166-1489ab6ece6f",
+    "name": "岩时攀岩(大屯店)",
+    "short_name": "岩",
+    "city_id": 2,
+    "latitude": 40.002491,
+    "longitude": 116.41502,
+    "status": "active"
+  },
+  {
+    "id": "a96802e6-65de-40bf-a5b6-5fc105ade2b8",
+    "name": "岩时攀岩(管庄店)",
+    "short_name": "岩",
+    "city_id": 2,
+    "latitude": 39.909876,
+    "longitude": 116.597728,
+    "status": "active"
+  },
+  {
+    "id": "c624be57-ffed-4d74-b5cc-c7df9671060b",
+    "name": "川跃攀岩",
+    "short_name": "川",
+    "city_id": 2,
+    "latitude": 26.592018,
+    "longitude": 106.703741,
+    "status": "active"
+  },
+  {
+    "id": "4bbcac9b-061c-48eb-8276-8f89e4f19ddc",
+    "name": "悦石运动攀岩空间(华贸天地店)",
+    "short_name": "悦",
+    "city_id": 2,
+    "latitude": 40.049004,
+    "longitude": 116.42812,
+    "status": "active"
+  },
+  {
+    "id": "9d43cd68-f5b0-4b5b-9b46-81f3c5adcf6a",
+    "name": "我攀攀岩",
+    "short_name": "我",
+    "city_id": 2,
+    "latitude": 39.887491,
+    "longitude": 116.513996,
+    "status": "active"
+  },
+  {
+    "id": "0ff9e4c6-c193-489d-874a-5ee9e47bda72",
+    "name": "日坛攀岩馆",
+    "short_name": "日",
+    "city_id": 2,
+    "latitude": 39.918695,
+    "longitude": 116.442211,
+    "status": "active"
+  },
+  {
+    "id": "2d4651f7-ac6f-4dff-a514-9af99f4ee0a9",
+    "name": "星岩攀石",
+    "short_name": "星",
+    "city_id": 2,
+    "latitude": 39.957424,
+    "longitude": 116.419522,
+    "status": "active"
+  },
+  {
+    "id": "72c2d849-9d8b-41cc-88c0-3b8f964345b8",
+    "name": "昱攀攀岩银川吾悦广场店",
+    "short_name": "昱",
+    "city_id": 2,
+    "latitude": 38.469463,
+    "longitude": 106.319248,
+    "status": "active"
+  },
+  {
+    "id": "0fe69600-f93d-4e20-9d1d-7f7f3e0f5240",
+    "name": "极石攀岩",
+    "short_name": "极",
+    "city_id": 2,
+    "latitude": 39.742451,
+    "longitude": 116.136963,
+    "status": "active"
+  },
+  {
+    "id": "c9ed34c7-cdb9-4a8d-b100-2769a8bb041c",
+    "name": "此山攀岩(亦庄信万广场店)",
+    "short_name": "此",
+    "city_id": 2,
+    "latitude": 39.783948,
+    "longitude": 116.5813,
+    "status": "active"
+  },
+  {
+    "id": "222c716f-5836-4f60-a30c-05aeaff2a2a7",
+    "name": "浩石运动攀岩空间(久隆店)",
+    "short_name": "浩",
+    "city_id": 2,
+    "latitude": 39.961813,
+    "longitude": 116.494984,
+    "status": "active"
+  },
+  {
+    "id": "fd267f8e-84b1-456f-8adb-21ae010b873a",
+    "name": "红松果攀岩馆",
+    "short_name": "红",
+    "city_id": 2,
+    "latitude": 39.687092,
+    "longitude": 116.304437,
+    "status": "active"
+  },
+  {
+    "id": "354711cc-9bc7-4f4f-b31f-bc262a6fa558",
+    "name": "耀岩攀岩(沙河店)",
+    "short_name": "耀",
+    "city_id": 2,
+    "latitude": 40.14381,
+    "longitude": 116.293571,
+    "status": "active"
+  },
+  {
+    "id": "dd155b6a-6eb8-41d5-91d2-7b01d25b2e6a",
+    "name": "耀岩攀岩馆(后沙峪店)",
+    "short_name": "耀",
+    "city_id": 2,
+    "latitude": 40.098671,
+    "longitude": 116.55039,
+    "status": "active"
+  },
+  {
+    "id": "e7cd6700-c767-43d0-ad52-b4443f1d8a65",
+    "name": "超级奥攀",
+    "short_name": "超",
+    "city_id": 2,
+    "latitude": 40.006974,
+    "longitude": 116.402147,
+    "status": "active"
+  },
+  {
+    "id": "c8d3465a-256b-47ed-86b2-2770a0d1e6ca",
+    "name": "趣攀岩(龙玥城店)",
+    "short_name": "趣",
+    "city_id": 2,
+    "latitude": 39.80148,
+    "longitude": 116.533358,
+    "status": "active"
+  },
+  {
+    "id": "bca2c295-b92f-4e7b-95ae-1d6c8007da9e",
+    "name": "趣野攀岩(回龙观店)",
+    "short_name": "趣",
+    "city_id": 2,
+    "latitude": 40.07986,
+    "longitude": 116.34744,
+    "status": "active"
+  },
+  {
+    "id": "3ffbb0ad-a557-409f-82a3-6f96a9caf423",
+    "name": "趣野攀岩(房山印象城店)",
+    "short_name": "趣",
+    "city_id": 2,
+    "latitude": 39.753823,
+    "longitude": 116.211416,
+    "status": "active"
+  },
+  {
+    "id": "e0a9e30c-ae0a-4dac-bf1e-6247fb545283",
+    "name": "趣野攀岩(龙湖北苑天街店)",
+    "short_name": "趣",
+    "city_id": 2,
+    "latitude": 40.042954,
+    "longitude": 116.438466,
+    "status": "active"
+  },
+  {
+    "id": "da1e377c-c5e3-4811-b362-23748ee57814",
+    "name": "趣野攀岩（北京东燕郊店）",
+    "short_name": "趣",
+    "city_id": 2,
+    "latitude": 39.9693222045898,
+    "longitude": 116.80517578125,
+    "status": "active"
+  },
+  {
+    "id": "1284166b-c6aa-4b81-9df1-061f69be271c",
+    "name": "问山MountQuest攀岩馆",
+    "short_name": "问",
+    "city_id": 2,
+    "latitude": 39.927059,
+    "longitude": 116.255257,
+    "status": "active"
+  },
+  {
+    "id": "b3b3d4f4-4706-48fa-b3e0-6a26766534c4",
+    "name": "青山攀石(清河店)",
+    "short_name": "青",
+    "city_id": 2,
+    "latitude": 40.036884,
+    "longitude": 116.339645,
+    "status": "active"
+  },
+  {
+    "id": "42a252a9-1c53-49b1-8962-be97faabcc3f",
+    "name": "青山攀石(魏公村店)",
+    "short_name": "青",
+    "city_id": 2,
+    "latitude": 39.956347,
+    "longitude": 116.320884,
+    "status": "active"
+  },
+  {
+    "id": "e3a29756-4fc9-4f76-b113-f9d744252ccc",
+    "name": "青藤攀岩",
+    "short_name": "青",
+    "city_id": 2,
+    "latitude": 40.002859,
+    "longitude": 116.432198,
+    "status": "active"
+  },
+  {
+    "id": "96760c52-aac8-445c-9631-486116760085",
+    "name": "顽岩攀岩",
+    "short_name": "顽",
+    "city_id": 2,
+    "latitude": 39.813627,
+    "longitude": 116.300586,
+    "status": "active"
+  },
+  {
+    "id": "3a73e4ea-b4e0-442b-b02f-8b55d49e1979",
+    "name": "飞猫攀岩 Feline Climbing Gym（朝阳店）",
+    "short_name": "飞",
+    "city_id": 2,
+    "latitude": 39.920354,
+    "longitude": 116.432892,
+    "status": "active"
+  },
+  {
+    "id": "10aba11b-b0a4-451c-b90c-7cdccce255d6",
+    "name": "飞猫攀岩(纪家庙店)",
+    "short_name": "飞",
+    "city_id": 2,
+    "latitude": 39.841889,
+    "longitude": 116.332853,
+    "status": "active"
+  },
+  {
+    "id": "0a6e711c-345b-499c-9a2d-ec4e850f1836",
+    "name": "首钢极限公园-攀岩运动区",
+    "short_name": "首",
+    "city_id": 2,
+    "latitude": 39.92323,
+    "longitude": 116.15791,
+    "status": "active"
+  },
+  {
+    "id": "4eeed888-2a05-48df-84d7-fe561a5a79f1",
+    "name": "香蕉攀岩(上地店)",
+    "short_name": "香",
+    "city_id": 2,
+    "latitude": 40.03696,
+    "longitude": 116.28747,
+    "status": "active"
+  },
+  {
+    "id": "5f70a5e8-78a2-4eae-abbf-0cf8233778b4",
+    "name": "香蕉攀岩(小月河店)",
+    "short_name": "香",
+    "city_id": 2,
+    "latitude": 40.0031,
+    "longitude": 116.366269,
+    "status": "active"
+  },
+  {
+    "id": "0a89defe-e616-4b55-a356-ffb7aea93bcd",
+    "name": "黑爆攀岩共享空间(丰科万达店)",
+    "short_name": "黑",
+    "city_id": 2,
+    "latitude": 39.820869,
+    "longitude": 116.300287,
+    "status": "active"
+  },
+  {
+    "id": "f4ff078e-a550-457f-b986-a3711aa8d8d4",
+    "name": "鼎石攀岩",
+    "short_name": "鼎",
+    "city_id": 2,
+    "latitude": 39.852438,
+    "longitude": 116.447985,
+    "status": "active"
+  },
+  {
+    "id": "08916646-2827-487b-9c99-3b74e0c04785",
+    "name": "先锋攀岩(东坝万达广场店)",
+    "short_name": "先",
+    "city_id": 2,
+    "latitude": 39.9611,
+    "longitude": 116.548782,
+    "status": "active"
+  },
+  {
+    "id": "2a4c77f3-a689-4e04-b0d9-20336c42ca96",
+    "name": "岩时攀登中心(西三旗店)",
+    "short_name": "岩",
+    "city_id": 2,
+    "latitude": 40.056022,
+    "longitude": 116.358055,
+    "status": "active"
+  },
+  {
+    "id": "1ba811cb-2ed6-4145-b463-ef078bc1780d",
+    "name": "浩石运动攀岩空间(顺义店)",
+    "short_name": "浩",
+    "city_id": 2,
+    "latitude": 40.11837,
+    "longitude": 116.559602,
+    "status": "active"
+  }
+]

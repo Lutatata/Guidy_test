@@ -1,0 +1,47 @@
+[
+  {
+    "id": "82b8f956-63b9-4d57-ace2-dc0d7b4505d3",
+    "name": "A+攀岩馆",
+    "short_name": "A",
+    "city_id": 45,
+    "latitude": 43.798898,
+    "longitude": 125.320492,
+    "status": "active"
+  },
+  {
+    "id": "9dc19fb9-02be-472f-b9d1-b5271a452480",
+    "name": "长春际华园-攀岩探险馆",
+    "short_name": "长",
+    "city_id": 45,
+    "latitude": 43.959089,
+    "longitude": 125.506861,
+    "status": "active"
+  },
+  {
+    "id": "91530178-9a1b-4d2d-8f85-89fa02b04269",
+    "name": "魔崖攀岩俱乐部MY ROCK(中东迪克公园店)",
+    "short_name": "魔",
+    "city_id": 45,
+    "latitude": 43.949613,
+    "longitude": 125.327278,
+    "status": "active"
+  },
+  {
+    "id": "5c40685f-6d38-469c-9e6d-c005762ee910",
+    "name": "野孩子计划青少年攀岩",
+    "short_name": "野",
+    "city_id": 45,
+    "latitude": 43.794146,
+    "longitude": 125.381497,
+    "status": "active"
+  },
+  {
+    "id": "954b3654-6451-422a-a242-46b807cec687",
+    "name": "长春乐豹攀岩",
+    "short_name": "长",
+    "city_id": 45,
+    "latitude": 43.915169,
+    "longitude": 125.33414,
+    "status": "active"
+  }
+]

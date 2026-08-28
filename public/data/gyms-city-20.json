@@ -1,0 +1,119 @@
+[
+  {
+    "id": "0f2efa64-18e4-40ee-b01d-8af3bb2c28d3",
+    "name": "MINSK攀岩馆",
+    "short_name": "M",
+    "city_id": 20,
+    "latitude": 21.657439,
+    "longitude": 109.217835,
+    "status": "active"
+  },
+  {
+    "id": "25c9112e-2609-4314-b0f8-e053a3ffc0b2",
+    "name": "V16攀岩俱乐部",
+    "short_name": "V",
+    "city_id": 20,
+    "latitude": 25.252334,
+    "longitude": 110.308476,
+    "status": "active"
+  },
+  {
+    "id": "d0bff825-6e79-4f3c-8851-32395f57d480",
+    "name": "岩邦攀岩馆",
+    "short_name": "岩",
+    "city_id": 20,
+    "latitude": 24.773894,
+    "longitude": 110.492634,
+    "status": "active"
+  },
+  {
+    "id": "fc652340-d193-473a-9d40-e288f0a443ca",
+    "name": "悦奥攀岩馆(丽港华府店)",
+    "short_name": "悦",
+    "city_id": 20,
+    "latitude": 23.471837,
+    "longitude": 111.288386,
+    "status": "active"
+  },
+  {
+    "id": "c18a0d71-8f6c-4c5b-a19b-cab0bd60d417",
+    "name": "攀达室内攀岩馆",
+    "short_name": "攀",
+    "city_id": 20,
+    "latitude": 23.421791,
+    "longitude": 111.25738,
+    "status": "active"
+  },
+  {
+    "id": "943a382f-eaef-402e-b9bf-e6fe4cd96282",
+    "name": "朝明攀岩(创意产业园店)",
+    "short_name": "朝",
+    "city_id": 20,
+    "latitude": 25.239647,
+    "longitude": 110.340524,
+    "status": "active"
+  },
+  {
+    "id": "60596f43-a3d0-459d-b2a8-86960ce542e5",
+    "name": "瑞士奶酪攀岩场",
+    "short_name": "瑞",
+    "city_id": 20,
+    "latitude": 24.756386,
+    "longitude": 110.4783,
+    "status": "active"
+  },
+  {
+    "id": "d76d7947-7f61-4e3b-92b7-5bf505546ff7",
+    "name": "贺州学院抱石墙",
+    "short_name": "贺",
+    "city_id": 20,
+    "latitude": 24.411049,
+    "longitude": 111.51166,
+    "status": "active"
+  },
+  {
+    "id": "2aa10a5e-be32-42f9-936d-54732a57618c",
+    "name": "超元气攀岩馆",
+    "short_name": "超",
+    "city_id": 20,
+    "latitude": 25.243466,
+    "longitude": 110.317651,
+    "status": "active"
+  },
+  {
+    "id": "856065da-99af-464b-9aef-278d672439ce",
+    "name": "阳朔西街",
+    "short_name": "阳",
+    "city_id": 20,
+    "latitude": 24.7750492095947,
+    "longitude": 110.49488067627,
+    "status": "active"
+  },
+  {
+    "id": "c0e317ba-acb3-421d-822e-71372debbff1",
+    "name": "麦子攀岩馆",
+    "short_name": "麦",
+    "city_id": 20,
+    "latitude": 25.246544,
+    "longitude": 110.326111,
+    "status": "active"
+  },
+  {
+    "id": "4e228e2d-8bc0-4dea-b780-3c485b254767",
+    "name": "龙岩攀岩馆(金绿洲店)",
+    "short_name": "龙",
+    "city_id": 20,
+    "latitude": 24.334546,
+    "longitude": 109.381149,
+    "status": "active"
+  },
+  {
+    "id": "f1860d9a-74eb-4e85-83ea-919f01420439",
+    "name": "龙岩攀岩馆",
+    "short_name": "龙",
+    "city_id": 20,
+    "latitude": 24.3204727172852,
+    "longitude": 109.450035095215,
+    "status": "active"
+  }
+]
