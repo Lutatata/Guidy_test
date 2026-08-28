@@ -28,6 +28,7 @@ export default function MapPage() {
   const userLocationMarkerRef = useRef<any>(null);
   const userLocationCircleRef = useRef<any>(null);
   const cityChangedByLocationRef = useRef(false);
+  const citiesRef = useRef<City[]>([]);
 
   const cityParam = searchParams.get('city');
   const [cityId, setCityId] = useState<number>(cityParam ? parseInt(cityParam) : 1);
@@ -105,6 +106,7 @@ export default function MapPage() {
         getCities(),
       ]);
       setCities(citiesData);
+      citiesRef.current = citiesData;
       setCityName(citiesData.find(c => c.id === cityId)?.name || '全国');
       const validGyms = gymsData.filter(g => g.latitude && g.longitude);
       setGyms(validGyms);
@@ -313,28 +315,26 @@ export default function MapPage() {
 
   // 逆地理编码，根据经纬度匹配城市（使用高德 REST API，更可靠）
   const reverseGeocodeAndMatchCity = async (lng: number, lat: number) => {
-    if (cities.length === 0) return;
+    if (citiesRef.current.length === 0) {
+      console.warn('城市列表还没加载好，跳过自动匹配');
+      return;
+    }
 
     try {
-      // 直接调用高德逆地理编码 REST API
       const response = await fetch(
         `https://restapi.amap.com/v3/geocode/regeo?key=ee175e6e8cf3639dd9566fb8268d0ead&location=${lng},${lat}`
       );
       const data = await response.json();
-      console.log('逆地理编码原始返回:', data);
 
       if (data.status === '1' && data.regeocode) {
-        // 高德 REST API 返回字段使用下划线命名（formatted_address）
         const formattedAddress = data.regeocode.formatted_address || '';
         let cityName = '';
         if (data.regeocode.addressComponent) {
           const comp = data.regeocode.addressComponent;
-          // 优先取 city，没有则取 province
           cityName = comp.city || comp.province || '';
         }
-        console.log('逆地理编码结果:', cityName, '完整地址:', formattedAddress);
+        console.log('定位城市:', cityName, '完整地址:', formattedAddress);
 
-        // 匹配城市列表
         const matchedCity = matchCityByName(cityName, formattedAddress);
         if (matchedCity) {
           console.log('匹配到城市:', matchedCity.name, 'id:', matchedCity.id);
@@ -346,19 +346,16 @@ export default function MapPage() {
         } else {
           console.warn('未匹配到城市，保持当前城市:', cityName);
         }
-      } else {
-        console.warn('逆地理编码失败:', data.info);
       }
     } catch (err) {
       console.error('逆地理编码请求异常:', err);
     }
   };
 
-  // 城市名匹配（支持模糊匹配，处理"上海市" vs "上海"、"广东(其他)" vs "广东省" 等）
   const matchCityByName = (cityName: string, fullAddress: string): City | null => {
-    if (cities.length === 0) return null;
+    const cityList = citiesRef.current;
+    if (cityList.length === 0) return null;
 
-    // 清理城市名：去除"市"、"省"、"自治区"等后缀
     const cleanName = cityName
       .replace(/市$/, '')
       .replace(/省$/, '')
@@ -366,36 +363,44 @@ export default function MapPage() {
       .replace(/特别行政区$/, '')
       .trim();
 
-    // 提取城市核心名：去除括号内容（如 "广东(其他)" → "广东"）
     const extractCore = (name: string) => name.replace(/[（(][^）)]*[）)]/, '').trim();
 
     // 精确匹配
-    let matched = cities.find(c => c.name === cityName || c.name === cleanName);
+    let matched = cityList.find(c => c.name === cityName || c.name === cleanName);
     if (matched) return matched;
 
     // 精确匹配（去除括号后）
-    matched = cities.find(c => {
+    matched = cityList.find(c => {
       const core = extractCore(c.name);
       return core === cleanName || core === cityName;
     });
     if (matched) return matched;
 
     // 模糊匹配：城市名包含或被包含
-    matched = cities.find(c =>
+    matched = cityList.find(c =>
       c.name.includes(cleanName) || cleanName.includes(c.name.replace(/市$/, ''))
     );
     if (matched) return matched;
 
     // 模糊匹配（去除括号后）
-    matched = cities.find(c => {
+    matched = cityList.find(c => {
       const core = extractCore(c.name);
       return core.includes(cleanName) || cleanName.includes(core);
     });
     if (matched) return matched;
 
-    // 用完整地址匹配（针对"XX省XX市"格式）
+    // 用完整地址匹配（找省份对应的"其他"项，如珠海 → 广东(其他)）
     if (fullAddress) {
-      matched = cities.find(c => {
+      // 优先匹配带"(其他)"的省份项
+      matched = cityList.find(c => {
+        if (!c.name.includes('其他')) return false;
+        const cn = extractCore(c.name).replace(/市$/, '').replace(/省$/, '');
+        return fullAddress.includes(cn);
+      });
+      if (matched) return matched;
+
+      // 其次用完整地址直接匹配
+      matched = cityList.find(c => {
         const cn = extractCore(c.name).replace(/市$/, '').replace(/省$/, '');
         return fullAddress.includes(cn);
       });
