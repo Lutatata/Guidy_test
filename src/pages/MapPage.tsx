@@ -879,7 +879,7 @@ export default function MapPage() {
                         <div className="relative aspect-[3/4] bg-black">
                           <img
                             className="w-full h-full object-cover"
-                            src={`/videos/video${i}.jpg`}
+                            src={`./videos/video${i}.jpg`}
                             alt={`视频${i}`}
                           />
                           {/* 播放图标覆盖 */}
@@ -1131,7 +1131,7 @@ export default function MapPage() {
           {/* 视频 */}
           <video
             className="w-full h-full object-cover"
-            src={`/videos/video${playingVideoIndex}.mp4`}
+            src={`./videos/video${playingVideoIndex}.mp4`}
             autoPlay
             playsInline
             controls
