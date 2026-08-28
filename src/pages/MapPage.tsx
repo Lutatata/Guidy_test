@@ -775,7 +775,7 @@ export default function MapPage() {
 
           {/* 导航按钮组 - 规划路线时显示 */}
           {showNavigation && (
-            <div className="relative mt-[500px]">
+            <div className="relative top-[60px]">
               {/* 时间距离提示框（在按钮左侧） */}
               {routeInfo && (
                 <div className="absolute right-[60px] top-1/2 -translate-y-1/2 bg-[#2B2B2E]/95 backdrop-blur-sm rounded-lg px-3 py-2 text-white whitespace-nowrap shadow-lg">
@@ -980,22 +980,22 @@ export default function MapPage() {
 
       {/* 悬浮搜索栏 */}
       <div className="absolute bottom-[95px] left-0 right-0 z-40 px-[46px]">
-        <div className="flex items-center gap-2 bg-[#2B2B2E] rounded-full shadow-lg px-4 py-2.5">
-          <div className="flex items-center gap-2 bg-gray-100 rounded-full flex-1 px-4 py-2.5">
+        <div className="flex items-center gap-2 bg-[#2B2B2E] rounded-full shadow-lg px-3 py-1.5">
+          <div className="flex items-center gap-2 bg-gray-100 rounded-full px-3 py-1.5 whitespace-nowrap">
             <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
             <input
               type="text"
-              placeholder="搜索攀岩馆、区域或路线"
+              placeholder="搜索攀岩馆"
               value={keyword}
               onChange={(e) => setKeyword(e.target.value)}
-              className="flex-1 bg-transparent outline-none text-sm text-gray-700 placeholder-gray-400"
+              className="bg-transparent outline-none text-sm text-gray-700 placeholder-gray-400 w-[90px]"
             />
           </div>
           <button
             onClick={() => setShowCityDrawer(true)}
-            className="flex items-center gap-1 bg-gray-100 rounded-full px-3 py-2.5 text-sm text-gray-700 flex-shrink-0"
+            className="ml-auto flex items-center gap-1 bg-gray-100 rounded-full px-3 py-1.5 text-sm text-gray-700 flex-shrink-0"
           >
             <svg className="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
