@@ -772,83 +772,6 @@ export default function MapPage() {
               <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/>
             </svg>
           </button>
-
-          {/* 导航按钮组 - 规划路线时显示 */}
-          {showNavigation && (
-            <div className="relative top-[60px]">
-              {/* 时间距离提示框（在按钮左侧） */}
-              {routeInfo && (
-                <div className="absolute right-[60px] top-1/2 -translate-y-1/2 bg-[#2B2B2E]/95 backdrop-blur-sm rounded-lg px-3 py-2 text-white whitespace-nowrap shadow-lg">
-                  <div className="text-xs text-white/60">约</div>
-                  <div className="text-sm font-bold">{routeInfo.time}</div>
-                  <div className="text-xs text-white/60 mt-0.5">{routeInfo.distance}</div>
-                  {/* 三角形指向按钮 */}
-                  <div className="absolute right-[-4px] top-1/2 -translate-y-1/2 w-0 h-0 border-l-[4px] border-l-[#2B2B2E]/95 border-t-[4px] border-t-transparent border-b-[4px] border-b-transparent"></div>
-                </div>
-              )}
-              
-              {/* 按钮组外框 */}
-              <div className="flex flex-col gap-1 bg-[#2B2B2E] rounded-[20px] shadow-lg p-2">
-                {/* 驾车 */}
-                <button
-                  onClick={() => switchNavMode('driving')}
-                  className={`w-10 h-10 rounded-xl flex items-center justify-center pointer-events-auto active:scale-95 transition-transform ${
-                    navMode === 'driving' ? 'bg-orange-500' : 'bg-transparent'
-                  }`}
-                  title="驾车"
-                >
-                  <span className={`text-sm font-bold ${navMode === 'driving' ? 'text-white' : 'text-white/70'}`}>驾</span>
-                </button>
-                
-                {/* 步行 */}
-                <button
-                  onClick={() => switchNavMode('walking')}
-                  className={`w-10 h-10 rounded-xl flex items-center justify-center pointer-events-auto active:scale-95 transition-transform ${
-                    navMode === 'walking' ? 'bg-orange-500' : 'bg-transparent'
-                  }`}
-                  title="步行"
-                >
-                  <span className={`text-sm font-bold ${navMode === 'walking' ? 'text-white' : 'text-white/70'}`}>步</span>
-                </button>
-                
-                {/* 公交 */}
-                <button
-                  onClick={() => switchNavMode('transit')}
-                  className={`w-10 h-10 rounded-xl flex items-center justify-center pointer-events-auto active:scale-95 transition-transform ${
-                    navMode === 'transit' ? 'bg-orange-500' : 'bg-transparent'
-                  }`}
-                  title="公交"
-                >
-                  <span className={`text-sm font-bold ${navMode === 'transit' ? 'text-white' : 'text-white/70'}`}>公</span>
-                </button>
-                
-                <div className="h-px bg-white/20 mx-2 my-1"></div>
-                
-                {/* Go - 打开手机导航 */}
-                <button
-                  onClick={openPhoneNavigation}
-                  disabled={!routeInfo}
-                  className={`w-10 h-10 rounded-xl flex items-center justify-center pointer-events-auto active:scale-95 transition-transform ${
-                    routeInfo ? 'bg-transparent' : 'bg-transparent opacity-50'
-                  }`}
-                  title="开始导航"
-                >
-                  <span className={`text-xs font-bold ${routeInfo ? 'text-white' : 'text-white/50'}`}>Go</span>
-                </button>
-              </div>
-              
-              {/* 关闭按钮 */}
-              <button
-                onClick={closeNavigation}
-                className="w-10 h-10 rounded-[20px] shadow-lg flex items-center justify-center pointer-events-auto active:scale-95 transition-transform bg-[#2B2B2E] mt-2 mx-auto"
-                title="关闭导航"
-              >
-                <svg className="w-4 h-4 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
-          )}
         </div>
 
         {/* 悬浮卡片 - 选中岩馆时显示 */}
@@ -1005,6 +928,83 @@ export default function MapPage() {
             <span className="text-xs text-gray-400">▾</span>
           </button>
         </div>
+
+        {/* 导航按钮组 - 规划路线时显示，位于搜索框上方 */}
+        {showNavigation && (
+          <div className="absolute right-[46px] bottom-[195px] z-40">
+            {/* 时间距离提示框（在按钮左侧） */}
+            {routeInfo && (
+              <div className="absolute right-[60px] top-1/2 -translate-y-1/2 bg-[#2B2B2E]/95 backdrop-blur-sm rounded-lg px-3 py-2 text-white whitespace-nowrap shadow-lg">
+                <div className="text-xs text-white/60">约</div>
+                <div className="text-sm font-bold">{routeInfo.time}</div>
+                <div className="text-xs text-white/60 mt-0.5">{routeInfo.distance}</div>
+                {/* 三角形指向按钮 */}
+                <div className="absolute right-[-4px] top-1/2 -translate-y-1/2 w-0 h-0 border-l-[4px] border-l-[#2B2B2E]/95 border-t-[4px] border-t-transparent border-b-[4px] border-b-transparent"></div>
+              </div>
+            )}
+            
+            {/* 按钮组外框 */}
+            <div className="flex flex-col gap-1 bg-[#2B2B2E] rounded-[20px] shadow-lg p-2">
+              {/* 驾车 */}
+              <button
+                onClick={() => switchNavMode('driving')}
+                className={`w-10 h-10 rounded-xl flex items-center justify-center pointer-events-auto active:scale-95 transition-transform ${
+                  navMode === 'driving' ? 'bg-orange-500' : 'bg-transparent'
+                }`}
+                title="驾车"
+              >
+                <span className={`text-sm font-bold ${navMode === 'driving' ? 'text-white' : 'text-white/70'}`}>驾</span>
+              </button>
+              
+              {/* 步行 */}
+              <button
+                onClick={() => switchNavMode('walking')}
+                className={`w-10 h-10 rounded-xl flex items-center justify-center pointer-events-auto active:scale-95 transition-transform ${
+                  navMode === 'walking' ? 'bg-orange-500' : 'bg-transparent'
+                }`}
+                title="步行"
+              >
+                <span className={`text-sm font-bold ${navMode === 'walking' ? 'text-white' : 'text-white/70'}`}>步</span>
+              </button>
+              
+              {/* 公交 */}
+              <button
+                onClick={() => switchNavMode('transit')}
+                className={`w-10 h-10 rounded-xl flex items-center justify-center pointer-events-auto active:scale-95 transition-transform ${
+                  navMode === 'transit' ? 'bg-orange-500' : 'bg-transparent'
+                }`}
+                title="公交"
+              >
+                <span className={`text-sm font-bold ${navMode === 'transit' ? 'text-white' : 'text-white/70'}`}>公</span>
+              </button>
+              
+              <div className="h-px bg-white/20 mx-2 my-1"></div>
+              
+              {/* Go - 打开手机导航 */}
+              <button
+                onClick={openPhoneNavigation}
+                disabled={!routeInfo}
+                className={`w-10 h-10 rounded-xl flex items-center justify-center pointer-events-auto active:scale-95 transition-transform ${
+                  routeInfo ? 'bg-transparent' : 'bg-transparent opacity-50'
+                }`}
+                title="开始导航"
+              >
+                <span className={`text-xs font-bold ${routeInfo ? 'text-white' : 'text-white/50'}`}>Go</span>
+              </button>
+            </div>
+            
+            {/* 关闭按钮 */}
+            <button
+              onClick={closeNavigation}
+              className="w-10 h-10 rounded-[20px] shadow-lg flex items-center justify-center pointer-events-auto active:scale-95 transition-transform bg-[#2B2B2E] mt-2 mx-auto"
+              title="关闭导航"
+            >
+              <svg className="w-4 h-4 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Tab 导航 */}
