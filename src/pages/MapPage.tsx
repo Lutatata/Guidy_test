@@ -931,7 +931,7 @@ export default function MapPage() {
 
         {/* 导航按钮组 - 规划路线时显示，位于搜索框上方 */}
         {showNavigation && (
-          <div className="absolute right-[46px] bottom-[195px] z-40">
+          <div className="absolute right-[46px] bottom-[170px] z-40">
             {/* 时间距离提示框（在按钮左侧） */}
             {routeInfo && (
               <div className="absolute right-[60px] top-1/2 -translate-y-1/2 bg-[#2B2B2E]/95 backdrop-blur-sm rounded-lg px-3 py-2 text-white whitespace-nowrap shadow-lg">
