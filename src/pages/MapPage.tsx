@@ -24,7 +24,6 @@ export default function MapPage() {
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<any>(null);
   const markersRef = useRef<any[]>([]);
-  const markerClickedRef = useRef(false);
 
   const cityParam = searchParams.get('city');
   const [cityId, setCityId] = useState<number>(cityParam ? parseInt(cityParam) : 1);
@@ -123,10 +122,6 @@ export default function MapPage() {
     });
 
     map.on('click', () => {
-      if (markerClickedRef.current) {
-        markerClickedRef.current = false;
-        return;
-      }
       console.log('Map clicked, clearing selection');
       setSelectedGym(null);
       setSelectedGymDetail(null);
@@ -167,7 +162,6 @@ export default function MapPage() {
 
         marker.on('click', () => {
           console.log('Marker clicked:', gym.name);
-          markerClickedRef.current = true;
           setSelectedGym(gym);
           getGymDetail(gym.id)
             .then(detail => setSelectedGymDetail(detail))
@@ -184,7 +178,6 @@ export default function MapPage() {
             el.addEventListener('click', (e) => {
               e.stopPropagation();
               console.log('Marker DOM clicked:', gym.name);
-              markerClickedRef.current = true;
               setSelectedGym(gym);
               getGymDetail(gym.id)
                 .then(detail => setSelectedGymDetail(detail))
@@ -237,24 +230,42 @@ export default function MapPage() {
     <div className="relative w-full h-full flex flex-col bg-gray-50 overflow-hidden">
       {/* 地图区域 */}
       <div className="flex-1 relative min-h-0">
-        {/* 15px 倒角边框框架（padding 模拟） */}
-        <div className="absolute inset-0 p-[15px] pb-[15px] bg-[#9AB372] rounded-t-[20px]">
-          <div ref={mapContainerRef} className="w-full h-full rounded-[20px] overflow-hidden" />
-        </div>
+        <div ref={mapContainerRef} className="absolute inset-0" onClick={() => setSelectedGym(null)} />
 
         {/* 顶部通知按钮 */}
-        <div className="absolute top-0 right-0 z-50 px-[46px] pt-[27px] pointer-events-none">
-          <button className="w-10 h-10 bg-[#2B2B2E] rounded-full shadow-md flex items-center justify-center pointer-events-auto">
-            <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+        <div className="absolute top-0 right-0 z-50 px-4 pt-3 pointer-events-none">
+          <button className="w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center pointer-events-auto">
+            <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+            </svg>
+          </button>
+        </div>
+
+        {/* 地图右下角控制按钮 */}
+        <div className="absolute right-3 bottom-[140px] flex flex-col gap-2 z-40">
+          <button onClick={zoomIn} className="w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center text-xl text-gray-700">
+            +
+          </button>
+          <button onClick={zoomOut} className="w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center text-xl text-gray-700">
+            −
+          </button>
+          <button onClick={locate} className="w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center">
+            <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+              <circle cx="12" cy="9" r="2.5" />
+            </svg>
+          </button>
+          <button className="w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center">
+            <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 10h16M4 14h16M4 18h16" />
             </svg>
           </button>
         </div>
 
         {/* 悬浮卡片 - 选中岩馆时显示 */}
         {selectedGym && (
-          <div className="absolute bottom-[130px] left-[46px] right-[46px] z-50 animate-slide-up">
-            <div onClick={(e) => e.stopPropagation()} className="bg-white rounded-[20px] shadow-2xl overflow-hidden">
+          <div className="absolute bottom-[130px] left-3 right-3 z-50 animate-slide-up">
+            <div onClick={(e) => e.stopPropagation()} className="bg-white rounded-2xl shadow-2xl overflow-hidden">
               {/* 拖拽手柄 */}
               <div className="flex justify-center pt-3 pb-1">
                 <div className="w-10 h-1.5 bg-gray-300 rounded-full"></div>
@@ -365,7 +376,7 @@ export default function MapPage() {
                 {/* 导航按钮 */}
                 <button
                   onClick={() => goToDetail(selectedGym)}
-                  className="w-full mt-4 bg-[#2B2B2E] text-white py-3.5 rounded-[20px] font-semibold flex items-center justify-center gap-2 hover:bg-gray-800 transition-colors active:scale-[0.98]"
+                  className="w-full mt-4 bg-black text-white py-3.5 rounded-2xl font-semibold flex items-center justify-center gap-2 hover:bg-gray-800 transition-colors active:scale-[0.98]"
                 >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
@@ -378,9 +389,10 @@ export default function MapPage() {
         )}
       </div>
 
-      {/* 悬浮搜索栏 */}
-      <div className="absolute bottom-[95px] left-0 right-0 z-40 px-[46px]">
-        <div className="flex items-center gap-2 bg-[#2B2B2E] rounded-full shadow-lg px-4 py-2.5">
+      {/* 底部区域：搜索栏 + Tab导航 */}
+      <div className="bg-white border-t border-gray-100 shadow-lg relative z-30">
+        {/* 搜索栏 + 城市切换 */}
+        <div className="flex items-center gap-2 mx-4 mt-3 mb-2">
           <div className="flex items-center gap-2 bg-gray-100 rounded-full flex-1 px-4 py-2.5">
             <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -405,30 +417,32 @@ export default function MapPage() {
             <span className="text-xs text-gray-400">▾</span>
           </button>
         </div>
-      </div>
 
-      {/* Tab 导航 */}
-      <div className="bg-[#9AB372] border-t border-[#9AB372] shadow-lg relative z-30">
-        <div className="flex items-center justify-around px-2 pt-0 pb-2">
-          <button className="flex items-center py-[7px] px-[18px]">
-            <svg className="w-[26px] h-[26px] text-orange-500" fill="currentColor" viewBox="0 0 24 24">
+        {/* Tab 导航 */}
+        <div className="flex items-center justify-around px-2 pb-2 pt-1 border-t border-gray-50">
+          <button className="flex flex-col items-center gap-0.5 py-1.5 px-4">
+            <svg className="w-6 h-6 text-orange-500" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z" />
             </svg>
+            <span className="text-[10px] text-orange-500 font-medium">地图</span>
           </button>
-          <button className="flex items-center py-[7px] px-[18px]">
-            <svg className="w-[26px] h-[26px] text-[#3B473B]/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <button className="flex flex-col items-center gap-0.5 py-1.5 px-4">
+            <svg className="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
+            <span className="text-[10px] text-gray-400">发现</span>
           </button>
-          <button className="flex items-center py-[7px] px-[18px]">
-            <svg className="w-[26px] h-[26px] text-[#3B473B]/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <button className="flex flex-col items-center gap-0.5 py-1.5 px-4">
+            <svg className="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
             </svg>
+            <span className="text-[10px] text-gray-400">计划</span>
           </button>
-          <button className="flex items-center py-[7px] px-[18px]">
-            <svg className="w-[26px] h-[26px] text-[#3B473B]/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <button className="flex flex-col items-center gap-0.5 py-1.5 px-4">
+            <svg className="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
             </svg>
+            <span className="text-[10px] text-gray-400">我的</span>
           </button>
         </div>
       </div>
