@@ -254,10 +254,10 @@ export default function MapPage() {
         {/* 悬浮卡片 - 选中岩馆时显示 */}
         {selectedGym && (
           <div className="absolute bottom-[130px] left-[46px] right-[46px] z-50 animate-slide-up">
-            <div onClick={(e) => e.stopPropagation()} className="bg-white rounded-[20px] shadow-2xl overflow-hidden">
+            <div onClick={(e) => e.stopPropagation()} className="bg-[#F6E199] rounded-[20px] shadow-2xl overflow-hidden">
               {/* 拖拽手柄 */}
               <div className="flex justify-center pt-3 pb-1">
-                <div className="w-10 h-1.5 bg-gray-300 rounded-full"></div>
+                <div className="w-10 h-1.5 bg-[#3B473B]/30 rounded-full"></div>
               </div>
 
               {/* 卡片内容 */}
@@ -278,23 +278,23 @@ export default function MapPage() {
                   {/* 右侧信息 */}
                   <div className="flex-1 min-w-0 flex items-start">
                     <div className="flex-1 min-w-0">
-                      <h2 className="text-lg font-bold text-gray-900 truncate">
+                      <h2 className="text-lg font-bold text-[#3B473B] truncate">
                         {selectedGym.name}
                       </h2>
                       
                       {/* 标签 */}
                       <div className="flex flex-wrap gap-1 mt-1">
                         {selectedGymDetail?.climb_type ? (
-                          <span className="text-xs px-2 py-0.5 bg-gray-100 text-gray-600 rounded-full">
+                          <span className="text-xs px-2 py-0.5 bg-[#3B473B]/15 text-[#3B473B] rounded-full">
                             {selectedGymDetail.climb_type}
                           </span>
                         ) : (
                           <>
-                            <span className="text-xs px-2 py-0.5 bg-gray-100 text-gray-600 rounded-full">抱石</span>
-                            <span className="text-xs px-2 py-0.5 bg-gray-100 text-gray-600 rounded-full">难度墙</span>
+                            <span className="text-xs px-2 py-0.5 bg-[#3B473B]/15 text-[#3B473B] rounded-full">抱石</span>
+                            <span className="text-xs px-2 py-0.5 bg-[#3B473B]/15 text-[#3B473B] rounded-full">难度墙</span>
                           </>
                         )}
-                        <span className="text-xs px-2 py-0.5 bg-gray-100 text-gray-600 rounded-full">自动保护</span>
+                        <span className="text-xs px-2 py-0.5 bg-[#3B473B]/15 text-[#3B473B] rounded-full">自动保护</span>
                       </div>
 
                       {/* 距离 + 状态 */}
@@ -302,15 +302,15 @@ export default function MapPage() {
                         <span className="text-sm text-orange-500 font-semibold">
                           距你 380m
                         </span>
-                        <span className="text-xs px-2 py-0.5 bg-green-50 text-green-600 rounded-full flex items-center gap-1">
-                          <span className="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+                        <span className="text-xs px-2 py-0.5 bg-[#3B473B]/15 text-[#3B473B] rounded-full flex items-center gap-1">
+                          <span className="w-1.5 h-1.5 bg-green-600 rounded-full"></span>
                           {selectedGym.status === 'active' ? '营业中' : '已关闭'}
                         </span>
                       </div>
                     </div>
 
                     {/* 爱心收藏按钮 */}
-                    <button className="p-2 text-gray-400 hover:text-red-500 flex-shrink-0 transition-colors">
+                    <button className="p-2 text-[#3B473B]/50 hover:text-red-500 flex-shrink-0 transition-colors">
                       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                       </svg>
@@ -319,33 +319,33 @@ export default function MapPage() {
                 </div>
 
                 {/* 分隔线 */}
-                <div className="border-t border-gray-100 my-3"></div>
+                <div className="border-t border-[#3B473B]/20 my-3"></div>
 
                 {/* 详细信息 */}
                 <div className="space-y-2.5">
                   {/* 地址 */}
                   <div className="flex items-start gap-2 text-sm">
-                    <svg className="w-4 h-4 text-gray-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 text-[#3B473B]/50 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
-                    <span className="text-gray-700">{selectedGymDetail?.address || '地址暂未提供'}</span>
+                    <span className="text-[#3B473B]">{selectedGymDetail?.address || '地址暂未提供'}</span>
                   </div>
 
                   {/* 电话 */}
                   <div className="flex items-center gap-2 text-sm">
-                    <svg className="w-4 h-4 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 text-[#3B473B]/50 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
-                    <span className="text-gray-700">{selectedGymDetail?.phone || '电话暂未提供'}</span>
+                    <span className="text-[#3B473B]">{selectedGymDetail?.phone || '电话暂未提供'}</span>
                   </div>
 
                   {/* 营业时间 */}
                   <div className="flex items-center gap-2 text-sm">
-                    <svg className="w-4 h-4 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 text-[#3B473B]/50 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
-                    <span className="text-gray-700">
+                    <span className="text-[#3B473B]">
                       营业时间：{selectedGymDetail?.opening_hours?.weekday || '暂未提供'}
                     </span>
                   </div>
@@ -353,11 +353,11 @@ export default function MapPage() {
                   {/* 评分 */}
                   {selectedGymDetail?.rating && (
                     <div className="flex items-center gap-2 text-sm">
-                      <svg className="w-4 h-4 text-yellow-400 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-4 h-4 text-yellow-500 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                       </svg>
-                      <span className="text-gray-700 font-medium">{selectedGymDetail.rating}</span>
-                      <span className="text-gray-400">· {selectedGymDetail.favorites}收藏</span>
+                      <span className="text-[#3B473B] font-medium">{selectedGymDetail.rating}</span>
+                      <span className="text-[#3B473B]/50">· {selectedGymDetail.favorites}收藏</span>
                     </div>
                   )}
                 </div>
