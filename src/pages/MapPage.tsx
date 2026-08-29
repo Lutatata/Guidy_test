@@ -200,10 +200,10 @@ export default function MapPage() {
         const zIndex = isBanana ? 300 : 200;
         
         let logoPath = '';
-        if (isBanana) logoPath = './logos/香蕉.png';
-        else if (isYanshi) logoPath = './logos/岩时.png';
-        else if (isYanwu) logoPath = './logos/岩舞.png';
-        else if (hasRandomLogo) logoPath = `./logos/${gym.logo}.png`;
+        if (isBanana) logoPath = './logos/香蕉.webp';
+        else if (isYanshi) logoPath = './logos/岩时.webp';
+        else if (isYanwu) logoPath = './logos/岩舞.webp';
+        else if (hasRandomLogo) logoPath = `./logos/${gym.logo}.webp`;
 
         const markerId = `marker-${gym.id}`;
         let size = isLogo ? '40px' : '32px';
