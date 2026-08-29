@@ -6,7 +6,9 @@
     "city_id": 30,
     "latitude": 41.703673,
     "longitude": 123.384688,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "8"
   },
   {
     "id": "727b4685-4b5e-46fc-be1e-317acdd9d7e0",
@@ -15,7 +17,9 @@
     "city_id": 30,
     "latitude": 41.80786,
     "longitude": 123.487999,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
   },
   {
     "id": "b52d6905-e9fd-40c3-bfe4-8c04c22e45c5",
@@ -24,25 +28,9 @@
     "city_id": 30,
     "latitude": 41.746071,
     "longitude": 123.499971,
-    "status": "active"
-  },
-  {
-    "id": "16dded33-5c44-4e01-9f0f-b50cb0b1e585",
-    "name": "极爱攀岩",
-    "short_name": "极",
-    "city_id": 30,
-    "latitude": 41.739518,
-    "longitude": 123.457784,
-    "status": "active"
-  },
-  {
-    "id": "5bc53184-83dd-482b-99a9-c6a3ca7f523e",
-    "name": "老曲攀岩馆",
-    "short_name": "老",
-    "city_id": 30,
-    "latitude": 41.743301,
-    "longitude": 123.45795,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
   },
   {
     "id": "f12075f2-4ef0-4cff-8c4d-66e87dbc9e4f",
@@ -51,7 +39,20 @@
     "city_id": 30,
     "latitude": 41.793877,
     "longitude": 123.34698,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
+  },
+  {
+    "id": "16dded33-5c44-4e01-9f0f-b50cb0b1e585",
+    "name": "极爱攀岩",
+    "short_name": "极",
+    "city_id": 30,
+    "latitude": 41.739518,
+    "longitude": 123.457784,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "2"
   },
   {
     "id": "ccb977a3-7006-4cbd-a092-f3cf8381ae86",
@@ -60,6 +61,19 @@
     "city_id": 30,
     "latitude": 41.79293,
     "longitude": 123.43313,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "5"
+  },
+  {
+    "id": "5bc53184-83dd-482b-99a9-c6a3ca7f523e",
+    "name": "老曲攀岩馆",
+    "short_name": "老",
+    "city_id": 30,
+    "latitude": 41.743301,
+    "longitude": 123.45795,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
   }
 ]

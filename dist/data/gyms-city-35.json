@@ -1,12 +1,25 @@
 [
   {
+    "id": "37974646-c250-48af-9f7f-3e93eabe8f5b",
+    "name": "Moutop攀岩馆(凯德和平广场店)",
+    "short_name": "M",
+    "city_id": 35,
+    "latitude": 38.896611,
+    "longitude": 121.588312,
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
+  },
+  {
     "id": "02327fc1-73ae-48cc-9d4d-0586faf85dac",
     "name": "乐攀岩馆(奥莱店)",
     "short_name": "乐",
     "city_id": 35,
     "latitude": 38.929945,
     "longitude": 121.608895,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
   },
   {
     "id": "8b908d4c-96bd-4d20-bcee-664ca9b3d7da",
@@ -15,7 +28,9 @@
     "city_id": 35,
     "latitude": 38.849976,
     "longitude": 121.515226,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "3"
   },
   {
     "id": "39f9f652-ab3c-4719-899e-f1622b832898",
@@ -24,7 +39,9 @@
     "city_id": 35,
     "latitude": 38.945424,
     "longitude": 121.572069,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
   },
   {
     "id": "67975db2-c387-48c8-a458-d0735a7831ae",
@@ -33,15 +50,8 @@
     "city_id": 35,
     "latitude": 38.975078,
     "longitude": 121.545228,
-    "status": "active"
-  },
-  {
-    "id": "37974646-c250-48af-9f7f-3e93eabe8f5b",
-    "name": "Moutop攀岩馆(凯德和平广场店)",
-    "short_name": "M",
-    "city_id": 35,
-    "latitude": 38.896611,
-    "longitude": 121.588312,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "6"
   }
 ]

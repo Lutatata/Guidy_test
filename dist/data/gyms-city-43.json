@@ -1,12 +1,25 @@
 [
   {
+    "id": "4f2c07a3-c61d-4707-ae2e-adb5ab308894",
+    "name": "FlowC随石攀岩馆",
+    "short_name": "F",
+    "city_id": 43,
+    "latitude": 26.057535,
+    "longitude": 119.28145,
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
+  },
+  {
     "id": "cb760801-7b76-4486-bdb0-2453d23da646",
     "name": "UTopOn乌托攀攀岩馆(白马河公园)",
     "short_name": "U",
     "city_id": 43,
     "latitude": 26.063279,
     "longitude": 119.294463,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "3"
   },
   {
     "id": "9b04a9fd-1dcb-4bc0-93ea-bd823e5981df",
@@ -15,7 +28,9 @@
     "city_id": 43,
     "latitude": 26.484588,
     "longitude": 119.550446,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
   },
   {
     "id": "a001bab2-4400-4245-b0cf-7f834c7d379a",
@@ -24,7 +39,9 @@
     "city_id": 43,
     "latitude": 26.023571,
     "longitude": 119.358459,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
   },
   {
     "id": "eeff267e-7b1d-4499-bd2e-06ae7cafdc61",
@@ -33,15 +50,8 @@
     "city_id": 43,
     "latitude": 26.045727,
     "longitude": 119.273141,
-    "status": "active"
-  },
-  {
-    "id": "4f2c07a3-c61d-4707-ae2e-adb5ab308894",
-    "name": "FlowC随石攀岩馆",
-    "short_name": "F",
-    "city_id": 43,
-    "latitude": 26.057535,
-    "longitude": 119.28145,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
   }
 ]

@@ -189,16 +189,41 @@ export default function MapPage() {
       try {
         const displayName = gym.short_name || gym.name.slice(0, 1);
         const isBanana = gym.name.includes('香蕉') || gym.name.toUpperCase().includes('BANANA');
+        const isYanshi = gym.name.includes('岩时');
+        const isYanwu = gym.name.includes('岩舞');
+        const isLogo = isBanana || isYanshi || isYanwu;
         const bgColor = isBanana ? '#FFD400' : '#f97316';
         const textColor = isBanana ? '#1a1a1a' : 'white';
         const borderColor = 'white';
         const zIndex = isBanana ? 300 : 200;
         
+        let logoPath = '';
+        if (isBanana) logoPath = './logos/香蕉.png';
+        else if (isYanshi) logoPath = './logos/岩时.png';
+        else if (isYanwu) logoPath = './logos/岩舞.png';
+
         const markerId = `marker-${gym.id}`;
+        const size = isLogo ? '40px' : (isBanana ? '36px' : '32px');
+        const sizeNum = parseInt(size);
+        const redDotCountDisplay = gym.red_dot_count || '';
+        const redDotIsPill = redDotCountDisplay.length >= 3;
+        const redDotStyle = redDotIsPill
+          ? `min-width:22px;height:16px;padding:0 3px;border-radius:8px;font-size:9px;`
+          : `width:12px;height:12px;border-radius:50%;font-size:9px;`;
+        const redDotContent = gym.is_red_dot
+          ? (redDotCountDisplay
+              ? `<div style="position:absolute;top:-1px;right:-1px;${redDotStyle}background:#ef4444;z-index:10;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;line-height:1;box-shadow:0 1px 3px rgba(0,0,0,0.3);">${redDotCountDisplay}</div>`
+              : `<div style="position:absolute;top:-1px;right:-1px;width:12px;height:12px;background:#ef4444;border-radius:50%;z-index:10;"></div>`)
+          : '';
+
+        const innerContent = isLogo
+          ? `<img src="${logoPath}" style="width:${size};height:${size};border-radius:10px;object-fit:contain;display:block;" alt="${gym.name.split('(')[0]}"/>`
+          : `<div style="width:${size};height:${size};background:${bgColor};border-radius:10px;display:flex;align-items:center;justify-content:center;color:${textColor};font-weight:${isBanana ? '800' : '700'};font-size:${isBanana ? '14px' : '13px'};box-shadow:${isBanana ? '0 3px 12px rgba(255,212,0,0.5)' : '0 2px 8px rgba(0,0,0,0.25)'};border:2px solid ${borderColor};">${isBanana ? '香' : displayName}</div>`;
+
         const markerContent = `
           <div id="${markerId}" style="position:relative;transform:translate(-50%,-100%);cursor:pointer;">
-            ${gym.is_red_dot ? (gym.red_dot_count ? `<div style="position:absolute;top:-1px;right:-1px;min-width:${gym.red_dot_count.length >= 3 ? '22px' : '12px'};height:${gym.red_dot_count.length >= 3 ? '16px' : '12px'};padding:${gym.red_dot_count.length >= 3 ? '0 3px' : '0'};background:#ef4444;border-radius:${gym.red_dot_count.length >= 3 ? '8px' : '50%'};z-index:10;display:flex;align-items:center;justify-content:center;color:white;font-size:${gym.red_dot_count.length >= 3 ? '9px' : '9px'};font-weight:700;line-height:1;box-shadow:0 1px 3px rgba(0,0,0,0.3);">${gym.red_dot_count}</div>` : '<div style="position:absolute;top:-1px;right:-1px;width:12px;height:12px;background:#ef4444;border-radius:50%;z-index:10;"></div>') : ''}
-            <div style="width:${isBanana ? '36px' : '32px'};height:${isBanana ? '36px' : '32px'};background:${bgColor};border-radius:10px;display:flex;align-items:center;justify-content:center;color:${textColor};font-weight:${isBanana ? '800' : '700'};font-size:${isBanana ? '14px' : '13px'};box-shadow:${isBanana ? '0 3px 12px rgba(255,212,0,0.5)' : '0 2px 8px rgba(0,0,0,0.25)'};border:2px solid ${borderColor};">${isBanana ? '香' : displayName}</div>
+            ${redDotContent}
+            ${innerContent}
           </div>`;
 
         const marker = new AMapObj.Marker({

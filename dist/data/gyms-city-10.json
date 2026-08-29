@@ -6,196 +6,9 @@
     "city_id": 10,
     "latitude": 37.454003,
     "longitude": 118.540884,
-    "status": "active"
-  },
-  {
-    "id": "b0ae28b5-ab11-42b7-9017-bd6f0549149b",
-    "name": "StarValley星之峡攀岩",
-    "short_name": "S",
-    "city_id": 10,
-    "latitude": 37.538364,
-    "longitude": 121.231427,
-    "status": "active"
-  },
-  {
-    "id": "7b43191f-51f8-4f48-8396-29ba0dc8c531",
-    "name": "乐境攀岩(济州上城店)",
-    "short_name": "乐",
-    "city_id": 10,
-    "latitude": 35.396078,
-    "longitude": 116.619582,
-    "status": "active"
-  },
-  {
-    "id": "094d87b2-55d4-4d1f-8f87-e494ba27622d",
-    "name": "乐境攀岩(运河城店)",
-    "short_name": "乐",
-    "city_id": 10,
-    "latitude": 35.407842,
-    "longitude": 116.589914,
-    "status": "active"
-  },
-  {
-    "id": "e2fcb33a-fdcc-47da-9a70-65321911ff45",
-    "name": "云路攀岩 · 跑酷射箭(亚东柒号店)",
-    "short_name": "云",
-    "city_id": 10,
-    "latitude": 37.566931,
-    "longitude": 121.275685,
-    "status": "active"
-  },
-  {
-    "id": "e2820997-622b-4e59-8609-9324e4a0ac73",
-    "name": "岩象攀岩(大悦城店)",
-    "short_name": "岩",
-    "city_id": 10,
-    "latitude": 37.545532,
-    "longitude": 121.38728,
-    "status": "active"
-  },
-  {
-    "id": "abe8f5d7-56c8-444d-9f0d-84e401cb8fac",
-    "name": "岩象攀岩(莱山店)",
-    "short_name": "岩",
-    "city_id": 10,
-    "latitude": 37.469063,
-    "longitude": 121.440934,
-    "status": "active"
-  },
-  {
-    "id": "f479ef84-2ff7-49df-9d58-bd2a86c0ef57",
-    "name": "岩鼠攀岩",
-    "short_name": "岩",
-    "city_id": 10,
-    "latitude": 37.439326,
-    "longitude": 118.586956,
-    "status": "active"
-  },
-  {
-    "id": "933de8ea-d768-48ee-bdd5-d50d3a7d9ab1",
-    "name": "常春藤攀岩馆",
-    "short_name": "常",
-    "city_id": 10,
-    "latitude": 37.556445,
-    "longitude": 122.126783,
-    "status": "active"
-  },
-  {
-    "id": "e2f346e5-e648-4707-a1db-bc296da04808",
-    "name": "抱石熊猫攀岩馆",
-    "short_name": "抱",
-    "city_id": 10,
-    "latitude": 35.250492,
-    "longitude": 115.469866,
-    "status": "active"
-  },
-  {
-    "id": "930cc640-deca-4c8b-b04f-0499c3a9a46a",
-    "name": "敬山攀岩",
-    "short_name": "敬",
-    "city_id": 10,
-    "latitude": 36.851691,
-    "longitude": 118.829093,
-    "status": "active"
-  },
-  {
-    "id": "77b0c71e-96de-4028-a829-b472f4c00566",
-    "name": "梦之队跆拳道少儿体能攀岩馆",
-    "short_name": "梦",
-    "city_id": 10,
-    "latitude": 35.41593,
-    "longitude": 116.97889,
-    "status": "active"
-  },
-  {
-    "id": "9af74549-22ec-427b-8065-d7a820f7520d",
-    "name": "河清岛攀岩中心",
-    "short_name": "河",
-    "city_id": 10,
-    "latitude": 36.687022,
-    "longitude": 121.178977,
-    "status": "active"
-  },
-  {
-    "id": "91f960b0-18da-439b-b5c4-afe33bbd668d",
-    "name": "济宁征途攀岩馆",
-    "short_name": "济",
-    "city_id": 10,
-    "latitude": 35.420779,
-    "longitude": 116.696008,
-    "status": "active"
-  },
-  {
-    "id": "7799d26c-1576-4649-85a0-cc04e3f5f0bd",
-    "name": "淄博魔方攀岩馆",
-    "short_name": "淄",
-    "city_id": 10,
-    "latitude": 36.796575,
-    "longitude": 118.036125,
-    "status": "active"
-  },
-  {
-    "id": "c14fc81e-7671-4f4d-a325-ee81221f0e8f",
-    "name": "烟台市顶攀攀岩馆",
-    "short_name": "烟",
-    "city_id": 10,
-    "latitude": 37.437109,
-    "longitude": 121.452989,
-    "status": "active"
-  },
-  {
-    "id": "8b60c182-a9e1-4c4a-bc0f-73994cfbd441",
-    "name": "璟山攀岩馆",
-    "short_name": "璟",
-    "city_id": 10,
-    "latitude": 37.464919,
-    "longitude": 121.364863,
-    "status": "active"
-  },
-  {
-    "id": "f2efa14d-d626-493c-b612-f1f2666102ee",
-    "name": "胖猴子攀岩馆（唐库二店）",
-    "short_name": "胖",
-    "city_id": 10,
-    "latitude": 36.829741,
-    "longitude": 117.982097,
-    "status": "active"
-  },
-  {
-    "id": "1739714d-bdf2-4c3f-b2e6-1f5260e62e18",
-    "name": "胖猴子攀岩（唐库店）",
-    "short_name": "胖",
-    "city_id": 10,
-    "latitude": 36.796921,
-    "longitude": 118.004877,
-    "status": "active"
-  },
-  {
-    "id": "eba81749-061d-4bb1-9ccc-d449d40449a3",
-    "name": "蜗牛攀岩",
-    "short_name": "蜗",
-    "city_id": 10,
-    "latitude": 37.378967,
-    "longitude": 117.956299,
-    "status": "active"
-  },
-  {
-    "id": "edf0cd60-93da-41d7-b814-74ac597ebcec",
-    "name": "袋鼠攀岩",
-    "short_name": "袋",
-    "city_id": 10,
-    "latitude": 36.70302,
-    "longitude": 119.162094,
-    "status": "active"
-  },
-  {
-    "id": "2b45b6ba-d5ed-4018-bfde-00c5cf5d2b78",
-    "name": "觅峰攀岩",
-    "short_name": "觅",
-    "city_id": 10,
-    "latitude": 36.81141,
-    "longitude": 117.99321,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "5"
   },
   {
     "id": "0ea9b975-c1ef-44a1-90d9-1ba16b242613",
@@ -204,7 +17,53 @@
     "city_id": 10,
     "latitude": 37.443498,
     "longitude": 118.69793,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "1"
+  },
+  {
+    "id": "b0ae28b5-ab11-42b7-9017-bd6f0549149b",
+    "name": "StarValley星之峡攀岩",
+    "short_name": "S",
+    "city_id": 10,
+    "latitude": 37.538364,
+    "longitude": 121.231427,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "7"
+  },
+  {
+    "id": "7b43191f-51f8-4f48-8396-29ba0dc8c531",
+    "name": "乐境攀岩(济州上城店)",
+    "short_name": "乐",
+    "city_id": 10,
+    "latitude": 35.396078,
+    "longitude": 116.619582,
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
+  },
+  {
+    "id": "094d87b2-55d4-4d1f-8f87-e494ba27622d",
+    "name": "乐境攀岩(运河城店)",
+    "short_name": "乐",
+    "city_id": 10,
+    "latitude": 35.407842,
+    "longitude": 116.589914,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
+  },
+  {
+    "id": "e2fcb33a-fdcc-47da-9a70-65321911ff45",
+    "name": "云路攀岩 · 跑酷射箭(亚东柒号店)",
+    "short_name": "云",
+    "city_id": 10,
+    "latitude": 37.566931,
+    "longitude": 121.275685,
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
   },
   {
     "id": "66b74e07-46de-4d59-b502-08f95f359405",
@@ -213,7 +72,163 @@
     "city_id": 10,
     "latitude": 35.4265,
     "longitude": 116.60581,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
+  },
+  {
+    "id": "e2820997-622b-4e59-8609-9324e4a0ac73",
+    "name": "岩象攀岩(大悦城店)",
+    "short_name": "岩",
+    "city_id": 10,
+    "latitude": 37.545532,
+    "longitude": 121.38728,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
+  },
+  {
+    "id": "abe8f5d7-56c8-444d-9f0d-84e401cb8fac",
+    "name": "岩象攀岩(莱山店)",
+    "short_name": "岩",
+    "city_id": 10,
+    "latitude": 37.469063,
+    "longitude": 121.440934,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
+  },
+  {
+    "id": "f479ef84-2ff7-49df-9d58-bd2a86c0ef57",
+    "name": "岩鼠攀岩",
+    "short_name": "岩",
+    "city_id": 10,
+    "latitude": 37.439326,
+    "longitude": 118.586956,
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
+  },
+  {
+    "id": "933de8ea-d768-48ee-bdd5-d50d3a7d9ab1",
+    "name": "常春藤攀岩馆",
+    "short_name": "常",
+    "city_id": 10,
+    "latitude": 37.556445,
+    "longitude": 122.126783,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
+  },
+  {
+    "id": "e2f346e5-e648-4707-a1db-bc296da04808",
+    "name": "抱石熊猫攀岩馆",
+    "short_name": "抱",
+    "city_id": 10,
+    "latitude": 35.250492,
+    "longitude": 115.469866,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "7"
+  },
+  {
+    "id": "930cc640-deca-4c8b-b04f-0499c3a9a46a",
+    "name": "敬山攀岩",
+    "short_name": "敬",
+    "city_id": 10,
+    "latitude": 36.851691,
+    "longitude": 118.829093,
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
+  },
+  {
+    "id": "77b0c71e-96de-4028-a829-b472f4c00566",
+    "name": "梦之队跆拳道少儿体能攀岩馆",
+    "short_name": "梦",
+    "city_id": 10,
+    "latitude": 35.41593,
+    "longitude": 116.97889,
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
+  },
+  {
+    "id": "9af74549-22ec-427b-8065-d7a820f7520d",
+    "name": "河清岛攀岩中心",
+    "short_name": "河",
+    "city_id": 10,
+    "latitude": 36.687022,
+    "longitude": 121.178977,
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
+  },
+  {
+    "id": "91f960b0-18da-439b-b5c4-afe33bbd668d",
+    "name": "济宁征途攀岩馆",
+    "short_name": "济",
+    "city_id": 10,
+    "latitude": 35.420779,
+    "longitude": 116.696008,
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
+  },
+  {
+    "id": "7799d26c-1576-4649-85a0-cc04e3f5f0bd",
+    "name": "淄博魔方攀岩馆",
+    "short_name": "淄",
+    "city_id": 10,
+    "latitude": 36.796575,
+    "longitude": 118.036125,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "1"
+  },
+  {
+    "id": "c14fc81e-7671-4f4d-a325-ee81221f0e8f",
+    "name": "烟台市顶攀攀岩馆",
+    "short_name": "烟",
+    "city_id": 10,
+    "latitude": 37.437109,
+    "longitude": 121.452989,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "7"
+  },
+  {
+    "id": "8b60c182-a9e1-4c4a-bc0f-73994cfbd441",
+    "name": "璟山攀岩馆",
+    "short_name": "璟",
+    "city_id": 10,
+    "latitude": 37.464919,
+    "longitude": 121.364863,
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
+  },
+  {
+    "id": "f2efa14d-d626-493c-b612-f1f2666102ee",
+    "name": "胖猴子攀岩馆（唐库二店）",
+    "short_name": "胖",
+    "city_id": 10,
+    "latitude": 36.829741,
+    "longitude": 117.982097,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "8"
+  },
+  {
+    "id": "1739714d-bdf2-4c3f-b2e6-1f5260e62e18",
+    "name": "胖猴子攀岩（唐库店）",
+    "short_name": "胖",
+    "city_id": 10,
+    "latitude": 36.796921,
+    "longitude": 118.004877,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "5"
   },
   {
     "id": "c68ec499-c76e-46a3-8cfa-ccf0ef01ab9a",
@@ -222,6 +237,41 @@
     "city_id": 10,
     "latitude": 36.707954,
     "longitude": 119.19123,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
+  },
+  {
+    "id": "eba81749-061d-4bb1-9ccc-d449d40449a3",
+    "name": "蜗牛攀岩",
+    "short_name": "蜗",
+    "city_id": 10,
+    "latitude": 37.378967,
+    "longitude": 117.956299,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "4"
+  },
+  {
+    "id": "edf0cd60-93da-41d7-b814-74ac597ebcec",
+    "name": "袋鼠攀岩",
+    "short_name": "袋",
+    "city_id": 10,
+    "latitude": 36.70302,
+    "longitude": 119.162094,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "6"
+  },
+  {
+    "id": "2b45b6ba-d5ed-4018-bfde-00c5cf5d2b78",
+    "name": "觅峰攀岩",
+    "short_name": "觅",
+    "city_id": 10,
+    "latitude": 36.81141,
+    "longitude": 117.99321,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
   }
 ]

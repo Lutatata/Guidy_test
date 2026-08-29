@@ -1,12 +1,25 @@
 [
   {
+    "id": "f08bb8ba-27f4-4ec4-b9a4-3f42b78ebae8",
+    "name": "在野攀岩",
+    "short_name": "在",
+    "city_id": 27,
+    "latitude": 36.105594,
+    "longitude": 120.471565,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "1"
+  },
+  {
     "id": "11b6c388-4e2e-4a5e-aecf-a32924e3933e",
     "name": "大海螺抱石攀岩",
     "short_name": "大",
     "city_id": 27,
     "latitude": 35.968808,
     "longitude": 120.233889,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "6"
   },
   {
     "id": "d1821f32-0ef7-47f3-88fe-184d17e18822",
@@ -15,7 +28,9 @@
     "city_id": 27,
     "latitude": 36.679348,
     "longitude": 116.899154,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
   },
   {
     "id": "00010dbb-ef73-4354-8904-a779ecc0c774",
@@ -24,7 +39,9 @@
     "city_id": 27,
     "latitude": 36.100902,
     "longitude": 120.424858,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
   },
   {
     "id": "3c698e44-0a89-4e09-8320-ca80d8c548ef",
@@ -33,7 +50,9 @@
     "city_id": 27,
     "latitude": 36.408826,
     "longitude": 120.545933,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
   },
   {
     "id": "002cba37-7b6a-4e99-aa83-509c032f4a82",
@@ -42,7 +61,9 @@
     "city_id": 27,
     "latitude": 35.928529,
     "longitude": 120.165779,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
   },
   {
     "id": "5c15bd85-7971-41ad-ae80-dc2ed3a0436c",
@@ -51,25 +72,9 @@
     "city_id": 27,
     "latitude": 36.07972,
     "longitude": 120.37057,
-    "status": "active"
-  },
-  {
-    "id": "f23b00d6-4700-4421-8ada-a3300fe42b54",
-    "name": "青岛菁英攀岩(新都心万科生活广场店)",
-    "short_name": "青",
-    "city_id": 27,
-    "latitude": 36.111081,
-    "longitude": 120.393285,
-    "status": "active"
-  },
-  {
-    "id": "f08bb8ba-27f4-4ec4-b9a4-3f42b78ebae8",
-    "name": "在野攀岩",
-    "short_name": "在",
-    "city_id": 27,
-    "latitude": 36.105594,
-    "longitude": 120.471565,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
   },
   {
     "id": "df4c3ec5-84a9-45f7-afc3-7bf5b9893080",
@@ -78,6 +83,19 @@
     "city_id": 27,
     "latitude": 36.115692,
     "longitude": 120.33714,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "9"
+  },
+  {
+    "id": "f23b00d6-4700-4421-8ada-a3300fe42b54",
+    "name": "青岛菁英攀岩(新都心万科生活广场店)",
+    "short_name": "青",
+    "city_id": 27,
+    "latitude": 36.111081,
+    "longitude": 120.393285,
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
   }
 ]

@@ -6,7 +6,9 @@
     "city_id": 8,
     "latitude": 30.722901,
     "longitude": 120.757229,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
   },
   {
     "id": "d00fcfa3-efe6-4e41-a3ae-42bcd2b45011",
@@ -15,7 +17,9 @@
     "city_id": 8,
     "latitude": 28.629455,
     "longitude": 121.399961,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
   },
   {
     "id": "f7ff02a6-c79a-4b39-9f23-30519ea7a23d",
@@ -24,7 +28,9 @@
     "city_id": 8,
     "latitude": 29.854956,
     "longitude": 121.624925,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
   },
   {
     "id": "add464cb-e33b-4001-8a01-47d1ffc9282a",
@@ -33,7 +39,9 @@
     "city_id": 8,
     "latitude": 29.859702,
     "longitude": 121.612818,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
   },
   {
     "id": "bb25c6ed-04e4-4852-b268-31615708cda3",
@@ -42,7 +50,9 @@
     "city_id": 8,
     "latitude": 29.851071,
     "longitude": 121.549042,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "9"
   },
   {
     "id": "d749d424-fcfc-4c7a-b733-6703229aa05a",
@@ -51,7 +61,9 @@
     "city_id": 8,
     "latitude": 30.874707,
     "longitude": 120.099166,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "9"
   },
   {
     "id": "b1374680-5677-4af9-ba0d-13fbff9cb147",
@@ -60,7 +72,9 @@
     "city_id": 8,
     "latitude": 29.80957,
     "longitude": 121.54303,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "2"
   },
   {
     "id": "7eff6aca-9889-44ed-b6cc-92ea73f5141a",
@@ -69,7 +83,9 @@
     "city_id": 8,
     "latitude": 29.911306,
     "longitude": 121.621041,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "8"
   },
   {
     "id": "05650a9e-5118-493d-a33d-177f32ab91b2",
@@ -78,7 +94,9 @@
     "city_id": 8,
     "latitude": 28.450473,
     "longitude": 119.945068,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "9"
   },
   {
     "id": "99e35417-65ee-41fe-8038-555a01a65701",
@@ -87,7 +105,9 @@
     "city_id": 8,
     "latitude": 30.081141,
     "longitude": 120.489747,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
   },
   {
     "id": "6ade5608-dbad-4ed0-a378-c7c1f65bd089",
@@ -96,7 +116,9 @@
     "city_id": 8,
     "latitude": 29.711844,
     "longitude": 120.23658,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "8"
   },
   {
     "id": "fb07a7ea-13f0-4d64-8982-caaa8a92796b",
@@ -105,7 +127,9 @@
     "city_id": 8,
     "latitude": 30.055299,
     "longitude": 120.573446,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
   },
   {
     "id": "ef6f9de1-037e-4e95-89f9-f7958dec099c",
@@ -114,7 +138,9 @@
     "city_id": 8,
     "latitude": 30.63284,
     "longitude": 120.551192,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "9"
   },
   {
     "id": "f2721876-054b-4d2f-856a-9b90fc2f1121",
@@ -123,142 +149,9 @@
     "city_id": 8,
     "latitude": 29.303688,
     "longitude": 120.077735,
-    "status": "active"
-  },
-  {
-    "id": "13254290-a34b-4803-9528-37890d59914b",
-    "name": "山弧攀岩",
-    "short_name": "山",
-    "city_id": 8,
-    "latitude": 30.706987,
-    "longitude": 120.79219,
-    "status": "active"
-  },
-  {
-    "id": "c44f022c-29aa-4713-8546-ad292d94d2a0",
-    "name": "岩住民攀岩",
-    "short_name": "岩",
-    "city_id": 8,
-    "latitude": 28.675129,
-    "longitude": 121.40927,
-    "status": "active"
-  },
-  {
-    "id": "624dc279-1710-4c29-92b5-28dc3e8e1551",
-    "name": "岩叙攀岩",
-    "short_name": "岩",
-    "city_id": 8,
-    "latitude": 29.869804,
-    "longitude": 121.56178,
-    "status": "active"
-  },
-  {
-    "id": "47971631-d816-45c3-b538-50641f5dbac8",
-    "name": "岩风攀岩馆(杉杉in象店)",
-    "short_name": "岩",
-    "city_id": 8,
-    "latitude": 30.775795,
-    "longitude": 120.72723,
-    "status": "active"
-  },
-  {
-    "id": "78b239a3-3052-4fb9-8789-36264d1b4202",
-    "name": "岩风攀岩馆(秀洲店)",
-    "short_name": "岩",
-    "city_id": 8,
-    "latitude": 30.774854,
-    "longitude": 120.68461,
-    "status": "active"
-  },
-  {
-    "id": "8cf2e6f5-118e-43a9-b75f-81195c26fdb4",
-    "name": "想攀攀岩馆",
-    "short_name": "想",
-    "city_id": 8,
-    "latitude": 30.53884,
-    "longitude": 120.01503,
-    "status": "active"
-  },
-  {
-    "id": "a8981916-f7d7-4cfa-924e-3de9e64e2242",
-    "name": "慈溪市乐攀攀岩馆(糖坊路银泰店)四楼中庭",
-    "short_name": "慈",
-    "city_id": 8,
-    "latitude": 30.169975,
-    "longitude": 121.24821,
-    "status": "active"
-  },
-  {
-    "id": "c4d11fd1-a9ad-4c07-a785-06187a48a6b9",
-    "name": "攀越攀岩",
-    "short_name": "攀",
-    "city_id": 8,
-    "latitude": 30.066449,
-    "longitude": 120.522754,
-    "status": "active"
-  },
-  {
-    "id": "4dbc29c7-070e-492d-bf33-72928e9bdd28",
-    "name": "杰威士攀岩",
-    "short_name": "杰",
-    "city_id": 8,
-    "latitude": 30.516265,
-    "longitude": 119.969066,
-    "status": "active"
-  },
-  {
-    "id": "b3193919-eebb-490d-bf14-3f47d4132cda",
-    "name": "氧攀(东阳分店)",
-    "short_name": "氧",
-    "city_id": 8,
-    "latitude": 29.284946,
-    "longitude": 120.208481,
-    "status": "active"
-  },
-  {
-    "id": "fb7f808f-8da1-4d7c-92ea-c936e310f9b5",
-    "name": "永康市攀首攀岩馆",
-    "short_name": "永",
-    "city_id": 8,
-    "latitude": 28.882176,
-    "longitude": 120.027179,
-    "status": "active"
-  },
-  {
-    "id": "ac428b51-f55a-4132-a294-0f40626b8c66",
-    "name": "绍兴柯桥羊山攀岩中心",
-    "short_name": "绍",
-    "city_id": 8,
-    "latitude": 30.114317,
-    "longitude": 120.540459,
-    "status": "active"
-  },
-  {
-    "id": "57c51a63-af06-49bb-83e4-ef2ce9d351db",
-    "name": "缙云攀岩运动中心",
-    "short_name": "缙",
-    "city_id": 8,
-    "latitude": 28.644428,
-    "longitude": 120.170628,
-    "status": "active"
-  },
-  {
-    "id": "a781144d-ab13-4a89-b53f-7c79edb12e7d",
-    "name": "莱攀岩",
-    "short_name": "莱",
-    "city_id": 8,
-    "latitude": 29.912122,
-    "longitude": 121.634958,
-    "status": "active"
-  },
-  {
-    "id": "3ccc68b9-48af-43ce-a6fa-55c1b887f3fd",
-    "name": "顶噜噜攀岩",
-    "short_name": "顶",
-    "city_id": 8,
-    "latitude": 30.552933,
-    "longitude": 120.945547,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "9"
   },
   {
     "id": "03b6fdb5-6ecb-4a87-a11e-de155553a202",
@@ -267,7 +160,9 @@
     "city_id": 8,
     "latitude": 29.866611,
     "longitude": 121.619278,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "3"
   },
   {
     "id": "27785b5c-2e1e-47b6-b567-5dfe589cb682",
@@ -276,7 +171,130 @@
     "city_id": 8,
     "latitude": 30.610216,
     "longitude": 119.688621,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
+  },
+  {
+    "id": "13254290-a34b-4803-9528-37890d59914b",
+    "name": "山弧攀岩",
+    "short_name": "山",
+    "city_id": 8,
+    "latitude": 30.706987,
+    "longitude": 120.79219,
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
+  },
+  {
+    "id": "c44f022c-29aa-4713-8546-ad292d94d2a0",
+    "name": "岩住民攀岩",
+    "short_name": "岩",
+    "city_id": 8,
+    "latitude": 28.675129,
+    "longitude": 121.40927,
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
+  },
+  {
+    "id": "624dc279-1710-4c29-92b5-28dc3e8e1551",
+    "name": "岩叙攀岩",
+    "short_name": "岩",
+    "city_id": 8,
+    "latitude": 29.869804,
+    "longitude": 121.56178,
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
+  },
+  {
+    "id": "47971631-d816-45c3-b538-50641f5dbac8",
+    "name": "岩风攀岩馆(杉杉in象店)",
+    "short_name": "岩",
+    "city_id": 8,
+    "latitude": 30.775795,
+    "longitude": 120.72723,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "5"
+  },
+  {
+    "id": "78b239a3-3052-4fb9-8789-36264d1b4202",
+    "name": "岩风攀岩馆(秀洲店)",
+    "short_name": "岩",
+    "city_id": 8,
+    "latitude": 30.774854,
+    "longitude": 120.68461,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
+  },
+  {
+    "id": "8cf2e6f5-118e-43a9-b75f-81195c26fdb4",
+    "name": "想攀攀岩馆",
+    "short_name": "想",
+    "city_id": 8,
+    "latitude": 30.53884,
+    "longitude": 120.01503,
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
+  },
+  {
+    "id": "a8981916-f7d7-4cfa-924e-3de9e64e2242",
+    "name": "慈溪市乐攀攀岩馆(糖坊路银泰店)四楼中庭",
+    "short_name": "慈",
+    "city_id": 8,
+    "latitude": 30.169975,
+    "longitude": 121.24821,
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
+  },
+  {
+    "id": "c4d11fd1-a9ad-4c07-a785-06187a48a6b9",
+    "name": "攀越攀岩",
+    "short_name": "攀",
+    "city_id": 8,
+    "latitude": 30.066449,
+    "longitude": 120.522754,
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
+  },
+  {
+    "id": "4dbc29c7-070e-492d-bf33-72928e9bdd28",
+    "name": "杰威士攀岩",
+    "short_name": "杰",
+    "city_id": 8,
+    "latitude": 30.516265,
+    "longitude": 119.969066,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
+  },
+  {
+    "id": "b3193919-eebb-490d-bf14-3f47d4132cda",
+    "name": "氧攀(东阳分店)",
+    "short_name": "氧",
+    "city_id": 8,
+    "latitude": 29.284946,
+    "longitude": 120.208481,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "9"
+  },
+  {
+    "id": "fb7f808f-8da1-4d7c-92ea-c936e310f9b5",
+    "name": "永康市攀首攀岩馆",
+    "short_name": "永",
+    "city_id": 8,
+    "latitude": 28.882176,
+    "longitude": 120.027179,
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
   },
   {
     "id": "f07cbd64-bdc6-44bd-8ec2-9369d7e6ee56",
@@ -285,6 +303,52 @@
     "city_id": 8,
     "latitude": 30.19607,
     "longitude": 121.277245,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "4"
+  },
+  {
+    "id": "ac428b51-f55a-4132-a294-0f40626b8c66",
+    "name": "绍兴柯桥羊山攀岩中心",
+    "short_name": "绍",
+    "city_id": 8,
+    "latitude": 30.114317,
+    "longitude": 120.540459,
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
+  },
+  {
+    "id": "57c51a63-af06-49bb-83e4-ef2ce9d351db",
+    "name": "缙云攀岩运动中心",
+    "short_name": "缙",
+    "city_id": 8,
+    "latitude": 28.644428,
+    "longitude": 120.170628,
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
+  },
+  {
+    "id": "a781144d-ab13-4a89-b53f-7c79edb12e7d",
+    "name": "莱攀岩",
+    "short_name": "莱",
+    "city_id": 8,
+    "latitude": 29.912122,
+    "longitude": 121.634958,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "2"
+  },
+  {
+    "id": "3ccc68b9-48af-43ce-a6fa-55c1b887f3fd",
+    "name": "顶噜噜攀岩",
+    "short_name": "顶",
+    "city_id": 8,
+    "latitude": 30.552933,
+    "longitude": 120.945547,
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
   }
 ]
