@@ -916,7 +916,7 @@ export default function MapPage() {
                         <div className="relative aspect-[3/4] bg-black">
                           <img
                             className="w-full h-full object-cover"
-                            src={`./videos/video${i}.jpg`}
+                            src={`./videos/video${i}.webp`}
                             alt={`视频${i}`}
                           />
                           {/* 播放图标覆盖 */}
