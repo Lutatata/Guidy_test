@@ -51,7 +51,7 @@ html, body {
 }
 
 .animate-slide-up {
-  animation: slide-up 0.6s ease-out;
+  animation: slide-up 0.3s ease-out;
 }
 
 /* 用户位置脉冲动画 */
