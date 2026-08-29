@@ -197,8 +197,8 @@ export default function MapPage() {
         const markerId = `marker-${gym.id}`;
         const markerContent = `
           <div id="${markerId}" style="position:relative;transform:translate(-50%,-100%);cursor:pointer;">
-            ${gym.is_red_dot ? '<div style="position:absolute;top:-1px;right:-1px;width:12px;height:12px;background:#ef4444;border-radius:50%;z-index:10;"></div>' : ''}
-            <div style="width:${isBanana ? '36px' : '32px'};height:${isBanana ? '36px' : '32px'};background:${bgColor};border-radius:50%;display:flex;align-items:center;justify-content:center;color:${textColor};font-weight:${isBanana ? '800' : '700'};font-size:${isBanana ? '14px' : '13px'};box-shadow:${isBanana ? '0 3px 12px rgba(255,212,0,0.5)' : '0 2px 8px rgba(0,0,0,0.25)'};border:2px solid ${borderColor};">${isBanana ? '香' : displayName}</div>
+            ${gym.is_red_dot ? (gym.red_dot_count ? `<div style="position:absolute;top:-1px;right:-1px;min-width:${gym.red_dot_count.length >= 3 ? '22px' : '12px'};height:${gym.red_dot_count.length >= 3 ? '16px' : '12px'};padding:${gym.red_dot_count.length >= 3 ? '0 3px' : '0'};background:#ef4444;border-radius:${gym.red_dot_count.length >= 3 ? '8px' : '50%'};z-index:10;display:flex;align-items:center;justify-content:center;color:white;font-size:${gym.red_dot_count.length >= 3 ? '9px' : '9px'};font-weight:700;line-height:1;box-shadow:0 1px 3px rgba(0,0,0,0.3);">${gym.red_dot_count}</div>` : '<div style="position:absolute;top:-1px;right:-1px;width:12px;height:12px;background:#ef4444;border-radius:50%;z-index:10;"></div>') : ''}
+            <div style="width:${isBanana ? '36px' : '32px'};height:${isBanana ? '36px' : '32px'};background:${bgColor};border-radius:10px;display:flex;align-items:center;justify-content:center;color:${textColor};font-weight:${isBanana ? '800' : '700'};font-size:${isBanana ? '14px' : '13px'};box-shadow:${isBanana ? '0 3px 12px rgba(255,212,0,0.5)' : '0 2px 8px rgba(0,0,0,0.25)'};border:2px solid ${borderColor};">${isBanana ? '香' : displayName}</div>
           </div>`;
 
         const marker = new AMapObj.Marker({

@@ -17,6 +17,7 @@ export interface GymBase {
   longitude: number | null;
   status: string;
   is_red_dot?: boolean;
+  red_dot_count?: string | null;
 }
 
 // 岩馆列表项
