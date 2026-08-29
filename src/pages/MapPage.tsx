@@ -203,9 +203,7 @@ export default function MapPage() {
         else if (isYanwu) logoPath = './logos/岩舞.png';
 
         const markerId = `marker-${gym.id}`;
-        let size = '32px';
-        if (isBanana || isYanshi) size = '48px';
-        else if (isYanwu) size = '40px';
+        let size = isLogo ? '40px' : '32px';
         const sizeNum = parseInt(size);
         const redDotCountDisplay = gym.red_dot_count || '';
         const redDotIsPill = redDotCountDisplay.length >= 3;
