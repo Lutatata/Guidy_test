@@ -54,6 +54,21 @@ html, body {
   animation: slide-up 0.3s ease-out;
 }
 
+@keyframes slide-down {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.animate-slide-down {
+  animation: slide-down 0.3s ease-in forwards;
+}
+
 /* 用户位置脉冲动画 */
 @keyframes pulse {
   0% {

@@ -38,7 +38,17 @@ export default function MapPage() {
   const [loading, setLoading] = useState(true);
   const [showCityDrawer, setShowCityDrawer] = useState(false);
   const [selectedGym, setSelectedGym] = useState<GymBase | null>(null);
+  const [isClosing, setIsClosing] = useState(false);
   const [selectedGymDetail, setSelectedGymDetail] = useState<GymDetail | null>(null);
+
+  const closeCard = () => {
+    setIsClosing(true);
+    setTimeout(() => {
+      setSelectedGym(null);
+      setSelectedGymDetail(null);
+      setIsClosing(false);
+    }, 300);
+  };
   const [keyword, setKeyword] = useState('');
   const [userLocation, setUserLocation] = useState<{ lng: number; lat: number } | null>(null);
   const [locating, setLocating] = useState(false);
@@ -172,7 +182,7 @@ export default function MapPage() {
         return;
       }
       console.log('Map clicked, clearing selection');
-      setSelectedGym(null);
+      closeCard();
       setSelectedGymDetail(null);
     });
 
@@ -291,7 +301,7 @@ export default function MapPage() {
     setCityId(id);
     setCityName(name);
     setShowCityDrawer(false);
-    setSelectedGym(null);
+    closeCard();
     // 清除导航
     if (showNavigationRef.current) {
       closeNavigation();
@@ -721,7 +731,7 @@ export default function MapPage() {
     navDestinationRef.current = dest;
 
     // 隐藏卡片，显示导航面板
-    setSelectedGym(null);
+    closeCard();
     setSelectedGymDetail(null);
     setShowNavigation(true);
     showNavigationRef.current = true;
@@ -889,7 +899,7 @@ export default function MapPage() {
 
         {/* 悬浮卡片 - 选中岩馆时显示 */}
         {selectedGym && (
-          <div className="absolute top-[40px] bottom-[90px] left-[26px] right-[26px] z-50 animate-slide-up flex flex-col">
+          <div className={`absolute top-[40px] bottom-[90px] left-[26px] right-[26px] z-50 ${isClosing ? 'animate-slide-down' : 'animate-slide-up'} flex flex-col`}>
             <div onClick={(e) => e.stopPropagation()} className="bg-[#F6E199] rounded-[20px] shadow-2xl overflow-hidden flex flex-col h-full">
               {/* 拖拽手柄 - 下滑关闭 */}
               <div
@@ -898,7 +908,7 @@ export default function MapPage() {
                 onTouchMove={(e) => {
                   const deltaY = e.touches[0].clientY - touchStartYRef.current;
                   if (deltaY > 60) {
-                    setSelectedGym(null);
+                    closeCard();
                   }
                 }}
                 onTouchEnd={() => { touchStartYRef.current = 0; }}
