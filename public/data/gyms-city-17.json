@@ -6,7 +6,9 @@
     "city_id": 17,
     "latitude": 32.404595,
     "longitude": 119.477648,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "4"
   },
   {
     "id": "794d418a-70a5-4dab-8474-de9bd4f29558",
@@ -15,7 +17,9 @@
     "city_id": 17,
     "latitude": 32.380838,
     "longitude": 119.397608,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "7"
   },
   {
     "id": "566d5b52-fd65-4bbd-8f8a-766c16aa72e0",
@@ -24,7 +28,9 @@
     "city_id": 17,
     "latitude": 34.268003,
     "longitude": 117.203237,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "4"
   },
   {
     "id": "cc7893a1-aeeb-4432-ba15-1971a26153f6",
@@ -33,7 +39,9 @@
     "city_id": 17,
     "latitude": 31.86052,
     "longitude": 119.955086,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
   },
   {
     "id": "5f21c57b-755e-4fe4-8f95-d6b6ed120b48",
@@ -42,7 +50,9 @@
     "city_id": 17,
     "latitude": 33.297229,
     "longitude": 120.216818,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "8"
   },
   {
     "id": "ecaf1a9e-d439-469a-bde2-a95f9bd14e5a",
@@ -51,7 +61,9 @@
     "city_id": 17,
     "latitude": 31.765082,
     "longitude": 119.950479,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "7"
   },
   {
     "id": "626681c0-ea34-4335-86e5-2344d4c48756",
@@ -60,7 +72,9 @@
     "city_id": 17,
     "latitude": 31.733329,
     "longitude": 119.948303,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
   },
   {
     "id": "f7effabb-11a1-4949-95d2-80c3e504096a",
@@ -69,7 +83,9 @@
     "city_id": 17,
     "latitude": 31.975608,
     "longitude": 120.897329,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "1"
   },
   {
     "id": "21305067-ffed-4290-a00f-4cc8c20bdde3",
@@ -78,7 +94,9 @@
     "city_id": 17,
     "latitude": 31.780394,
     "longitude": 119.95577,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "2"
   },
   {
     "id": "cefb8c57-7972-4372-ac2d-999ff95c73fd",
@@ -87,7 +105,9 @@
     "city_id": 17,
     "latitude": 33.21174,
     "longitude": 120.45386,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
   },
   {
     "id": "9f6dbc75-7d78-4199-a96d-2c3c4c0aa27f",
@@ -96,7 +116,9 @@
     "city_id": 17,
     "latitude": 31.826627,
     "longitude": 119.950438,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "4"
   },
   {
     "id": "b8bc6c60-9656-4695-b59a-8f2abd031912",
@@ -105,7 +127,9 @@
     "city_id": 17,
     "latitude": 34.226373,
     "longitude": 117.296612,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "2"
   },
   {
     "id": "50c2675d-befb-4c38-9343-f3222e04ff1c",
@@ -114,7 +138,9 @@
     "city_id": 17,
     "latitude": 31.666231,
     "longitude": 119.96507,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "3"
   },
   {
     "id": "a1d6326b-77f0-4a4e-b276-df58cde906f0",
@@ -123,7 +149,9 @@
     "city_id": 17,
     "latitude": 34.253216,
     "longitude": 117.246276,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "3"
   },
   {
     "id": "a6c5aade-bf01-4928-b4a2-62d1a9877a30",
@@ -132,7 +160,9 @@
     "city_id": 17,
     "latitude": 32.312196,
     "longitude": 119.917116,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "8"
   },
   {
     "id": "ee023f10-4c10-466a-86a2-e0d4f6a785a6",
@@ -141,6 +171,8 @@
     "city_id": 17,
     "latitude": 33.370808,
     "longitude": 120.15654,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "8"
   }
 ]

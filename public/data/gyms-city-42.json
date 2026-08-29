@@ -6,7 +6,9 @@
     "city_id": 42,
     "latitude": 27.81891,
     "longitude": 113.12214,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
   },
   {
     "id": "7122c9df-42dd-4ccf-b72e-97d2b7adeb5a",
@@ -15,7 +17,9 @@
     "city_id": 42,
     "latitude": 29.065067,
     "longitude": 111.696687,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
   },
   {
     "id": "22dd8067-fcae-4391-9b2d-11382ef15c06",
@@ -24,7 +28,9 @@
     "city_id": 42,
     "latitude": 26.450214,
     "longitude": 110.85031,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "5"
   },
   {
     "id": "d6eaac64-6f22-4335-aca7-99de21f0fe6f",
@@ -33,7 +39,9 @@
     "city_id": 42,
     "latitude": 27.838373,
     "longitude": 112.917903,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "7"
   },
   {
     "id": "b9fbfc17-b92e-4b38-86e7-256898897dd0",
@@ -42,6 +50,8 @@
     "city_id": 42,
     "latitude": 29.02612,
     "longitude": 111.697556,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
   }
 ]

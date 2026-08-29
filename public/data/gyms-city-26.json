@@ -6,7 +6,9 @@
     "city_id": 26,
     "latitude": 29.560849,
     "longitude": 103.75527,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "7"
   },
   {
     "id": "a044d53f-f40e-410d-a663-5167b5426f95",
@@ -15,7 +17,9 @@
     "city_id": 26,
     "latitude": 31.105784,
     "longitude": 104.418701,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "7"
   },
   {
     "id": "b6b818f7-c1bd-4a51-9eea-3b8546b22e35",
@@ -24,7 +28,9 @@
     "city_id": 26,
     "latitude": 30.095556,
     "longitude": 103.877786,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "8"
   },
   {
     "id": "2dc0fe18-a3b7-4146-b809-cfe245782e2d",
@@ -33,7 +39,9 @@
     "city_id": 26,
     "latitude": 28.894501,
     "longitude": 105.408807,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
   },
   {
     "id": "ca943b92-1e96-45c5-8082-768f93a59555",
@@ -42,7 +50,9 @@
     "city_id": 26,
     "latitude": 28.75533,
     "longitude": 104.649181,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
   },
   {
     "id": "9ea27c55-bf2d-4fd3-aa8f-7ce5c279b15f",
@@ -51,7 +61,9 @@
     "city_id": 26,
     "latitude": 29.331711,
     "longitude": 104.74102,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
   },
   {
     "id": "92b5652c-6421-4f88-8925-2eb6c06d940f",
@@ -60,7 +72,9 @@
     "city_id": 26,
     "latitude": 31.454415,
     "longitude": 104.689155,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
   },
   {
     "id": "deba5c6f-bbeb-4a55-993f-0c2f6db8da0f",
@@ -69,7 +83,9 @@
     "city_id": 26,
     "latitude": 31.449983,
     "longitude": 104.729243,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "3"
   },
   {
     "id": "1e27b42e-ad80-42b1-9f20-1c815c1621a2",
@@ -78,6 +94,8 @@
     "city_id": 26,
     "latitude": 31.45499,
     "longitude": 104.685722,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
   }
 ]

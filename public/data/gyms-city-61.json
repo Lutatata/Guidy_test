@@ -6,6 +6,8 @@
     "city_id": 61,
     "latitude": 18.411334,
     "longitude": 109.900079,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "6"
   }
 ]

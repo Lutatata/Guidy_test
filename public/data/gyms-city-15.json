@@ -1,12 +1,25 @@
 [
   {
+    "id": "1ab1982b-7461-48da-bc4b-975ad35fb168",
+    "name": "LOOPER CLIMBING",
+    "short_name": "L",
+    "city_id": 15,
+    "latitude": 32.00969,
+    "longitude": 118.77441,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "9"
+  },
+  {
     "id": "4afd54bd-38dd-4484-849e-9d289e4cbf6c",
     "name": "MOJO CLIMBING 攀岩",
     "short_name": "M",
     "city_id": 15,
     "latitude": 32.023892,
     "longitude": 118.770213,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
   },
   {
     "id": "3bcfd6ed-857d-4b60-a6a4-f732289dcb40",
@@ -15,7 +28,9 @@
     "city_id": 15,
     "latitude": 32.000235,
     "longitude": 118.846785,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "9"
   },
   {
     "id": "8db27757-a984-4514-a632-498fae48e576",
@@ -24,7 +39,9 @@
     "city_id": 15,
     "latitude": 32.093894,
     "longitude": 118.824905,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "8"
   },
   {
     "id": "33293ada-86f9-44cb-9da5-cc745d3e3fa6",
@@ -33,7 +50,9 @@
     "city_id": 15,
     "latitude": 32.069346,
     "longitude": 118.779842,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
   },
   {
     "id": "2d0335a9-be31-4922-9176-f4c77fc8133f",
@@ -42,124 +61,9 @@
     "city_id": 15,
     "latitude": 32.044403,
     "longitude": 118.787707,
-    "status": "active"
-  },
-  {
-    "id": "1c9f7cb7-29ee-4a93-8ec2-ffe8e12cbd40",
-    "name": "新境攀岩",
-    "short_name": "新",
-    "city_id": 15,
-    "latitude": 32.123509,
-    "longitude": 118.833688,
-    "status": "active"
-  },
-  {
-    "id": "354fba2c-5bb2-45ae-852f-5c5d256ff0f5",
-    "name": "此山攀岩(南京华贸中心店)",
-    "short_name": "此",
-    "city_id": 15,
-    "latitude": 32.079666,
-    "longitude": 118.78242,
-    "status": "active"
-  },
-  {
-    "id": "9b1ad221-a0b6-4797-903b-615f12f40a5b",
-    "name": "石刻攀岩(南邮广场/仙林附中馆)",
-    "short_name": "石",
-    "city_id": 15,
-    "latitude": 32.119457,
-    "longitude": 118.925206,
-    "status": "active"
-  },
-  {
-    "id": "82c3546f-0f08-49ee-98bf-ace43c5e26ce",
-    "name": "石刻攀岩(印象汇馆)",
-    "short_name": "石",
-    "city_id": 15,
-    "latitude": 32.140087,
-    "longitude": 118.722501,
-    "status": "active"
-  },
-  {
-    "id": "f1e9d0ca-eee0-4b29-bd4f-5746ecd01d04",
-    "name": "石刻攀岩(新尧金地广场店)",
-    "short_name": "石",
-    "city_id": 15,
-    "latitude": 32.123639,
-    "longitude": 118.888655,
-    "status": "active"
-  },
-  {
-    "id": "3748ba88-08de-4d61-99a1-77fed852177f",
-    "name": "石刻攀岩（旗舰馆）",
-    "short_name": "石",
-    "city_id": 15,
-    "latitude": 32.075201,
-    "longitude": 118.808545,
-    "status": "active"
-  },
-  {
-    "id": "6064fd66-04f5-45e0-97e2-afcca6ace95c",
-    "name": "考拉攀岩koolahclimbing",
-    "short_name": "考",
-    "city_id": 15,
-    "latitude": 32.064306,
-    "longitude": 118.813451,
-    "status": "active"
-  },
-  {
-    "id": "af8a46fe-f1ab-494a-855b-2b283ffaa92c",
-    "name": "蓝鲸攀岩(太阳城店)",
-    "short_name": "蓝",
-    "city_id": 15,
-    "latitude": 31.927333,
-    "longitude": 118.825104,
-    "status": "active"
-  },
-  {
-    "id": "aa140086-6783-47c5-a723-b7b174165283",
-    "name": "蓝鲸攀岩(太阳城抱石店)",
-    "short_name": "蓝",
-    "city_id": 15,
-    "latitude": 31.927438,
-    "longitude": 118.822036,
-    "status": "active"
-  },
-  {
-    "id": "2c87dee6-d4cb-43f1-a188-63dc77953467",
-    "name": "蓝鲸攀岩(河西中胜店)",
-    "short_name": "蓝",
-    "city_id": 15,
-    "latitude": 31.982784,
-    "longitude": 118.733738,
-    "status": "active"
-  },
-  {
-    "id": "be865e17-52e2-4c9d-a6a6-2540aa24da00",
-    "name": "蓝鲸攀岩(越界梦幻城店)",
-    "short_name": "蓝",
-    "city_id": 15,
-    "latitude": 32.036726,
-    "longitude": 118.773671,
-    "status": "active"
-  },
-  {
-    "id": "616f5848-d255-4fd1-a45b-4bea61d9b3c8",
-    "name": "蓝鲸攀岩(集庆门店)",
-    "short_name": "蓝",
-    "city_id": 15,
-    "latitude": 32.015776,
-    "longitude": 118.76895,
-    "status": "active"
-  },
-  {
-    "id": "1ab1982b-7461-48da-bc4b-975ad35fb168",
-    "name": "LOOPER CLIMBING",
-    "short_name": "L",
-    "city_id": 15,
-    "latitude": 32.00969,
-    "longitude": 118.77441,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "5"
   },
   {
     "id": "fe54f439-037c-4d68-8105-547183f5c647",
@@ -168,6 +72,140 @@
     "city_id": 15,
     "latitude": 31.6172752380371,
     "longitude": 119.027099609375,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "4"
+  },
+  {
+    "id": "1c9f7cb7-29ee-4a93-8ec2-ffe8e12cbd40",
+    "name": "新境攀岩",
+    "short_name": "新",
+    "city_id": 15,
+    "latitude": 32.123509,
+    "longitude": 118.833688,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "9"
+  },
+  {
+    "id": "354fba2c-5bb2-45ae-852f-5c5d256ff0f5",
+    "name": "此山攀岩(南京华贸中心店)",
+    "short_name": "此",
+    "city_id": 15,
+    "latitude": 32.079666,
+    "longitude": 118.78242,
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
+  },
+  {
+    "id": "9b1ad221-a0b6-4797-903b-615f12f40a5b",
+    "name": "石刻攀岩(南邮广场/仙林附中馆)",
+    "short_name": "石",
+    "city_id": 15,
+    "latitude": 32.119457,
+    "longitude": 118.925206,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
+  },
+  {
+    "id": "82c3546f-0f08-49ee-98bf-ace43c5e26ce",
+    "name": "石刻攀岩(印象汇馆)",
+    "short_name": "石",
+    "city_id": 15,
+    "latitude": 32.140087,
+    "longitude": 118.722501,
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
+  },
+  {
+    "id": "f1e9d0ca-eee0-4b29-bd4f-5746ecd01d04",
+    "name": "石刻攀岩(新尧金地广场店)",
+    "short_name": "石",
+    "city_id": 15,
+    "latitude": 32.123639,
+    "longitude": 118.888655,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "4"
+  },
+  {
+    "id": "3748ba88-08de-4d61-99a1-77fed852177f",
+    "name": "石刻攀岩（旗舰馆）",
+    "short_name": "石",
+    "city_id": 15,
+    "latitude": 32.075201,
+    "longitude": 118.808545,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "8"
+  },
+  {
+    "id": "6064fd66-04f5-45e0-97e2-afcca6ace95c",
+    "name": "考拉攀岩koolahclimbing",
+    "short_name": "考",
+    "city_id": 15,
+    "latitude": 32.064306,
+    "longitude": 118.813451,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "9"
+  },
+  {
+    "id": "af8a46fe-f1ab-494a-855b-2b283ffaa92c",
+    "name": "蓝鲸攀岩(太阳城店)",
+    "short_name": "蓝",
+    "city_id": 15,
+    "latitude": 31.927333,
+    "longitude": 118.825104,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "2"
+  },
+  {
+    "id": "aa140086-6783-47c5-a723-b7b174165283",
+    "name": "蓝鲸攀岩(太阳城抱石店)",
+    "short_name": "蓝",
+    "city_id": 15,
+    "latitude": 31.927438,
+    "longitude": 118.822036,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
+  },
+  {
+    "id": "2c87dee6-d4cb-43f1-a188-63dc77953467",
+    "name": "蓝鲸攀岩(河西中胜店)",
+    "short_name": "蓝",
+    "city_id": 15,
+    "latitude": 31.982784,
+    "longitude": 118.733738,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "6"
+  },
+  {
+    "id": "be865e17-52e2-4c9d-a6a6-2540aa24da00",
+    "name": "蓝鲸攀岩(越界梦幻城店)",
+    "short_name": "蓝",
+    "city_id": 15,
+    "latitude": 32.036726,
+    "longitude": 118.773671,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "1"
+  },
+  {
+    "id": "616f5848-d255-4fd1-a45b-4bea61d9b3c8",
+    "name": "蓝鲸攀岩(集庆门店)",
+    "short_name": "蓝",
+    "city_id": 15,
+    "latitude": 32.015776,
+    "longitude": 118.76895,
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
   }
 ]
