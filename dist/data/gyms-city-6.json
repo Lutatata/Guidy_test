@@ -1,16 +1,5 @@
 [
   {
-    "id": "6fdf6cc2-5b40-4e69-832b-04b4af8b3867",
-    "name": "凯乐石磐石空间",
-    "short_name": "凯",
-    "city_id": 6,
-    "latitude": 23.137111,
-    "longitude": 113.326444,
-    "status": "active",
-    "is_red_dot": true,
-    "red_dot_count": "8"
-  },
-  {
     "id": "d2ccc91a-1534-4060-914b-751ae0bb3565",
     "name": "Besloower 抱石馆",
     "short_name": "B",
@@ -19,7 +8,8 @@
     "longitude": 113.61453,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "10+"
+    "red_dot_count": "10+",
+    "logo": null
   },
   {
     "id": "cdb4b1e5-1aae-496b-be54-43a51f1a38b6",
@@ -30,7 +20,8 @@
     "longitude": 113.34666,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "10+"
+    "red_dot_count": "10+",
+    "logo": null
   },
   {
     "id": "bfc4f9ca-ba7c-4852-9736-9c2c48bc1608",
@@ -41,7 +32,8 @@
     "longitude": 113.260284,
     "status": "active",
     "is_red_dot": false,
-    "red_dot_count": null
+    "red_dot_count": null,
+    "logo": null
   },
   {
     "id": "d79c5265-cb8c-4ecd-86bb-83aa68438ab6",
@@ -52,7 +44,8 @@
     "longitude": 113.327723,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "6"
+    "red_dot_count": "6",
+    "logo": null
   },
   {
     "id": "5da30fe4-445e-4dad-9039-12b85f9b0bbf",
@@ -63,7 +56,8 @@
     "longitude": 113.551677,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "10+"
+    "red_dot_count": "10+",
+    "logo": null
   },
   {
     "id": "08226af0-b98b-4cab-8ceb-2e96a7bd8f20",
@@ -74,7 +68,8 @@
     "longitude": 113.258252,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "4"
+    "red_dot_count": "4",
+    "logo": null
   },
   {
     "id": "317f9e8a-5a8c-4074-98ac-50bc8bad6d9b",
@@ -85,7 +80,8 @@
     "longitude": 113.284153,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "2"
+    "red_dot_count": "2",
+    "logo": null
   },
   {
     "id": "43347c28-2088-4bed-a4f0-ddc808a33bcf",
@@ -96,7 +92,8 @@
     "longitude": 113.378406,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "1"
+    "red_dot_count": "1",
+    "logo": null
   },
   {
     "id": "325a5b93-8ee4-41e9-a230-bf4ff9d99f7d",
@@ -107,7 +104,20 @@
     "longitude": 113.31499,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "10+"
+    "red_dot_count": "10+",
+    "logo": null
+  },
+  {
+    "id": "6fdf6cc2-5b40-4e69-832b-04b4af8b3867",
+    "name": "凯乐石磐石空间",
+    "short_name": "凯",
+    "city_id": 6,
+    "latitude": 23.137111,
+    "longitude": 113.326444,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "8",
+    "logo": null
   },
   {
     "id": "2f100342-b4d4-4a38-bc9d-49a5065d1434",
@@ -118,7 +128,8 @@
     "longitude": 113.411423,
     "status": "active",
     "is_red_dot": false,
-    "red_dot_count": null
+    "red_dot_count": null,
+    "logo": null
   },
   {
     "id": "bbecd667-62d2-4f44-8604-fe98f2e2b2c1",
@@ -129,7 +140,8 @@
     "longitude": 113.351945,
     "status": "active",
     "is_red_dot": false,
-    "red_dot_count": null
+    "red_dot_count": null,
+    "logo": null
   },
   {
     "id": "c919ef29-c41a-4b7f-9625-5eff1c7bcac4",
@@ -140,7 +152,8 @@
     "longitude": 113.262042,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "4"
+    "red_dot_count": "4",
+    "logo": null
   },
   {
     "id": "e82d9375-04d2-49aa-acef-bca9f8eb21af",
@@ -151,7 +164,8 @@
     "longitude": 113.254404,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "4"
+    "red_dot_count": "4",
+    "logo": null
   },
   {
     "id": "2b762338-71ce-4d44-b136-fac7ff182f43",
@@ -162,18 +176,8 @@
     "longitude": 113.341756,
     "status": "active",
     "is_red_dot": false,
-    "red_dot_count": null
-  },
-  {
-    "id": "4b7cfa8a-d72c-4e22-9308-6013d0897f2f",
-    "name": "黑喵攀岩馆",
-    "short_name": "黑",
-    "city_id": 6,
-    "latitude": 22.971056,
-    "longitude": 113.33666,
-    "status": "active",
-    "is_red_dot": true,
-    "red_dot_count": "2"
+    "red_dot_count": null,
+    "logo": null
   },
   {
     "id": "39b43031-261b-466f-9007-cff8238e5091",
@@ -184,7 +188,8 @@
     "longitude": 113.617888,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "5"
+    "red_dot_count": "5",
+    "logo": null
   },
   {
     "id": "0a603259-1c05-4b62-9f0a-81bcc69a0cb7",
@@ -195,7 +200,8 @@
     "longitude": 113.377314,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "10+"
+    "red_dot_count": "10+",
+    "logo": null
   },
   {
     "id": "df3f4297-036e-44a6-8458-1945c7cc5c8a",
@@ -206,7 +212,8 @@
     "longitude": 113.396638,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "10+"
+    "red_dot_count": "10+",
+    "logo": null
   },
   {
     "id": "1fac767e-f0a3-4a2b-bc41-40cdfe392dc8",
@@ -217,7 +224,8 @@
     "longitude": 113.50295,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "9"
+    "red_dot_count": "9",
+    "logo": null
   },
   {
     "id": "c462a813-41e2-4f9a-a957-30cb870aac73",
@@ -228,7 +236,8 @@
     "longitude": 113.37154,
     "status": "active",
     "is_red_dot": false,
-    "red_dot_count": null
+    "red_dot_count": null,
+    "logo": null
   },
   {
     "id": "5fef0fad-ca27-4e28-8710-29cad8b37e7d",
@@ -239,7 +248,8 @@
     "longitude": 113.29734,
     "status": "active",
     "is_red_dot": false,
-    "red_dot_count": null
+    "red_dot_count": null,
+    "logo": null
   },
   {
     "id": "dbedf525-b178-4519-b4b7-49b662128324",
@@ -250,7 +260,8 @@
     "longitude": 113.273495,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "9"
+    "red_dot_count": "9",
+    "logo": null
   },
   {
     "id": "ee5f8137-8ee8-49e1-9ce0-94557cb5b887",
@@ -261,7 +272,8 @@
     "longitude": 113.417649,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "1"
+    "red_dot_count": "1",
+    "logo": null
   },
   {
     "id": "a7840f30-e1e1-420e-9e5c-7b952e15d0c0",
@@ -272,7 +284,8 @@
     "longitude": 113.36209,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "5"
+    "red_dot_count": "5",
+    "logo": null
   },
   {
     "id": "cd1f764d-db38-476a-8173-33bac4805c6f",
@@ -283,7 +296,8 @@
     "longitude": 113.244118,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "5"
+    "red_dot_count": "5",
+    "logo": null
   },
   {
     "id": "e70ec234-84c4-4a14-afa6-e8a9a470333f",
@@ -294,7 +308,8 @@
     "longitude": 113.242844,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "7"
+    "red_dot_count": "7",
+    "logo": null
   },
   {
     "id": "539638ff-25d1-49c5-aa8c-d16b404d4928",
@@ -305,7 +320,8 @@
     "longitude": 113.235716,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "6"
+    "red_dot_count": "6",
+    "logo": null
   },
   {
     "id": "8c2b89d9-8db4-4501-8cab-0abf964e4750",
@@ -316,7 +332,8 @@
     "longitude": 113.386428,
     "status": "active",
     "is_red_dot": false,
-    "red_dot_count": null
+    "red_dot_count": null,
+    "logo": null
   },
   {
     "id": "35a9a022-6d88-4cae-b466-5c0250797b7f",
@@ -327,7 +344,8 @@
     "longitude": 113.45176,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "9"
+    "red_dot_count": "9",
+    "logo": null
   },
   {
     "id": "6cb5883d-7528-4d0e-b081-ea2f369ee3eb",
@@ -338,7 +356,8 @@
     "longitude": 113.519696,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "4"
+    "red_dot_count": "4",
+    "logo": null
   },
   {
     "id": "9503d91f-a366-4ad4-b327-e88cf408db29",
@@ -349,7 +368,8 @@
     "longitude": 113.346756,
     "status": "active",
     "is_red_dot": false,
-    "red_dot_count": null
+    "red_dot_count": null,
+    "logo": null
   },
   {
     "id": "1e1dc5be-22f7-47ab-a8e7-3233d0aa2da9",
@@ -360,7 +380,8 @@
     "longitude": 113.413042,
     "status": "active",
     "is_red_dot": false,
-    "red_dot_count": null
+    "red_dot_count": null,
+    "logo": null
   },
   {
     "id": "cca334c3-2235-4d3e-9df9-4e246469a5a6",
@@ -371,7 +392,8 @@
     "longitude": 113.328574,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "7"
+    "red_dot_count": "7",
+    "logo": null
   },
   {
     "id": "88aeabae-2280-4442-8100-199e16b398f1",
@@ -382,7 +404,8 @@
     "longitude": 113.272087,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "9"
+    "red_dot_count": "9",
+    "logo": null
   },
   {
     "id": "0296b36b-9800-4ba5-a5ce-dc8557381532",
@@ -393,7 +416,20 @@
     "longitude": 113.376763,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "4"
+    "red_dot_count": "4",
+    "logo": null
+  },
+  {
+    "id": "4b7cfa8a-d72c-4e22-9308-6013d0897f2f",
+    "name": "黑喵攀岩馆",
+    "short_name": "黑",
+    "city_id": 6,
+    "latitude": 22.971056,
+    "longitude": 113.33666,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "2",
+    "logo": null
   },
   {
     "id": "67619e36-1e56-4240-82f9-47966f806abc",
@@ -404,6 +440,7 @@
     "longitude": 113.272156,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "10+"
+    "red_dot_count": "10+",
+    "logo": null
   }
 ]

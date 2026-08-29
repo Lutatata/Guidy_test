@@ -1,5 +1,17 @@
 [
   {
+    "id": "b6c6f2e8-41d0-43e5-85a7-0ea4494074ad",
+    "name": "攀猩攀岩馆",
+    "short_name": "攀",
+    "city_id": 29,
+    "latitude": 33.316675,
+    "longitude": 117.320519,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "6",
+    "logo": null
+  },
+  {
     "id": "f08c907d-4411-4bbc-b14f-b4889036ce20",
     "name": "中奥极限攀岩馆",
     "short_name": "中",
@@ -8,7 +20,8 @@
     "longitude": 117.404687,
     "status": "active",
     "is_red_dot": false,
-    "red_dot_count": null
+    "red_dot_count": null,
+    "logo": null
   },
   {
     "id": "d158e617-31a3-45cc-b885-a69c94305cf9",
@@ -19,18 +32,8 @@
     "longitude": 115.891915,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "7"
-  },
-  {
-    "id": "b6c6f2e8-41d0-43e5-85a7-0ea4494074ad",
-    "name": "攀猩攀岩馆",
-    "short_name": "攀",
-    "city_id": 29,
-    "latitude": 33.316675,
-    "longitude": 117.320519,
-    "status": "active",
-    "is_red_dot": true,
-    "red_dot_count": "6"
+    "red_dot_count": "7",
+    "logo": null
   },
   {
     "id": "3f5477e6-2532-4d67-9acb-b5b9e98516f2",
@@ -41,7 +44,8 @@
     "longitude": 118.713894,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "10+"
+    "red_dot_count": "10+",
+    "logo": null
   },
   {
     "id": "7bbc00fd-4a60-4fa9-94fb-85fe9544ab06",
@@ -52,7 +56,8 @@
     "longitude": 116.795942,
     "status": "active",
     "is_red_dot": false,
-    "red_dot_count": null
+    "red_dot_count": null,
+    "logo": null
   },
   {
     "id": "8294a25f-a778-4a8d-8cd2-f65968837f51",
@@ -63,7 +68,8 @@
     "longitude": 117.055965,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "10+"
+    "red_dot_count": "10+",
+    "logo": null
   },
   {
     "id": "dbcd14f1-52c8-4f58-a207-bf0b4d42e262",
@@ -74,6 +80,7 @@
     "longitude": 118.366161,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "6"
+    "red_dot_count": "6",
+    "logo": null
   }
 ]

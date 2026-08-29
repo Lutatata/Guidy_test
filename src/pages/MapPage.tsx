@@ -191,7 +191,9 @@ export default function MapPage() {
         const isBanana = gym.name.includes('香蕉') || gym.name.toUpperCase().includes('BANANA');
         const isYanshi = gym.name.includes('岩时');
         const isYanwu = gym.name.includes('岩舞');
-        const isLogo = isBanana || isYanshi || isYanwu;
+        const isRealLogo = isBanana || isYanshi || isYanwu;
+        const hasRandomLogo = !!gym.logo;
+        const isLogo = isRealLogo || hasRandomLogo;
         const bgColor = isBanana ? '#FFD400' : '#f97316';
         const textColor = isBanana ? '#1a1a1a' : 'white';
         const borderColor = 'white';
@@ -201,6 +203,7 @@ export default function MapPage() {
         if (isBanana) logoPath = './logos/香蕉.png';
         else if (isYanshi) logoPath = './logos/岩时.png';
         else if (isYanwu) logoPath = './logos/岩舞.png';
+        else if (hasRandomLogo) logoPath = `./logos/${gym.logo}.png`;
 
         const markerId = `marker-${gym.id}`;
         let size = isLogo ? '40px' : '32px';

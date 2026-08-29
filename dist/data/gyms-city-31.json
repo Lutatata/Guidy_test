@@ -8,7 +8,8 @@
     "longitude": 108.94428,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "10+"
+    "red_dot_count": "10+",
+    "logo": null
   },
   {
     "id": "e58961bd-f70c-4584-aba6-b30191e26ef4",
@@ -19,7 +20,8 @@
     "longitude": 112.885864,
     "status": "active",
     "is_red_dot": false,
-    "red_dot_count": null
+    "red_dot_count": null,
+    "logo": null
   },
   {
     "id": "5cba81e3-f01d-4b11-accb-49215c6e6fee",
@@ -30,7 +32,8 @@
     "longitude": 111.309945,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "2"
+    "red_dot_count": "2",
+    "logo": null
   },
   {
     "id": "34487ee9-fbdb-4e8d-a756-b0d8c30b94b1",
@@ -41,7 +44,8 @@
     "longitude": 111.33418,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "10+"
+    "red_dot_count": "10+",
+    "logo": null
   },
   {
     "id": "40e164b3-92c7-4218-b066-6821376defff",
@@ -52,7 +56,8 @@
     "longitude": 112.206155,
     "status": "active",
     "is_red_dot": false,
-    "red_dot_count": null
+    "red_dot_count": null,
+    "logo": null
   },
   {
     "id": "2782a5d9-270b-4564-a951-af26aef05e8e",
@@ -63,7 +68,8 @@
     "longitude": 115.085264,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "10+"
+    "red_dot_count": "10+",
+    "logo": null
   },
   {
     "id": "48369c2c-6d55-4dfb-8b79-f7a903caa6be",
@@ -74,6 +80,7 @@
     "longitude": 112.115908,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "3"
+    "red_dot_count": "3",
+    "logo": null
   }
 ]

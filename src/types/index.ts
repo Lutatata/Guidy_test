@@ -18,6 +18,7 @@ export interface GymBase {
   status: string;
   is_red_dot?: boolean;
   red_dot_count?: string | null;
+  logo?: string | null;
 }
 
 // 岩馆列表项

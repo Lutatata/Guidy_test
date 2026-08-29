@@ -8,6 +8,7 @@
     "longitude": 109.529304,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "6"
+    "red_dot_count": "6",
+    "logo": null
   }
 ]
