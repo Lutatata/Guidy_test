@@ -911,13 +911,13 @@ export default function MapPage() {
                 <div className="flex-1 min-h-0 overflow-y-auto px-3 pb-3 pt-1">
                   {renderDetailContent()}
                   <div className="grid grid-cols-2 gap-2 mt-4">
-                    {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((i) => (
-                      <div key={i} className="bg-white rounded-xl overflow-hidden shadow-sm" onClick={() => setPlayingVideoIndex(i)}>
+                    {Array.from({length: 18}, (_, gridIdx) => gridIdx % 9 + 1).map((videoNum, gridIdx) => (
+                      <div key={gridIdx} className="bg-white rounded-xl overflow-hidden shadow-sm" onClick={() => setPlayingVideoIndex(videoNum)}>
                         <div className="relative aspect-[3/4] bg-black">
                           <img
                             className="w-full h-full object-cover"
-                            src={`./videos/video${i}.webp`}
-                            alt={`视频${i}`}
+                            src={`./videos/video${videoNum}.webp`}
+                            alt={`视频${videoNum}`}
                           />
                           {/* 播放图标覆盖 */}
                           <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
@@ -929,14 +929,14 @@ export default function MapPage() {
                           </div>
                         </div>
                         <div className="p-2">
-                          <p className="text-xs font-medium text-[#3B473B] line-clamp-1">视频标题{['一','二','三','四','五','六','七','八','九'][i-1]}</p>
+                          <p className="text-xs font-medium text-[#3B473B] line-clamp-1">视频标题{['一','二','三','四','五','六','七','八','九'][videoNum-1]}</p>
                           <div className="flex items-center justify-between mt-1">
-                            <span className="text-[10px] text-[#3B473B]/60">视频{['一','二','三','四','五','六','七','八','九'][i-1]}</span>
+                            <span className="text-[10px] text-[#3B473B]/60">视频{['一','二','三','四','五','六','七','八','九'][videoNum-1]}</span>
                             <div className="flex items-center gap-0.5 text-[#3B473B]/60">
                               <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                               </svg>
-                              <span className="text-[10px]">{[128, 256, 384, 512, 640, 768, 896, 1024, 999][i-1]}</span>
+                              <span className="text-[10px]">{[128, 256, 384, 512, 640, 768, 896, 1024, 999][videoNum-1]}</span>
                             </div>
                           </div>
                         </div>
