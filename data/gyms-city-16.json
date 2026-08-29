@@ -6,7 +6,9 @@
     "city_id": 16,
     "latitude": 39.079075,
     "longitude": 117.176544,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
   },
   {
     "id": "bcf388f0-b519-49de-97ed-20c30584ff73",
@@ -15,7 +17,9 @@
     "city_id": 16,
     "latitude": 39.39018,
     "longitude": 117.011765,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "1"
   },
   {
     "id": "e07748a0-3cbd-4c09-afdd-75b6c1bdf35c",
@@ -24,7 +28,9 @@
     "city_id": 16,
     "latitude": 39.358175,
     "longitude": 117.045078,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
   },
   {
     "id": "2d781564-2ccf-4b40-b608-8fe199fb9380",
@@ -33,7 +39,9 @@
     "city_id": 16,
     "latitude": 39.131615,
     "longitude": 117.1474,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
   },
   {
     "id": "f9d1146c-d14c-4c77-86a3-1d8cc1008c8f",
@@ -42,7 +50,9 @@
     "city_id": 16,
     "latitude": 39.012729,
     "longitude": 117.229773,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "3"
   },
   {
     "id": "a6c85bbd-5002-4c32-8b24-db75408b8d11",
@@ -51,7 +61,9 @@
     "city_id": 16,
     "latitude": 39.066048,
     "longitude": 117.16778,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
   },
   {
     "id": "375db25c-958f-4ef9-9c9d-f0c5f9db51d2",
@@ -60,7 +72,9 @@
     "city_id": 16,
     "latitude": 39.08199,
     "longitude": 117.23597,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
   },
   {
     "id": "b18f08f4-f175-415d-bf81-7ca11507da2d",
@@ -69,88 +83,9 @@
     "city_id": 16,
     "latitude": 39.139427,
     "longitude": 117.121086,
-    "status": "active"
-  },
-  {
-    "id": "38620dce-88c3-4eb6-abbc-58204c085e85",
-    "name": "攀猩儿童攀岩馆(天津远洋店)",
-    "short_name": "攀",
-    "city_id": 16,
-    "latitude": 39.138477,
-    "longitude": 117.220645,
-    "status": "active"
-  },
-  {
-    "id": "eeda42c2-e72b-465f-b37c-a83277c21286",
-    "name": "本攀攀岩馆(天津店)",
-    "short_name": "本",
-    "city_id": 16,
-    "latitude": 39.136072,
-    "longitude": 117.122079,
-    "status": "active"
-  },
-  {
-    "id": "f9cddc03-63c5-43d7-b1e5-2b58c32a2732",
-    "name": "渤龙湖体育健身中心攀岩馆",
-    "short_name": "渤",
-    "city_id": 16,
-    "latitude": 39.12983,
-    "longitude": 117.523444,
-    "status": "active"
-  },
-  {
-    "id": "ab77cf82-2c98-4294-8c10-69fed53bbc89",
-    "name": "芒果攀岩(宁河吾悦广场店)",
-    "short_name": "芒",
-    "city_id": 16,
-    "latitude": 39.339181,
-    "longitude": 117.818106,
-    "status": "active"
-  },
-  {
-    "id": "532b6aec-210d-424d-b28f-ad16aa23da82",
-    "name": "芒果攀岩(滨海吾悦广场店)",
-    "short_name": "芒",
-    "city_id": 16,
-    "latitude": 39.066026,
-    "longitude": 117.622973,
-    "status": "active"
-  },
-  {
-    "id": "6706c7a2-46f9-4995-a6cc-b68a6a7fd43d",
-    "name": "芒果攀岩(滨海金隅嘉品店)",
-    "short_name": "芒",
-    "city_id": 16,
-    "latitude": 39.032539,
-    "longitude": 117.678746,
-    "status": "active"
-  },
-  {
-    "id": "67baab95-9455-4633-ad53-cf6ed932846d",
-    "name": "行空攀岩馆(刘园店)",
-    "short_name": "行",
-    "city_id": 16,
-    "latitude": 39.202439,
-    "longitude": 117.118641,
-    "status": "active"
-  },
-  {
-    "id": "87e33ec8-2708-4820-aae9-149a78f94a46",
-    "name": "趣野攀岩(梅江会展中心店)",
-    "short_name": "趣",
-    "city_id": 16,
-    "latitude": 39.037146,
-    "longitude": 117.213968,
-    "status": "active"
-  },
-  {
-    "id": "904fd14e-ddd6-4760-8365-edc6dfc6d94d",
-    "name": "锋芒攀岩(鼓楼新世界店)",
-    "short_name": "锋",
-    "city_id": 16,
-    "latitude": 39.140584,
-    "longitude": 117.189179,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "8"
   },
   {
     "id": "7a440524-cd53-4ae3-ae01-f535af850a2d",
@@ -159,7 +94,108 @@
     "city_id": 16,
     "latitude": 39.158651,
     "longitude": 117.419521,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
+  },
+  {
+    "id": "38620dce-88c3-4eb6-abbc-58204c085e85",
+    "name": "攀猩儿童攀岩馆(天津远洋店)",
+    "short_name": "攀",
+    "city_id": 16,
+    "latitude": 39.138477,
+    "longitude": 117.220645,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "1"
+  },
+  {
+    "id": "eeda42c2-e72b-465f-b37c-a83277c21286",
+    "name": "本攀攀岩馆(天津店)",
+    "short_name": "本",
+    "city_id": 16,
+    "latitude": 39.136072,
+    "longitude": 117.122079,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "8"
+  },
+  {
+    "id": "f9cddc03-63c5-43d7-b1e5-2b58c32a2732",
+    "name": "渤龙湖体育健身中心攀岩馆",
+    "short_name": "渤",
+    "city_id": 16,
+    "latitude": 39.12983,
+    "longitude": 117.523444,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "6"
+  },
+  {
+    "id": "ab77cf82-2c98-4294-8c10-69fed53bbc89",
+    "name": "芒果攀岩(宁河吾悦广场店)",
+    "short_name": "芒",
+    "city_id": 16,
+    "latitude": 39.339181,
+    "longitude": 117.818106,
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
+  },
+  {
+    "id": "532b6aec-210d-424d-b28f-ad16aa23da82",
+    "name": "芒果攀岩(滨海吾悦广场店)",
+    "short_name": "芒",
+    "city_id": 16,
+    "latitude": 39.066026,
+    "longitude": 117.622973,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "1"
+  },
+  {
+    "id": "6706c7a2-46f9-4995-a6cc-b68a6a7fd43d",
+    "name": "芒果攀岩(滨海金隅嘉品店)",
+    "short_name": "芒",
+    "city_id": 16,
+    "latitude": 39.032539,
+    "longitude": 117.678746,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "8"
+  },
+  {
+    "id": "67baab95-9455-4633-ad53-cf6ed932846d",
+    "name": "行空攀岩馆(刘园店)",
+    "short_name": "行",
+    "city_id": 16,
+    "latitude": 39.202439,
+    "longitude": 117.118641,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "2"
+  },
+  {
+    "id": "87e33ec8-2708-4820-aae9-149a78f94a46",
+    "name": "趣野攀岩(梅江会展中心店)",
+    "short_name": "趣",
+    "city_id": 16,
+    "latitude": 39.037146,
+    "longitude": 117.213968,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "2"
+  },
+  {
+    "id": "904fd14e-ddd6-4760-8365-edc6dfc6d94d",
+    "name": "锋芒攀岩(鼓楼新世界店)",
+    "short_name": "锋",
+    "city_id": 16,
+    "latitude": 39.140584,
+    "longitude": 117.189179,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "1"
   },
   {
     "id": "7e1aa343-f576-4b62-ae07-19f69af92818",
@@ -168,6 +204,8 @@
     "city_id": 16,
     "latitude": 39.114836,
     "longitude": 117.139865,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "5"
   }
 ]

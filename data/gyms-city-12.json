@@ -6,7 +6,9 @@
     "city_id": 12,
     "latitude": 31.290828,
     "longitude": 121.063043,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "1"
   },
   {
     "id": "e36c42b7-9607-43af-849e-4c5dd9166403",
@@ -15,7 +17,9 @@
     "city_id": 12,
     "latitude": 31.235794,
     "longitude": 120.637669,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
   },
   {
     "id": "83dbc317-194d-4886-aa03-e660ae93a57f",
@@ -24,7 +28,9 @@
     "city_id": 12,
     "latitude": 31.377003,
     "longitude": 120.978466,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "7"
   },
   {
     "id": "f5de340e-e5a8-4774-9d75-0cf2938bfe9c",
@@ -33,7 +39,9 @@
     "city_id": 12,
     "latitude": 31.216055,
     "longitude": 120.602767,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
   },
   {
     "id": "7adf7fef-f9d7-48d2-aa9f-706bad480931",
@@ -42,7 +50,9 @@
     "city_id": 12,
     "latitude": 31.38365,
     "longitude": 120.905739,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "4"
   },
   {
     "id": "283819ac-ac6e-41b9-a2c3-d6cb668c307a",
@@ -51,7 +61,9 @@
     "city_id": 12,
     "latitude": 31.29078,
     "longitude": 121.062877,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "4"
   },
   {
     "id": "88938722-864e-489f-a584-d6b9c0644cf8",
@@ -60,7 +72,9 @@
     "city_id": 12,
     "latitude": 31.310141,
     "longitude": 120.598418,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
   },
   {
     "id": "ec9bc12d-2628-456e-9abb-74eb040bd460",
@@ -69,7 +83,9 @@
     "city_id": 12,
     "latitude": 31.319779,
     "longitude": 120.71537,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
   },
   {
     "id": "61e72104-d5be-4aae-b216-5020c92de18e",
@@ -78,7 +94,9 @@
     "city_id": 12,
     "latitude": 31.137572,
     "longitude": 120.595511,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "5"
   },
   {
     "id": "619961fe-7ac8-4e39-8d39-614f19725932",
@@ -87,124 +105,9 @@
     "city_id": 12,
     "latitude": 31.305613,
     "longitude": 120.747117,
-    "status": "active"
-  },
-  {
-    "id": "136cec6d-cbad-46c7-95a4-1787e644a06f",
-    "name": "引力攀岩",
-    "short_name": "引",
-    "city_id": 12,
-    "latitude": 31.667727,
-    "longitude": 120.770431,
-    "status": "active"
-  },
-  {
-    "id": "4c90377c-e6ee-4e1a-894e-60b914ce5450",
-    "name": "攀月攀岩(园区星湖店)",
-    "short_name": "攀",
-    "city_id": 12,
-    "latitude": 31.373291,
-    "longitude": 120.723722,
-    "status": "active"
-  },
-  {
-    "id": "fd27d5f7-9be4-46d7-bbf1-1bba525cc4f5",
-    "name": "攀月攀岩(相城天街店)",
-    "short_name": "攀",
-    "city_id": 12,
-    "latitude": 31.368238,
-    "longitude": 120.636921,
-    "status": "active"
-  },
-  {
-    "id": "eab55019-ded0-41e2-ae44-dfd48990d582",
-    "name": "攀猩攀岩馆(星斓荟店)",
-    "short_name": "攀",
-    "city_id": 12,
-    "latitude": 31.307305,
-    "longitude": 120.765645,
-    "status": "active"
-  },
-  {
-    "id": "e1ddf224-526e-4f4e-9fd1-7ad76c1782f4",
-    "name": "星空攀岩(张家港览秀城店)",
-    "short_name": "星",
-    "city_id": 12,
-    "latitude": 31.8836,
-    "longitude": 120.57097,
-    "status": "active"
-  },
-  {
-    "id": "f88434ae-88b3-4442-b0ec-9074973ea139",
-    "name": "星空攀岩(木渎悠方店)",
-    "short_name": "星",
-    "city_id": 12,
-    "latitude": 31.275231,
-    "longitude": 120.528073,
-    "status": "active"
-  },
-  {
-    "id": "c4fd7c38-f184-4135-b333-6d31d2230070",
-    "name": "星空攀岩(美罗店)",
-    "short_name": "星",
-    "city_id": 12,
-    "latitude": 31.281866,
-    "longitude": 120.548961,
-    "status": "active"
-  },
-  {
-    "id": "27386a8e-537e-4c6d-943f-03738a13b8ab",
-    "name": "星空攀岩(苏州湾歌林公园店)",
-    "short_name": "星",
-    "city_id": 12,
-    "latitude": 31.191324,
-    "longitude": 120.611888,
-    "status": "active"
-  },
-  {
-    "id": "a01f330d-1178-4464-8dbd-df1a3557efd2",
-    "name": "星空攀岩(高新文体店)",
-    "short_name": "星",
-    "city_id": 12,
-    "latitude": 31.337157,
-    "longitude": 120.413847,
-    "status": "active"
-  },
-  {
-    "id": "af88bda3-b0ed-4067-9a26-9f4236f9ad7f",
-    "name": "星空攀岩(高铁吾悦店)",
-    "short_name": "星",
-    "city_id": 12,
-    "latitude": 31.414105,
-    "longitude": 120.632097,
-    "status": "active"
-  },
-  {
-    "id": "bacfb2ad-0e01-4cc7-a617-89f6373b8aca",
-    "name": "考拉攀岩（新区店）",
-    "short_name": "考",
-    "city_id": 12,
-    "latitude": 31.293727,
-    "longitude": 120.568017,
-    "status": "active"
-  },
-  {
-    "id": "a517392b-ab8b-4190-8756-22f745144af2",
-    "name": "考拉攀岩（王府井店）",
-    "short_name": "考",
-    "city_id": 12,
-    "latitude": 31.373196,
-    "longitude": 120.640062,
-    "status": "active"
-  },
-  {
-    "id": "3d28d537-f205-4147-9dcf-f7dae1465f5e",
-    "name": "运动社&星空攀岩(尹山湖歌林公园店)",
-    "short_name": "运",
-    "city_id": 12,
-    "latitude": 31.245702,
-    "longitude": 120.704349,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
   },
   {
     "id": "5fda97ba-33c2-4c71-8ba0-4293dfa368ac",
@@ -213,7 +116,31 @@
     "city_id": 12,
     "latitude": 31.26762,
     "longitude": 120.72433,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "2"
+  },
+  {
+    "id": "136cec6d-cbad-46c7-95a4-1787e644a06f",
+    "name": "引力攀岩",
+    "short_name": "引",
+    "city_id": 12,
+    "latitude": 31.667727,
+    "longitude": 120.770431,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
+  },
+  {
+    "id": "4c90377c-e6ee-4e1a-894e-60b914ce5450",
+    "name": "攀月攀岩(园区星湖店)",
+    "short_name": "攀",
+    "city_id": 12,
+    "latitude": 31.373291,
+    "longitude": 120.723722,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "1"
   },
   {
     "id": "9aab2bbd-912a-4d0c-a156-546ae76a3c83",
@@ -222,6 +149,129 @@
     "city_id": 12,
     "latitude": 31.4599,
     "longitude": 120.61129,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "7"
+  },
+  {
+    "id": "fd27d5f7-9be4-46d7-bbf1-1bba525cc4f5",
+    "name": "攀月攀岩(相城天街店)",
+    "short_name": "攀",
+    "city_id": 12,
+    "latitude": 31.368238,
+    "longitude": 120.636921,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "2"
+  },
+  {
+    "id": "eab55019-ded0-41e2-ae44-dfd48990d582",
+    "name": "攀猩攀岩馆(星斓荟店)",
+    "short_name": "攀",
+    "city_id": 12,
+    "latitude": 31.307305,
+    "longitude": 120.765645,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "6"
+  },
+  {
+    "id": "e1ddf224-526e-4f4e-9fd1-7ad76c1782f4",
+    "name": "星空攀岩(张家港览秀城店)",
+    "short_name": "星",
+    "city_id": 12,
+    "latitude": 31.8836,
+    "longitude": 120.57097,
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
+  },
+  {
+    "id": "f88434ae-88b3-4442-b0ec-9074973ea139",
+    "name": "星空攀岩(木渎悠方店)",
+    "short_name": "星",
+    "city_id": 12,
+    "latitude": 31.275231,
+    "longitude": 120.528073,
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
+  },
+  {
+    "id": "c4fd7c38-f184-4135-b333-6d31d2230070",
+    "name": "星空攀岩(美罗店)",
+    "short_name": "星",
+    "city_id": 12,
+    "latitude": 31.281866,
+    "longitude": 120.548961,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "7"
+  },
+  {
+    "id": "27386a8e-537e-4c6d-943f-03738a13b8ab",
+    "name": "星空攀岩(苏州湾歌林公园店)",
+    "short_name": "星",
+    "city_id": 12,
+    "latitude": 31.191324,
+    "longitude": 120.611888,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
+  },
+  {
+    "id": "a01f330d-1178-4464-8dbd-df1a3557efd2",
+    "name": "星空攀岩(高新文体店)",
+    "short_name": "星",
+    "city_id": 12,
+    "latitude": 31.337157,
+    "longitude": 120.413847,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "6"
+  },
+  {
+    "id": "af88bda3-b0ed-4067-9a26-9f4236f9ad7f",
+    "name": "星空攀岩(高铁吾悦店)",
+    "short_name": "星",
+    "city_id": 12,
+    "latitude": 31.414105,
+    "longitude": 120.632097,
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
+  },
+  {
+    "id": "bacfb2ad-0e01-4cc7-a617-89f6373b8aca",
+    "name": "考拉攀岩（新区店）",
+    "short_name": "考",
+    "city_id": 12,
+    "latitude": 31.293727,
+    "longitude": 120.568017,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "8"
+  },
+  {
+    "id": "a517392b-ab8b-4190-8756-22f745144af2",
+    "name": "考拉攀岩（王府井店）",
+    "short_name": "考",
+    "city_id": 12,
+    "latitude": 31.373196,
+    "longitude": 120.640062,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
+  },
+  {
+    "id": "3d28d537-f205-4147-9dcf-f7dae1465f5e",
+    "name": "运动社&星空攀岩(尹山湖歌林公园店)",
+    "short_name": "运",
+    "city_id": 12,
+    "latitude": 31.245702,
+    "longitude": 120.704349,
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
   }
 ]

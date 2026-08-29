@@ -6,7 +6,9 @@
     "city_id": 25,
     "latitude": 25.587374,
     "longitude": 100.223953,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
   },
   {
     "id": "e2589062-2bfb-42cc-ada5-a2b601f9b76b",
@@ -15,7 +17,9 @@
     "city_id": 25,
     "latitude": 25.594798,
     "longitude": 100.207599,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "8"
   },
   {
     "id": "531f7075-dc50-4326-8ce1-b0871902cb2a",
@@ -24,7 +28,9 @@
     "city_id": 25,
     "latitude": 24.36576,
     "longitude": 102.566605,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
   },
   {
     "id": "2eee42d8-b173-47f9-a0ec-660d7e93a9dd",
@@ -33,7 +39,9 @@
     "city_id": 25,
     "latitude": 23.367667,
     "longitude": 104.248406,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "8"
   },
   {
     "id": "c026db83-3a34-4874-980a-88fe016c7bf0",
@@ -42,34 +50,9 @@
     "city_id": 25,
     "latitude": 25.112713,
     "longitude": 99.163313,
-    "status": "active"
-  },
-  {
-    "id": "54105c56-33d5-49c6-928e-4ab182ea81c0",
-    "name": "行山攀岩(弥勒店)",
-    "short_name": "行",
-    "city_id": 25,
-    "latitude": 24.408941,
-    "longitude": 103.427923,
-    "status": "active"
-  },
-  {
-    "id": "c1e09f3f-2b60-4c5b-ba86-eb5111b957ed",
-    "name": "行山攀岩馆(苍山大道)",
-    "short_name": "行",
-    "city_id": 25,
-    "latitude": 25.660241,
-    "longitude": 100.173247,
-    "status": "active"
-  },
-  {
-    "id": "d1b28266-285b-4d63-ae53-eb2cdd1341b5",
-    "name": "香格里拉红坡攀岩馆",
-    "short_name": "香",
-    "city_id": 25,
-    "latitude": 27.8072,
-    "longitude": 99.81545,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "9"
   },
   {
     "id": "8c74b688-dfe5-4124-861e-260f867f9372",
@@ -78,6 +61,41 @@
     "city_id": 25,
     "latitude": 24.88169,
     "longitude": 104.30116,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
+  },
+  {
+    "id": "54105c56-33d5-49c6-928e-4ab182ea81c0",
+    "name": "行山攀岩(弥勒店)",
+    "short_name": "行",
+    "city_id": 25,
+    "latitude": 24.408941,
+    "longitude": 103.427923,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "6"
+  },
+  {
+    "id": "c1e09f3f-2b60-4c5b-ba86-eb5111b957ed",
+    "name": "行山攀岩馆(苍山大道)",
+    "short_name": "行",
+    "city_id": 25,
+    "latitude": 25.660241,
+    "longitude": 100.173247,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
+  },
+  {
+    "id": "d1b28266-285b-4d63-ae53-eb2cdd1341b5",
+    "name": "香格里拉红坡攀岩馆",
+    "short_name": "香",
+    "city_id": 25,
+    "latitude": 27.8072,
+    "longitude": 99.81545,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
   }
 ]

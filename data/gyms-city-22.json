@@ -6,97 +6,9 @@
     "city_id": 22,
     "latitude": 36.676038,
     "longitude": 117.129656,
-    "status": "active"
-  },
-  {
-    "id": "37ca4ee0-f05f-4992-9bdb-917fa245d247",
-    "name": "乐攀攀岩(悦动城)",
-    "short_name": "乐",
-    "city_id": 22,
-    "latitude": 36.644983,
-    "longitude": 117.010278,
-    "status": "active"
-  },
-  {
-    "id": "21b2c4af-d0df-46a6-9a27-2a621dce8982",
-    "name": "巅峰攀岩(826店)",
-    "short_name": "巅",
-    "city_id": 22,
-    "latitude": 36.6856384277344,
-    "longitude": 117.145195007324,
-    "status": "active"
-  },
-  {
-    "id": "69c65819-b2fe-4b0c-8e06-b27873e880b1",
-    "name": "巅峰攀岩(华山环宇城店)",
-    "short_name": "巅",
-    "city_id": 22,
-    "latitude": 36.717478,
-    "longitude": 117.053931,
-    "status": "active"
-  },
-  {
-    "id": "08126ee6-fe47-4c49-89ed-a5976280931d",
-    "name": "巅峰攀岩(融创店)",
-    "short_name": "巅",
-    "city_id": 22,
-    "latitude": 36.67078,
-    "longitude": 117.20035,
-    "status": "active"
-  },
-  {
-    "id": "76f9941a-16ba-471a-902c-d0041949f5da",
-    "name": "心流攀岩(旗舰店)",
-    "short_name": "心",
-    "city_id": 22,
-    "latitude": 36.614382,
-    "longitude": 116.9784,
-    "status": "active"
-  },
-  {
-    "id": "8485b116-a426-487c-92cc-019dc6679512",
-    "name": "心流攀岩（贵和店）",
-    "short_name": "心",
-    "city_id": 22,
-    "latitude": 36.593949,
-    "longitude": 117.002298,
-    "status": "active"
-  },
-  {
-    "id": "9b280df3-2a48-4e83-9191-a1ad5115cd5c",
-    "name": "济南515攀岩欧亚大观店",
-    "short_name": "济",
-    "city_id": 22,
-    "latitude": 36.633041,
-    "longitude": 116.98228,
-    "status": "active"
-  },
-  {
-    "id": "15ff2e32-c70a-4123-970a-ba6e00045619",
-    "name": "济南515攀岩训练室",
-    "short_name": "济",
-    "city_id": 22,
-    "latitude": 36.614361,
-    "longitude": 116.978441,
-    "status": "active"
-  },
-  {
-    "id": "162ddee9-947b-4e37-b8a5-d06cd536e4a5",
-    "name": "济南岩攀攀岩馆",
-    "short_name": "济",
-    "city_id": 22,
-    "latitude": 36.728308,
-    "longitude": 117.134121,
-    "status": "active"
-  },
-  {
-    "id": "5a201f6a-61f2-4feb-87af-cf22f46a271e",
-    "name": "济南岩色攀岩印象城店",
-    "short_name": "济",
-    "city_id": 22,
-    "latitude": 36.683772,
-    "longitude": 117.065915,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "1"
   },
   {
     "id": "f772b5f3-39c8-4bb0-972f-54f54467ae9a",
@@ -105,6 +17,118 @@
     "city_id": 22,
     "latitude": 36.594321,
     "longitude": 117.003727,
-    "status": "active"
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "6"
+  },
+  {
+    "id": "37ca4ee0-f05f-4992-9bdb-917fa245d247",
+    "name": "乐攀攀岩(悦动城)",
+    "short_name": "乐",
+    "city_id": 22,
+    "latitude": 36.644983,
+    "longitude": 117.010278,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "8"
+  },
+  {
+    "id": "21b2c4af-d0df-46a6-9a27-2a621dce8982",
+    "name": "巅峰攀岩(826店)",
+    "short_name": "巅",
+    "city_id": 22,
+    "latitude": 36.6856384277344,
+    "longitude": 117.145195007324,
+    "status": "active",
+    "is_red_dot": false,
+    "red_dot_count": null
+  },
+  {
+    "id": "69c65819-b2fe-4b0c-8e06-b27873e880b1",
+    "name": "巅峰攀岩(华山环宇城店)",
+    "short_name": "巅",
+    "city_id": 22,
+    "latitude": 36.717478,
+    "longitude": 117.053931,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "1"
+  },
+  {
+    "id": "08126ee6-fe47-4c49-89ed-a5976280931d",
+    "name": "巅峰攀岩(融创店)",
+    "short_name": "巅",
+    "city_id": 22,
+    "latitude": 36.67078,
+    "longitude": 117.20035,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "9"
+  },
+  {
+    "id": "76f9941a-16ba-471a-902c-d0041949f5da",
+    "name": "心流攀岩(旗舰店)",
+    "short_name": "心",
+    "city_id": 22,
+    "latitude": 36.614382,
+    "longitude": 116.9784,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "5"
+  },
+  {
+    "id": "8485b116-a426-487c-92cc-019dc6679512",
+    "name": "心流攀岩（贵和店）",
+    "short_name": "心",
+    "city_id": 22,
+    "latitude": 36.593949,
+    "longitude": 117.002298,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "8"
+  },
+  {
+    "id": "9b280df3-2a48-4e83-9191-a1ad5115cd5c",
+    "name": "济南515攀岩欧亚大观店",
+    "short_name": "济",
+    "city_id": 22,
+    "latitude": 36.633041,
+    "longitude": 116.98228,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "4"
+  },
+  {
+    "id": "15ff2e32-c70a-4123-970a-ba6e00045619",
+    "name": "济南515攀岩训练室",
+    "short_name": "济",
+    "city_id": 22,
+    "latitude": 36.614361,
+    "longitude": 116.978441,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+"
+  },
+  {
+    "id": "162ddee9-947b-4e37-b8a5-d06cd536e4a5",
+    "name": "济南岩攀攀岩馆",
+    "short_name": "济",
+    "city_id": 22,
+    "latitude": 36.728308,
+    "longitude": 117.134121,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "1"
+  },
+  {
+    "id": "5a201f6a-61f2-4feb-87af-cf22f46a271e",
+    "name": "济南岩色攀岩印象城店",
+    "short_name": "济",
+    "city_id": 22,
+    "latitude": 36.683772,
+    "longitude": 117.065915,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "2"
   }
 ]
