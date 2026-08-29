@@ -213,10 +213,15 @@ export default function MapPage() {
         const redDotStyle = redDotIsPill
           ? `min-width:22px;height:16px;padding:0 3px;border-radius:8px;font-size:9px;`
           : `width:12px;height:12px;border-radius:50%;font-size:9px;`;
+        // 红点位置偏移：香蕉向左10px，岩时向下10px
+        let redDotTop = '-1px';
+        let redDotRight = '-1px';
+        if (isBanana) redDotRight = '9px';
+        else if (isYanshi) redDotTop = '9px';
         const redDotContent = gym.is_red_dot
           ? (redDotCountDisplay
-              ? `<div style="position:absolute;top:-1px;right:-1px;${redDotStyle}background:#ef4444;z-index:10;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;line-height:1;box-shadow:0 1px 3px rgba(0,0,0,0.3);">${redDotCountDisplay}</div>`
-              : `<div style="position:absolute;top:-1px;right:-1px;width:12px;height:12px;background:#ef4444;border-radius:50%;z-index:10;"></div>`)
+              ? `<div style="position:absolute;top:${redDotTop};right:${redDotRight};${redDotStyle}background:#ef4444;z-index:10;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;line-height:1;box-shadow:0 1px 3px rgba(0,0,0,0.3);">${redDotCountDisplay}</div>`
+              : `<div style="position:absolute;top:${redDotTop};right:${redDotRight};width:12px;height:12px;background:#ef4444;border-radius:50%;z-index:10;"></div>`)
           : '';
 
         const innerContent = isLogo
