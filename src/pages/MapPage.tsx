@@ -47,7 +47,7 @@ export default function MapPage() {
       setSelectedGym(null);
       setSelectedGymDetail(null);
       setIsClosing(false);
-    }, 300);
+    }, 200);
   };
   const [keyword, setKeyword] = useState('');
   const [userLocation, setUserLocation] = useState<{ lng: number; lat: number } | null>(null);
