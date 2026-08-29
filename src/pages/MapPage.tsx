@@ -207,6 +207,7 @@ export default function MapPage() {
 
         const markerId = `marker-${gym.id}`;
         let size = isLogo ? '40px' : '32px';
+        if (isBanana || isYanshi) size = '48px';
         const sizeNum = parseInt(size);
         const redDotCountDisplay = gym.red_dot_count || '';
         const redDotIsPill = redDotCountDisplay.length >= 3;
