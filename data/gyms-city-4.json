@@ -1,27 +1,5 @@
 [
   {
-    "id": "fdb6dbaf-ef5b-4129-bd0b-4720f6b6284b",
-    "name": "向山攀岩馆",
-    "short_name": "向",
-    "city_id": 4,
-    "latitude": 30.177641,
-    "longitude": 120.202194,
-    "status": "active",
-    "is_red_dot": true,
-    "red_dot_count": "7"
-  },
-  {
-    "id": "69cb51cf-5aa0-49e0-a99c-2a86caa353ec",
-    "name": "噜呐攀岩(上城天街店)",
-    "short_name": "噜",
-    "city_id": 4,
-    "latitude": 30.331079,
-    "longitude": 120.277986,
-    "status": "active",
-    "is_red_dot": true,
-    "red_dot_count": "5"
-  },
-  {
     "id": "abe81c6e-059b-4402-90d6-ed604928ef50",
     "name": "CLIFFS颗粒攀岩(东方时代店)",
     "short_name": "C",
@@ -30,7 +8,8 @@
     "longitude": 120.19635,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "4"
+    "red_dot_count": "4",
+    "logo": null
   },
   {
     "id": "476feeb5-caf5-44d0-84d1-a81bfb42a435",
@@ -41,7 +20,8 @@
     "longitude": 120.262177,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "1"
+    "red_dot_count": "1",
+    "logo": null
   },
   {
     "id": "016c9dd1-d664-4fc5-bb1d-0ed2eb66f293",
@@ -52,7 +32,8 @@
     "longitude": 120.226302,
     "status": "active",
     "is_red_dot": false,
-    "red_dot_count": null
+    "red_dot_count": null,
+    "logo": null
   },
   {
     "id": "a64e385e-6ee3-4139-828d-93cec554d918",
@@ -63,7 +44,8 @@
     "longitude": 120.0765,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "7"
+    "red_dot_count": "7",
+    "logo": null
   },
   {
     "id": "6545ad23-60ce-4a13-82fa-188ff169b47f",
@@ -74,7 +56,8 @@
     "longitude": 120.117882,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "9"
+    "red_dot_count": "9",
+    "logo": null
   },
   {
     "id": "fb0efbab-d5cb-48e8-b476-b26830bdb137",
@@ -85,7 +68,8 @@
     "longitude": 120.250717,
     "status": "active",
     "is_red_dot": false,
-    "red_dot_count": null
+    "red_dot_count": null,
+    "logo": null
   },
   {
     "id": "a38cecc3-e44d-4aca-af44-f78cf61f0ddc",
@@ -96,7 +80,8 @@
     "longitude": 119.999708,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "5"
+    "red_dot_count": "5",
+    "logo": null
   },
   {
     "id": "b4ec18cb-2c58-49b7-a06d-abd1dcb8a1c3",
@@ -107,7 +92,8 @@
     "longitude": 119.967532,
     "status": "active",
     "is_red_dot": false,
-    "red_dot_count": null
+    "red_dot_count": null,
+    "logo": null
   },
   {
     "id": "0ee4c087-9208-43df-9fd8-b3f3a3cc30aa",
@@ -118,7 +104,32 @@
     "longitude": 120.251103,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "6"
+    "red_dot_count": "6",
+    "logo": null
+  },
+  {
+    "id": "fdb6dbaf-ef5b-4129-bd0b-4720f6b6284b",
+    "name": "向山攀岩馆",
+    "short_name": "向",
+    "city_id": 4,
+    "latitude": 30.177641,
+    "longitude": 120.202194,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "7",
+    "logo": null
+  },
+  {
+    "id": "69cb51cf-5aa0-49e0-a99c-2a86caa353ec",
+    "name": "噜呐攀岩(上城天街店)",
+    "short_name": "噜",
+    "city_id": 4,
+    "latitude": 30.331079,
+    "longitude": 120.277986,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "5",
+    "logo": null
   },
   {
     "id": "9d7f329e-81a6-4362-92ea-261c8a68fb9c",
@@ -129,7 +140,8 @@
     "longitude": 120.108855,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "2"
+    "red_dot_count": "2",
+    "logo": null
   },
   {
     "id": "8c89e51b-58c4-4d13-882b-48c26f39a902",
@@ -140,7 +152,8 @@
     "longitude": 120.129836,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "2"
+    "red_dot_count": "2",
+    "logo": null
   },
   {
     "id": "62c10516-e66c-4993-8485-4b75d594b92b",
@@ -151,7 +164,8 @@
     "longitude": 120.206901,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "4"
+    "red_dot_count": "4",
+    "logo": null
   },
   {
     "id": "05560b37-aca3-4737-846c-4e3d16438e0d",
@@ -162,7 +176,8 @@
     "longitude": 120.224039,
     "status": "active",
     "is_red_dot": false,
-    "red_dot_count": null
+    "red_dot_count": null,
+    "logo": null
   },
   {
     "id": "8067d0ac-9ac4-4e33-9927-a2cf6072a253",
@@ -173,7 +188,8 @@
     "longitude": 120.102849,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "3"
+    "red_dot_count": "3",
+    "logo": null
   },
   {
     "id": "c1c24007-cbae-4bce-9f8a-2048525455af",
@@ -184,7 +200,8 @@
     "longitude": 120.336754,
     "status": "active",
     "is_red_dot": false,
-    "red_dot_count": null
+    "red_dot_count": null,
+    "logo": null
   },
   {
     "id": "e1c79c70-ca2e-4959-bd05-2f113394438c",
@@ -195,7 +212,8 @@
     "longitude": 120.14106,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "10+"
+    "red_dot_count": "10+",
+    "logo": null
   },
   {
     "id": "3edecdcb-f460-49d6-b9ca-189222cef8fd",
@@ -206,7 +224,8 @@
     "longitude": 119.570378,
     "status": "active",
     "is_red_dot": false,
-    "red_dot_count": null
+    "red_dot_count": null,
+    "logo": null
   },
   {
     "id": "019c1ece-8f6d-4495-8071-185ddba6907c",
@@ -217,7 +236,8 @@
     "longitude": 120.091598,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "10+"
+    "red_dot_count": "10+",
+    "logo": null
   },
   {
     "id": "ecbf7c63-8cca-4c98-9486-f1109ed7edb5",
@@ -228,7 +248,8 @@
     "longitude": 120.0309,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "10+"
+    "red_dot_count": "10+",
+    "logo": null
   },
   {
     "id": "5a188333-288a-420d-ad67-050ba9acc22b",
@@ -239,7 +260,8 @@
     "longitude": 120.099448,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "3"
+    "red_dot_count": "3",
+    "logo": null
   },
   {
     "id": "7a94bdac-a77c-44c0-90ad-67c6c146cde6",
@@ -250,18 +272,8 @@
     "longitude": 119.337039,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "9"
-  },
-  {
-    "id": "4e76d9c1-b2b7-4f78-981a-2a7f23d72ab4",
-    "name": "顽攀·攀岩馆(西湖文体中心馆)",
-    "short_name": "顽",
-    "city_id": 4,
-    "latitude": 30.28324,
-    "longitude": 120.070821,
-    "status": "active",
-    "is_red_dot": true,
-    "red_dot_count": "10+"
+    "red_dot_count": "9",
+    "logo": null
   },
   {
     "id": "d27e55eb-07f3-4428-8a7e-a2f3a8619cac",
@@ -272,7 +284,8 @@
     "longitude": 120.026391,
     "status": "active",
     "is_red_dot": false,
-    "red_dot_count": null
+    "red_dot_count": null,
+    "logo": null
   },
   {
     "id": "1196b3e0-a296-4d57-a38d-cc5e3c8d5380",
@@ -283,7 +296,8 @@
     "longitude": 120.00261,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "10+"
+    "red_dot_count": "10+",
+    "logo": null
   },
   {
     "id": "83b947b5-88ae-4216-9e58-f96efbb003a7",
@@ -294,7 +308,8 @@
     "longitude": 120.116849,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "9"
+    "red_dot_count": "9",
+    "logo": null
   },
   {
     "id": "01abeadf-6a4a-4e2b-a560-21bc3d46cfcf",
@@ -305,7 +320,8 @@
     "longitude": 120.102211,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "9"
+    "red_dot_count": "9",
+    "logo": null
   },
   {
     "id": "bede2a22-c945-4404-8922-cef1a5795597",
@@ -316,7 +332,8 @@
     "longitude": 119.70469,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "2"
+    "red_dot_count": "2",
+    "logo": null
   },
   {
     "id": "476504d6-8674-4395-bf34-a456d52011a2",
@@ -327,7 +344,8 @@
     "longitude": 120.331148,
     "status": "active",
     "is_red_dot": false,
-    "red_dot_count": null
+    "red_dot_count": null,
+    "logo": null
   },
   {
     "id": "d2dc95d7-17d5-41d4-a677-c7dc16a265f1",
@@ -338,7 +356,8 @@
     "longitude": 120.245065,
     "status": "active",
     "is_red_dot": false,
-    "red_dot_count": null
+    "red_dot_count": null,
+    "logo": null
   },
   {
     "id": "03c4e9fd-0233-4681-8bde-84bf9ad5e786",
@@ -349,7 +368,8 @@
     "longitude": 120.212083,
     "status": "active",
     "is_red_dot": false,
-    "red_dot_count": null
+    "red_dot_count": null,
+    "logo": null
   },
   {
     "id": "5360104b-fcfa-4d2c-a9a9-789e5dbc0e28",
@@ -360,7 +380,8 @@
     "longitude": 120.135692,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "10+"
+    "red_dot_count": "10+",
+    "logo": null
   },
   {
     "id": "3c35a003-ddd9-4960-98d7-d493e4b1f008",
@@ -371,7 +392,8 @@
     "longitude": 120.178505,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "2"
+    "red_dot_count": "2",
+    "logo": null
   },
   {
     "id": "2bfa94f1-df2c-49cd-b428-c4996b181e2d",
@@ -382,7 +404,8 @@
     "longitude": 120.048645019531,
     "status": "active",
     "is_red_dot": false,
-    "red_dot_count": null
+    "red_dot_count": null,
+    "logo": null
   },
   {
     "id": "943a9cd4-51cf-436e-b779-e7f2929f8e58",
@@ -393,7 +416,8 @@
     "longitude": 120.169122,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "10+"
+    "red_dot_count": "10+",
+    "logo": null
   },
   {
     "id": "b6a41975-85f4-4207-b84d-31dc5250da6e",
@@ -404,7 +428,8 @@
     "longitude": 120.162292,
     "status": "active",
     "is_red_dot": false,
-    "red_dot_count": null
+    "red_dot_count": null,
+    "logo": null
   },
   {
     "id": "fe6201a8-90b1-416b-92cc-91e156f0dd67",
@@ -415,7 +440,8 @@
     "longitude": 120.075723,
     "status": "active",
     "is_red_dot": false,
-    "red_dot_count": null
+    "red_dot_count": null,
+    "logo": null
   },
   {
     "id": "8647a2ed-f82a-4719-ab40-d6f78666a3d5",
@@ -426,7 +452,20 @@
     "longitude": 120.082583,
     "status": "active",
     "is_red_dot": false,
-    "red_dot_count": null
+    "red_dot_count": null,
+    "logo": null
+  },
+  {
+    "id": "4e76d9c1-b2b7-4f78-981a-2a7f23d72ab4",
+    "name": "顽攀·攀岩馆(西湖文体中心馆)",
+    "short_name": "顽",
+    "city_id": 4,
+    "latitude": 30.28324,
+    "longitude": 120.070821,
+    "status": "active",
+    "is_red_dot": true,
+    "red_dot_count": "10+",
+    "logo": null
   },
   {
     "id": "a2329a83-39e4-4200-add9-998f77bc7392",
@@ -437,7 +476,8 @@
     "longitude": 120.252023,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "5"
+    "red_dot_count": "5",
+    "logo": null
   },
   {
     "id": "9aa646cb-c67d-47f1-8477-8fc9358d7288",
@@ -448,7 +488,8 @@
     "longitude": 120.0691,
     "status": "active",
     "is_red_dot": false,
-    "red_dot_count": null
+    "red_dot_count": null,
+    "logo": null
   },
   {
     "id": "3d96ae46-68e3-4698-9f93-0378bd44a61b",
@@ -459,6 +500,7 @@
     "longitude": 120.213129,
     "status": "active",
     "is_red_dot": true,
-    "red_dot_count": "6"
+    "red_dot_count": "6",
+    "logo": null
   }
 ]
